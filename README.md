@@ -49,9 +49,9 @@ You will be required to have free accounts with the following services:
 + [Google](https://accounts.google.com/signup?service=mail)
 
 In addition, please install a free text editor of your choice:
-	+ [Sublime Text](https://www.sublimetext.com/) (All systems)
-	+ [TextWrangler](http://www.barebones.com/products/textwrangler/) (All systems)
-	+ [Notepad++](https://notepad-plus-plus.org/) (Windows)
++ [Sublime Text](https://www.sublimetext.com/) (All systems)
++ [TextWrangler](http://www.barebones.com/products/textwrangler/) (All systems)
++ [Notepad++](https://notepad-plus-plus.org/) (Windows)
 
 <a id="course-readings"></a>
 ### Course Readings 
