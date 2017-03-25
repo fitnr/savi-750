@@ -1,0 +1,56 @@
+body {
+    margin-left:5%;
+    margin-right:5%
+}
+
+body.intro {
+    font-size: 5em;
+    font-family: sans-serif;    
+}
+body.intro li {
+    margin-left: 1em;
+}
+
+h1,h2,h3,h4 {
+    font-family:sans-serif;
+    width:95%;
+    margin-left:1em;
+    margin-right:1em
+}
+
+div {
+    font-family:sans-serif;
+    width:95%;
+    margin-left:1em;
+    margin-right:1em;
+    font-size:1em
+}
+
+#header {
+    font-size:2em;
+    font-weight:700;
+    text-align:center
+}
+
+.vis-critique {
+    background:#E6E6E6;
+    padding:5px;
+    margin:10px;
+    border-radius:15px
+}
+
+.project {
+    background:#ADD6FF;
+    padding:10px;
+    margin:10px;
+    border-radius:15px
+}
+
+blockquote {
+    background:#f9f9f9;
+    border-left:10px solid #ccc;
+    margin:1.5em 10px;
+    padding:.5em 10px;
+    quotes:"\201C""\201D""\2018""\2019";
+    text-align:justify
+}
