@@ -186,6 +186,13 @@ Update your maps (or create a new one) using data joined from two sources
 * [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets)
 * Kirk Bourne's list of [open data sources](http://www.datasciencecentral.com/profiles/blogs/a-plethora-of-open-data-repositories-i-e-thousands)
 * [NYPL Space/Time Directory](http://spacetime.nypl.org)
+* [https://data.ny.gov/](https://data.ny.gov/)
+* [https://data.sfgov.org/](https://data.sfgov.org/)
+* [https://data.cityofchicago.org/](https://data.cityofchicago.org/)
+* [https://data.cityofboston.gov/](https://data.cityofboston.gov/)
+* [https://data.seattle.gov/](https://data.seattle.gov/)
+* [https://data.kcmo.org/](https://data.kcmo.org/)
+* [http://data.lexingtonky.gov/](http://data.lexingtonky.gov/)
 
 #### Cartography
 + [Carto Academy](http://academy.carto.com/)
