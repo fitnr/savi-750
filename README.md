@@ -155,6 +155,12 @@ Update your maps (or create a new one) using data joined from two sources
 ### Working with data
 * [The Quartz guide to bad data](https://github.com/Quartz/bad-data-guide)
 
+### Command line
+* [What is the Command Line](https://learn.adafruit.com/what-is-the-command-line/overview?gclid=CMSy49eS8tICFZmIswod5zYMag) (series of pages with links to history articles)
+* [Lifehacker guide to the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
+* [Basic Unix commands](http://mally.stanford.edu/~sr/computing/basic-unix.html)
+* [Photos of historic command line interfaces](http://www.catb.org/esr/writings/taouu/html/ch02s02.html)
+
 #### APIs
 + [Codecademy Learn to Code for APIs](https://www.codecademy.com/apis)
 
