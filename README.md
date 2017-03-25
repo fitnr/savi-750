@@ -59,9 +59,7 @@ The required readings for this course consist of book chapters, newspaper articl
 
 <a id="class-format"></a>
 ### Class Format 
-Class runs from 9:30am to 5:30pm. Each day will be consist of 80-90–minute blocks broken up by 10-minute breaks and a half-hour break for lunch. Class will be a mix of lecture and practical exercise work, emphasizing the application of skills covered in the lecture portion of the class.
-
-You will have ample time in class to work on practical exercises based on the information presented in lectures. When possible, the final half hour of class will be set aside for any additional questions or additional tutorials in tools, skills, or techniques.
+Class runs from 9:30am to 5:30pm. Each day will be consist of 80-90–minute blocks broken up by 10-minute breaks and a half-hour break for lunch. Class will be a mix of lecture and exercise work, emphasizing the application of skills covered in the lecture portion of the class. You will have ample time in class to work on practical exercises based on the information presented in lectures.
 
 <a id="submitting-assignments"></a>
 ### Submitting Assignments
@@ -93,15 +91,14 @@ Find an interesting or visually compelling map (interactive or static) or visual
 
 <a id="class1"></a>
 ## [Session 1 - March 25](class1/index.html)
-+ What is open data?
++ Introduction
 + Data on the web
-+ Introduction to the command line
-+ Introduction to open source tools and services for mapping and visualization
++ Introduction to mapping and cartography
 + Introduction to HTML and CSS
 + Introduction to Git and [Github](http://github.com)
 
 #### Assignment
-1. Complete the online [CartoDB “Online Mapping for Beginners”](https://carto.com/academy/courses/beginners-course) course.
+1. Complete the [CARTO “Online Mapping for Beginners”](https://carto.com/academy/courses/beginners-course) course.
 2. Identify a research question that you would like to explore in this class, with the intention of creating maps and visualizations that will help answer question or clarify the topic. Write 2-3 paragraphs on what question you would like to answer, what data you'd like to explore using, and what you hope to contribute with your work.
 
 ### Readings
@@ -109,13 +106,13 @@ Find an interesting or visually compelling map (interactive or static) or visual
 + [Introduction to APIs ch 1-5](https://zapier.com/learn/apis/)
 + Ben Wellington "[Mapping the Sharing Economy](http://iquantny.tumblr.com/post/110747103479/mapping-the-sharing-economy-an-in-depth-view-of)"
 + Heer, Jeffrey, Michael Bostock, and Vadim Ogievetsky. "[A tour through the visualization zoo.](http://hci.stanford.edu/jheer/files/zoo/)" Commun. ACM 53.6 (2010): 59-67. 
-+ [CartoDB “Introduction to Map Design”](https://carto.com/academy/courses/design-for-beginners)
++ [CARTO “Introduction to Map Design”](https://carto.com/academy/courses/design-for-beginners)
 
 <a id="class2"></a>
 ## [Session 2 - April 13, 2016](class2/index.html)
 + Web scraping
 + Introduction to APIs
-+ Parsing data with [csvkit](http://csvkit.readthedocs.io/)
++ Introduction to the command line and parsing data with [csvkit](http://csvkit.readthedocs.io/)
 + Opening closed data with [Tabula](http://tabula.technology)
 + Introduction to SQL
 
@@ -135,7 +132,7 @@ Create a second map, using new data scraped from the web or pulled via an API. W
 + Obe, Regina, and Leo Hsu. PostGIS in action. Manning Publications Co., 2011, Pg 3-8.
 
 ### Assignments
-Complete the [SQL and PostGIS in CartoDB](http://academy.cartodb.com/courses/04-sql-postgis.html) course.
+Complete the [SQL and PostGIS in CARTO](http://academy.carto.com/courses/04-sql-postgis.html) course.
 Update your maps (or create a new one) using data joined from two sources
 
 <a id="class4"></a>
