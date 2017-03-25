@@ -139,7 +139,7 @@ Complete the [SQL and PostGIS in CartoDB](http://academy.cartodb.com/courses/04-
 Update your maps (or create a new one) using data joined from two sources
 
 <a id="class4"></a>
-### [Class 4 - April 20, 2016](class4/index.html
+### [Class 4 - April 20, 2016](class4/index.html)
 + Python for querying Geoclient API
 + Spatial SQL functions
 + Advanced topics TBD
