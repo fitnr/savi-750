@@ -97,6 +97,8 @@ Find an interesting or visually compelling map (interactive or static) or visual
 + Introduction to HTML and CSS
 + Introduction to Git and [Github](http://github.com)
 
+Please take the [student skills survey](https://docs.google.com/forms/d/e/1FAIpQLScf0l8tUuXc0z4Uz0lan3fMwIoU-jRTMrCpdOivX-YDwuTuEg/viewform).
+
 #### Assignment
 1. Complete the [CARTO “Online Mapping for Beginners”](https://carto.com/academy/courses/beginners-course) course.
 2. Identify a research question that you would like to explore in this class, with the intention of creating maps and visualizations that will help answer question or clarify the topic. Write 2-3 paragraphs on what question you would like to answer, what data you'd like to explore using, and what you hope to contribute with your work.
