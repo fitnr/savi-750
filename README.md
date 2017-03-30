@@ -90,7 +90,7 @@ Find an interesting or visually compelling map (interactive or static) or visual
 ----
 
 <a id="class1"></a>
-## [Session 1 - March 25](class1/index.html)
+## [Session 1 - March 25](http://fitnr.github.io/savi-750/class1/index.html)
 + Introduction
 + Data on the web
 + Introduction to mapping and cartography
@@ -111,7 +111,7 @@ Please take the [student skills survey](https://docs.google.com/forms/d/e/1FAIpQ
 + [CARTO “Introduction to Map Design”](https://carto.com/academy/courses/design-for-beginners)
 
 <a id="class2"></a>
-## [Session 2 - April 13, 2016](class2/index.html)
+## [Session 2 - April 13, 2016](http://fitnr.github.io/savi-750/class2/index.html)
 + Web scraping
 + Introduction to APIs
 + Introduction to the command line and parsing data with [csvkit](http://csvkit.readthedocs.io/)
@@ -124,7 +124,7 @@ Create a second map, using new data scraped from the web or pulled via an API. W
 #### Readings
 
 <a id="class3"></a>
-### [Class 3 - April 18, 2016](class3/index.html)
+### [Class 3 - April 18, 2016](http://fitnr.github.io/savi-750/class3/index.html)
 + Overview of social media data
 + Collecting social media data from APIs
 + Introduction to Python for querying APIs
@@ -138,7 +138,7 @@ Complete the [SQL and PostGIS in CARTO](http://academy.carto.com/courses/04-sql-
 Update your maps (or create a new one) using data joined from two sources
 
 <a id="class4"></a>
-### [Class 4 - April 20, 2016](class4/index.html)
+### [Class 4 - April 20, 2016](http://fitnr.github.io/savi-750/class4/index.html)
 + Python for querying Geoclient API
 + Spatial SQL functions
 + Advanced topics TBD
