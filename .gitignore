@@ -2,3 +2,7 @@
 *.csv
 *.xlsx
 *.orig
+
+[user]
+name = "cwyse0"
+email = "cwyse0@gmail.com"
