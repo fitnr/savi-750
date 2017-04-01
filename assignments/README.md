@@ -46,7 +46,7 @@ git remote add upstream https://github.com/fitnr/savi-750.git
 
 Once that setting is in place, run this command at any time to check for new commits (if any):
 ```
-git fetch upstream
+git fetch upstream gh-pages
 ```
 
 If nothing happens, then there's no new activity. If the terminal displays info about what it's downloading, follow up with:
