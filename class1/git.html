@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -224,4 +225,228 @@ class:center, middle
 var slideshow = remark.create();
 </script>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mining the Web - Class 2</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../assets/slide.css"/>
+</head>
+<body>
+<textarea id="source">
+
+---
+
+class:center,middle
+#Introduction to Git
+
+---
+
+class:center,middle
+#Why Git?
+
+---
+
+class:center,middle
+![img-full](../images/git1.png)
+
+---
+
+class:center,middle
+![img-full](../images/git2.png)
+
+---
+
+class:center,middle
+![img-full](../images/git3.png)
+
+---
+
+class:center,middle
+![img-full](../images/git4.png)
+
+---
+
+class:center,middle
+#Collaborating with Git
+
+---
+
+class:center,middle
+![img-full](../images/git5.png)
+
+---
+
+class:center,middle
+![img-full](../images/git6.png)
+
+---
+
+class:center,middle
+![img-full](../images/git7.png)
+
+---
+
+class:center,middle
+![img-full](../images/git8.png)
+
+---
+
+class:center,middle
+![img-full](../images/git9.png)
+
+---
+
+class:center,middle
+![img-full](../images/git10.png)
+
+---
+
+class:center,middle
+![img-full](../images/git11.png)
+
+---
+
+class:center,middle
+![img-full](../images/git12.png)
+
+---
+
+class:center,middle
+![img-full](../images/git13.png)
+
+---
+class:center
+#Git Workflow
+![img-full](../images/git14.png)
+
+---
+class:center,middle
+#Setup Git for this class
+
+---
+
+class:middle,center
+# First of all, we need to get some keys
+
+<iframe src="//giphy.com/embed/djd7OPtmcFJII" width="480" height="259" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+##Follow these instructions: 
+###https://help.github.com/articles/generating-ssh-keys/
+
+---
+##To Download the code for class (only do this once): 
+###`git clone https://github.com/fitnr/savi-750.git`
+
+---
+#From now on
+
+##To Get Updates: `git pull`
+
+##To Make a Commit: 
+
++ ###If the file hasn't been added to the repository: `git add filename.ext`
++ ###Once the file has been added: `git commit -am 'commit message'`
+
+---
+
+##To Create a Branch: `git checkout -b branch_name`
+
+##To Push Commit to Github (remote server): `git push`
+##To Push Commit to Branch: `git push --set-upstream origin branch_name`
+(Don't worry, git will remind you of this)
+
+---
+
+#The Workflow for Assignments
+
+```bash
+#get any changes in the repository
+git fetch 
+#checkout the main gh-pages branch
+git checkout gh-pages 
+#pull any commits in the gh-pages branch
+git pull
+#write some awesome code and save the text file
+#commit your awesome code to your local branch
+git commit -am 'my awesome code' 
+#push your awesome code to Github
+git push origin
+```
+
+---
+
+##You submit your work with a pull request
+
+###On the [Github page](https://github.com/fitnr/savi-750)
+
+![img-full](../images/create-pull.png)
+
+###After clicking the pull request button above click "Create Pull Request"
+
+![img-full](../images/compare-changes.png)
+
+---
+
+##Describe the request with your name and what you're submitting and click "Create pull request"
+
+![img-full](../images/github_pull3.png)
+
+---
+
+#Do It Now
+
+###Write a short introduction to yourself and post it onto the group page using the workflow we just outlined
+
+```bash
+#get any changes in the repository
+git fetch 
+#checkout the main gh-pages branch
+git checkout gh-pages 
+#pull any commits in the gh-pages branch
+git pull 
+#write some awesome code and save the text file
+#commit your awesome code to your local branch
+git commit -am 'my awesome code' 
+#push your awesome code to Github
+git push origin
+```
+
+###Create a pull request
+
+---
+
+class:middle,center
+#Congratulations! 
+#You've submitted your first pull request!
+###&nbsp;
+---
+
+class:middle,center
+#Congratulations! 
+#You've submitted your first pull request!
+
+---
+
+class:center,middle
+#And what are the rest of those assignments?
+
+---
+
+class: center,middle
+#Any Issues? Questions?
+
+---
+class:center, middle
+#See you next week
+
+</textarea>
+<script src="../assets/remark.js">
+</script>
+<script>
+var slideshow = remark.create();
+</script>
+</body>
+>>>>>>> origin/gh-pages
 </html>
