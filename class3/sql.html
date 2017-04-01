@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mining the Web - Class 5</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/slide.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+class:center,middle
+#Introduction to SQL
+##Let's look at earthquakes
+<!-- beginning of e block -->
+
+---
+
+#Add Earthquake Data from Data Library
+![img-full](../images/cdb_earthquake.png)
+##Click "Connect Dataset"
+
+---
+
+#Introduction to SQL
+![img-full](../images/sql1.png)
+
+---
+
+#Introduction to SQL
+![img-full](../images/sql2.png)
+
+---
+
+#Introduction to SQL
+![img-center-40](../images/sql3.png)
+
+---
+
+#Introduction to SQL
+![img-left](../images/sql4.png)
+<br>
+<br>
+
+---
+
+#Introduction to SQL
+--
+
+![img-left-45](../images/sql4.png)
+--
+
+![img-right-45](../images/sql5.png)
+<br>
+<br>
+--
+
+![img-center-75](../images/sql6.png)
+
+
+
+---
+
+#Introduction to SQL
+--
+
+![img-center-80](../images/sql7.png)
+--
+<br>
+![img-center-40](../images/sql8.png)
+
+---
+
+class:middle,center
+#How Many Earthquakes Occured in Each Country?
+
+---
+
+#Steps to Answer
+
+---
+
+#Steps to Answer
+1. Import the World Borders file from the Data Library
+
+---
+
+#Steps to Answer
+1. Import the World Borders file from the Data Library
+2. Join the datasets together
+
+---
+class:center, middle
+#How do we do joins in SQL?
+
+---
+
+class:center
+![img-full](../images/sql_join1.png)
+
+http://stackoverflow.com/questions/406294/left-join-and-left-outer-join-in-sql-server
+
+---
+
+#Joining Earthquakes with World Borders
+--
+
+![img-center-80](../images/sql_join2.png)
+--
+
+##Several things going on here
+--
+
++ Aliases for tables (using the keyword "**AS**")
+--
+
++ Using the function **ST_CONTAINS()**
+
+---
+
+#Joining Earthquakes with World Borders
+![img-full](../images/st_c.png)
+
+---
+
+#Several Options to Get Our Answer
+--
+
+1. Can create a table and count from there
+--
+
+2. Use this as a temporary table and generate the counts
+--
+
+![img-full](../images/sql_join3.png)
+
+    </textarea>
+    <script src="../assets/remark.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
