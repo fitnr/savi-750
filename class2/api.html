@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mining the Web - Class 2 - APIs</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/slide.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+class:center,middle
+# API
+## Application Program Interface
+
+---
+
+# NYC Open Data API
+![img-full](../images/tree-1.png)
+### http://opendata.cityofnewyork.us
+---
+
+# NYC Open Data API call
+![img-full](../images/tree-2.png)
+### https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh
+
+---
+
+# NYC Open Data API call
+![img-full](../images/tree-3.png)
+### https://dev.socrata.com/foundry/data.cityofnewyork.us/nwxe-4ae8
+
+---
+
+# NYC Open data API call
+
+```
+https://data.cityofnewyork.us/resource/nwxe-4ae8.json?zipcode=11217
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+```
+
+### Endpoint
++ `https://data.cityofnewyork.us/resource/nwxe-4ae8`
+
+---
+
+# NYC Open data API call
+
+```
+https://data.cityofnewyork.us/resource/nwxe-4ae8.json?zipcode=11217
+
+                                                 ^^^^
+```
+
+###  Format
++ `json`
+
+---
+
+# NYC Open data API call
+
+```
+https://data.cityofnewyork.us/resource/nwxe-4ae8.json?zipcode=11217
+
+                                                      ^^^^^^^^^^^^^
+```
+
+###Query Parameter
++ `zipcode=11217`
+
+---
+
+# NYC Open data API call
+
+```
+https://data.cityofnewyork.us/resource/nwxe-4ae8.json?zipcode=11217&spc_common=ginkgo
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+```
+
+### Multiple query parameters
++ `zipcode=11217`
++ `spc_common=ginkgo`
+
+---
+
+# NYC Open data API call
+## This seems important
+![img-center](../images/tree-4.png)
+
+---
+
+# NYC Open data API call
+## Authentication tokens are (sometimes) just parameters
+
+```
+https://data.cityofnewyork.us/resource/nwxe-4ae8.json?zipcode=11217&spc_common=ginkgo&$$app_token=ABC
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+```
+
+### Multiple query parameters
++ `zipcode` = `11217`
++ `spc_common` = `ginkgo`
++ `$$app_token` = `ABC`
+
+---
+
+# NYC Open data API setup
++ [Register for an account](https://data.cityofnewyork.us/login)
++ Click on the activation email
++ Get your token
+
+    </textarea>
+    <script src="../assets/remark.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
