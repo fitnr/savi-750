@@ -46,12 +46,12 @@ git remote add upstream https://github.com/fitnr/savi-750.git
 
 Once that setting is in place, run this command at any time to check for new commits (if any):
 ```
-git fetch upstream gh-pages
+git pull upstream gh-pages
 ```
 
-If nothing happens, then there's no new activity. If the terminal displays info about what it's downloading, follow up with:
+For some students, the `upstream` repo is named `fitnr`. Use this instead:
 ```
-git merge upstream/gh-pages -m "merging upstream/master"
+git pull fitnr gh-pages
 ```
 
 (Run all of these on the command line from within your `savi-750` folder)
