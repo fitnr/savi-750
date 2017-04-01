@@ -210,6 +210,9 @@ Update your maps (or create a new one) using data joined from two sources
 * [IQuantNY](http://iquantny.tumblr.com/)
 * [bl.ocks](https://bl.ocks.org)
 
+#### Sublime Text
+* [Package control](https://packagecontrol.io)
+
 #### Reference
 * [Get LatLon](http://teczno.com/squares/)
 * [Talks by Maciej Cegłowski](http://idlewords.com/talks/)
