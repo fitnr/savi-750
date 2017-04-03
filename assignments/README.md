@@ -44,6 +44,18 @@ First, you need to tell your local git repository about the main course reposito
 git remote add upstream https://github.com/fitnr/savi-750.git
 ```
 
+To ensure that this worked, run this command, which will tell you the name & addresses of the remote repositories you've created a link to:
+```
+git remote -v
+```
+The result will look something link:
+```
+upstream  https://github.com/fitnr/savi-750.git (fetch)
+upstream  https://github.com/fitnr/savi-750.git (push)
+origin    https://github.com/YOURNAME/savi-750.git (fetch)
+origin    https://github.com/YOURNAME/savi-750.git (push)
+```
+
 Once that setting is in place, run this command at any time to check for new commits (if any):
 ```
 git pull upstream gh-pages
