@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mining the Web - Class 3</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/slide.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+class:center,middle
+# Introduction to SQL
+## Let's look at counties
+
+---
+
+#Add County Data from Data Library
+
+![img-full](../images/sql1.png)
+
+---
+
+#Introduction to SQL
+![img-full](../images/sql2.png)
+
+---
+
+#Introduction to SQL
+
+The `WHERE` clause filters results
+
+![img-full](../images/sql3.png)
+
+---
+
+#Introduction to SQL
+
+The `WHERE` clause filters results
+
+![img-full](../images/sql4.png)
+
+---
+
+#Introduction to SQL
+
+Functions change the results
+
+![img-left](../images/sql6.png)
+
+---
+
+class:center, middle
+#How do we do joins in SQL?
+
+---
+
+class:center
+![img-full](../images/sql_join1.png)
+
+http://stackoverflow.com/questions/406294/left-join-and-left-outer-join-in-sql-server
+
+---
+
+class:middle,center
+# How Many Trees in Each County?
+
+---
+
+# Spatially Joining points with Polygons
+
+![img-center-80](../images/sql_join2.png)
+---
+
+#Steps to Answer
+
+---
+
+#Steps to Answer
+1. Import the World Borders file from the Data Library
+
+---
+
+#Steps to Answer
+1. Import the World Borders file from the Data Library
+2. Join the datasets together
+
+---
+
+##Several things going on here
+--
+
++ Aliases for tables (using the keyword "**AS**")
+--
+
++ Using the function **ST_CONTAINS()**
+
+---
+
+#Joining Earthquakes with World Borders
+![img-full](../images/st_c.png)
+
+---
+
+#Several Options to Get Our Answer
+--
+
+1. Can create a table and count from there
+--
+
+2. Use this as a temporary table and generate the counts
+--
+
+![img-full](../images/sql_join3.png)
+
+    </textarea>
+    <script src="../assets/remark.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mining the Web - Class 2 - Data Formats</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/slide.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+layout:true
+
+
+
+---
+
+class: center, middle
+![img-center-30](../images/pratt_logo.png)
+#Mining the Web
+###Neil Freeman
+###Slides are available here: http://fitnr.github.io/savi-705/class2/index.html
+
+---
+
+# Table of contents for today
++ Data formats
++ Scraping data
++ APIs
++ Cleaning data
+
+---
+
+# Data types
+--
+
++ `Strings`: text content `hello`, `goodbye`
+--
+
++ `Number`/`Integer`/`int`: whole numbers `1`, `3445`
+--
+
++ `decimal`/`float`/`real`: fractional numbers `3.145`, `5.51`
+--
+
++ `boolean`: `True` or `False`
+--
+
++ And more!
+
+---
+class:center
+# CSV
+![img-full](../images/csv.png)
+
+---
+
+class:center
+# JSON
+![img-full](../images/json.png)
+
+---
+
+class:center
+# Shapefile
+![img-full](../images/shp.png)
+
+---
+
+class:center
+# GeoJSON
+![img-full](../images/geojson.png)
+
+For more information see Eric Brelsford's [GeoJSON and Github tutorial](http://youtu.be/TQs7fYo9d_M)
+
+---
+
+class:center,middle
+# Why are there so many?
+
+---
+
+# Pros
+--
+
++ CSV: Flexible, human-readable.
+--
+
++ JSON: multi-level, computer-readable
+--
+
++ Shapefile: indexed, legacy of support
+--
+
++ GeoJSON: Geodata that's sort of human-readable
+
+---
+
+# Cons
+--
+
++ CSV: untyped, no depth
+--
+
++ JSON: messy to humans
+--
+
++ Shapefile: many files, harder to edit
+--
+
++ GeoJSON: slow for big files
+
+---
+
+    </textarea>
+    <script src="../assets/remark.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mining the Web - Class 3</title>
+    <title>Mining the Web - Class 2 - Scraping</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../assets/slide.css"/>
   </head>
@@ -10,14 +10,9 @@
 
 layout:true
 
-
-
 ---
 class:center,middle
-#Manual Scraping
-Example from Eric Brelsford - OpenRefine
-
-http://www.youtube.com/watch?v=KQlCTo0Q71Q 
+# Scraping
 
 ---
 
@@ -67,30 +62,14 @@ class:middle,center
 class:middle,center
 #Copy the response
 #Paste into text editor
-##or...
-
-#Assignment 1
-+ Find an interesting or visually compelling visualization online and write 2-3 paragraphs on the visualization, discussing the data source(s), the visual style, and how well the data was represented. Feel free to use the visualization resources listed above. Submit your text to the class page following the example shown.
 
 ---
 
-#Assignment 2
-+ Identify a question or topic you'd like to explore in this class, with the intention of creating a map related to the topics as part of your final project in this class. Write 2-3 paragraphs on why the topic is interesting to you, what data you'd like to explore using, and what you hope to contribute with your work.
+# Convert tables with a bookmarklet
 
----
+## [Table to TSV](javascript:%21function%28%29%7BArray.prototype.forEach.call%28document.getElementsByTagName%28%22table%22%29%2Cfunction%28a%29%7Bvar%20b%3Ddocument.createElement%28%22textarea%22%29%3Bb.style.setProperty%28%22width%22%2Ca.scrollWidth%2B%22px%22%29%2Cb.style.setProperty%28%22height%22%2C%22400px%22%29%2Cb.innerHTML%3DArray.prototype.map.call%28a.getElementsByTagName%28%22tr%22%29%2Cfunction%28a%29%7Breturn%20Array.prototype.map.call%28a.querySelectorAll%28%22th%2Ctd%22%29%2Cfunction%28a%29%7Breturn%20a.textContent.replace%28%22%5Cn%22%2C%22%20%22%29%7D%29.join%28%22%26%239%3B%22%29%7D%29.join%28%22%26%2313%3B%26%2310%3B%22%29%2Ca.parentNode.insertBefore%28b%2Ca.nextSibling%29%7D%29%7D%28%29%3B)
+## [List of countries and dependencies by population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population)
 
-#Resources 
-+ [School of Data: Cleaning Data with OpenRefine](http://schoolofdata.org/handbook/recipes/cleaning-data-with-refine/)
-+ [Enipedia OpenRefine Tutorial](http://enipedia.tudelft.nl/wiki/OpenRefine_Tutorial)
-
----
-
-class: center,middle
-#Any Issues? Questions?
-
----
-class:center, middle
-#See you next week
 
     </textarea>
     <script src="../assets/remark.js">

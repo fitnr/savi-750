@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mining the Web - Class 4</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/slide.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+class:center,middle
+
+![img-center-30](../images/pratt_logo.png)
+# Mining the Web
+### Neil Freeman
+### http://fitnr.github.io/savi-705/class4/index.html
+
+---
+
+class:center,middle
+# 2 Scrape 2 Map
+
+---
+
+class:center,middle
+# Goal: Map Whole Foods and Cracker Barrel
+
+--
+
+#### People write dumb articles. Let's see if there's anything here
+
+[![alt text](../images/medium-cb-wf.png))](https://medium.com/@michael_hendrix/why-2016-came-down-to-whole-foods-vs-cracker-barrel-4361cb9b1e5f)
+
+---
+
+
+# Get Whole Foods Locations
+
+--
+![list of whole foods](../images/complete-list-of-whole-foods.png)]
+
+---
+
+## There's no raw data!
+
+![whole foods site](../images/wf-website.png)
+
+---
+
+## There's no raw data!
+### We'll have to scrape it 
+
+--
+
+#### (manually?)
+
+---
+
+# There's a lot here
+
+Would be painful to manually download all of this
+
+.img-full[![inspect the website](../images/lots-of-pages.png)]
+
+---
+
+# How to?
+
+--
+
+## Python to the rescue
+
+---
+
+# Python Hello World
+
+Save file as `hello.py`
+
+![hello world](../images/hello.py.png)
+
+---
+
+# Python Hello World
+
+Run commands in a file with `python hello.py`
+
+![hello world](../images/python-a.png)
+
+---
+
+# Python Hello World
+
+Make sure the Build System is "Python"
+
+![set up build](../images/sublime-build-sys-python.png)
+
+---
+
+# Python Hello World
+
+Build (aka run) the file with `Command-B`
+
+![run build](../images/sublime-build-sys-python-execute.png)
+
+---
+
+# Python Hello World
+
+![hello world](../images/python-hello-world.png)
+
+---
+
+# Python Hello World
+
+The `python` command opens up a special command line environment
+
+![hello world](../images/python-aa.png)
+
+---
+
+# Python language guide
+
+
+`Str`s
+
+````python
+hello = "hello"
+x = "world"
+my_var = 'of course, strings can be long'
+note = "single or double quotes, which ever you prefer!"
+````
+--
+````python
+print hello + " " + x
+````
+--
+````python
+print hello.uppercase()
+````
+---
+
+# Python language guide
+
+`Int`s and `Float`s
+
+````python
+a = 1
+y = -2
+cats = 4
+mystery = 51.25
+````
+--
+
+````python
+print a + cats
+````
+
+---
+
+# Python language guide
+
+Conditionals
+
+````python
+
+cats = 4
+
+if cats > 2:
+    meowing = 'MEOW MEOW MEOW'
+
+````
+
+--
+
+````python
+print meowing
+````
+---
+
+# Python language guide
+
+`list`s and `dict`s
+
+````python
+cats = ['Inky', "Moxie", 'Sweet Potato']
+
+cat_colors = {
+    'Inky': 'black',
+    'Sweet Potato': 'splotchy',
+    'Moxie': 'black'
+}
+````
+
+--
+````python
+print cats[1]
+print cat_colors['Inky']
+print cats + ["Socks"]
+````
+--
+
+````python
+cats.append('socks')
+cat_colors.keys()
+````
+
+---
+
+# Python language guide
+
+`for` loops
+
+````python
+cats = ['Inky', "Moxie", 'Sweet Potato']
+
+cat_colors = {
+    'Inky': 'black',
+    'Sweet Potato': 'splotchy',
+    'Moxie': 'black'
+}
+
+for cat in cats:
+    print cat_colors[cat]
+````
+
+--
+
+````python
+for cat in cats:
+    print cat + " is " + cat_colors[cat]
+````
+
+---
+
+# Python language guide
+
+Functions store procedures
+
+````python
+def cat_info(name):
+    return name + ' is a cat'
+
+cats = ['Inky', "Moxie", 'Sweet Potato']
+
+for cat in cats:
+    print cat_info(cat)
+
+cat_info(name='Felix')
+````
+--
+````python
+Inky is a cat
+Moxie is a cat
+Sweet Potato is a cat
+Felix is a cat
+````
+
+---
+
+# Python language guide
+
+`import`: add functions to your code
+
+Imports may be built-in (e.g. `csv`) or added (with `pip`)
+
+````python
+import csv
+
+f = open('class3/foursquare_venues.csv')
+reader = csv.reader(f)
+
+for row in reader:
+    print row[0]
+
+````
+---
+
+# Parsing HTML with Python
+### Plan of action
+
++ Read the file
+--
+
++ Find the store descriptions
+--
+
++ Print out the needed information
+
+---
+
+# First, let's get some Soup
+
+```
+sudo pip install BeautifulSoup4
+```
+
+Beautiful Soup will help us parse HTML
+
+--
+
+and open up the docs:
+
+[https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+---
+
+# Get the Whole Foods
+
+.img-full[![inspect the website](../images/lots-of-pages.png)]
+
+---
+
+# Get the Whole Foods
+
+The URLs follow a simple pattern:
+```
+http://www.wholefoodsmarket.com/stores/list/state?field_postal_address_administrative_area=&page=1
+http://www.wholefoodsmarket.com/stores/list/state?field_postal_address_administrative_area=&page=20
+```
+
+---
+
+# Get the Whole Foods
+## Let's use a neat command line trick
+
+![bash expansion](../images/bash-number-expansion.png)
+
+---
+
+# Get the Whole Foods
+## Curl all 22 files all in one command
+
+```
+curl "http://www.wholefoodsmarket.com/stores/list/state?page="{0..21} > wholefoods.html
+```
+
+![curl](../images/curl.png)
+
+---
+
+# Parsing HTML with Python
+
+Read the file
+
+```python
+from bs4 import BeautifulSoup
+
+with open('wholefoods.html') as f:
+    soup = BeautifulSoup(f.read())
+
+print(soup)
+```
+
+---
+
+# Parsing HTML with Python
+
+One weird trick
+
+--
+
+Beautiful Soup will consider this many HTML files.
+
+So open it up and delete `</html>` tags.
+
+---
+
+# Parsing HTML with Python
+
+Inspect the website to get an idea of what's here
+
+![inspecting](../images/inspect-elements.png)
+
+---
+
+# Parsing HTML with Python
+
+Find a particular element
+
+````python
+from bs4 import BeautifulSoup
+
+with open('wholefoods.html') as f:
+    soup = BeautifulSoup(f.read())
+
+divs = soup.find_all('div', attrs={'class': 'views-row'})
+
+print divs[3]
+````
+--
+
+````html
+<div class="views-row views-row-1 views-row-odd views-row-first">\n<div class="views-field views-field-field-storefront-image"> <div class="field-content"><a href="/stores/huntsville"><img height="160" src="http://www.wholefoodsmarket.com/sites/default/files/styles/locations_small/public/media/WFM-Huntsville-210.jpg?itok=ZozsxKlD" typeof="foaf:Image" width="226"/></a></div> </div>\n<div class="views-field views-field-title"> <span class="field-content"><a href="/stores/huntsville">Huntsville</a></span> </div>\n<div class="views-field views-field-field-postal-address"> <div class="field-content"><div class="street-block"><div class="thoroughfare">2501 Memorial Pkwy SW</div></div><div class="addressfield-container-inline locality-block country-US"><span class="locality">Huntsville</span>, <span class="state">AL</span> <span class="postal-code">35801</span></div><span class="country">United States</span></div> </div>\n<div class="views-field views-field-field-phone-number"> <span class="views-label views-label-field-phone-number">Phone: </span> <div class="field-content">256.801.3741</div> </div>\n<div class="views-field views-field-field-store-hours"> <span class="views-label views-label-field-store-hours">Hours: </span> <div class="field-content">8am to 9pm Seven Days A Week </div> </div>\n<div class="views-field views-field-nothing"> <span class="field-content"><a href="/node/3991101">Store info</a> |\n \t<a href="/sales-flyer?store=3991101">Sales Flyers</a><br/>\n<a href="/events?store=3991101">Events</a> | <a href="/store-locations?store=3991101">Map &amp; Directions</a></span> </div>\n<div class="views-field views-field-store-make-users-store"> <span class="field-content"><form accept-charset="UTF-8" action="/stores/list/state?page=0" id="store-make-users-store-3991101" method="post"><div><input name="store" type="hidden" value="3991101"/>\n<input name="store_id" type="hidden" value="HSV"/>\n<input name="destination" type="hidden" value=""/>\n<div class="set_store"><input class="form-submit" id="edit-store-submit-399110158f15d61655d5" name="op" type="submit" value="Make This My Store"/></div><div class="set_store title"><input class="form-submit" id="edit-store-submit-399110158f15d616567c-name" name="op" type="submit" value="Huntsville"/></div><div class="storefront-button-description">Selecting MAKE THIS MY STORE allows you to see local information throughout the site such as store specials, local events, product lists and more.</div><input name="form_build_id" type="hidden" value="form-6vJHkHkeIYUxE4VPbeYCEHz7SGVEo399mgfVU-3ChB0"/>\n<input name="form_id" type="hidden" value="store_make_users_store_3991101"/>\n</div></form></span> </div> </div>
+````
+
+---
+
+class: center,middle
+
+#Break
+
+---
+
+# Parsing HTML with Python
+
+````html
+<div class="views-row views-row-1 views-row-odd views-row-first">\n
+    <div class="views-field views-field-field-storefront-image">
+        <div class="field-content">
+            <a href="/stores/huntsville"><img height="160" src="http://www.wholefoodsmarket.com/sites/default/files/styles/locations_small/public/media/WFM-Huntsville-210.jpg?itok=ZozsxKlD" typeof="foaf:Image" width="226" /></a>
+        </div>
+    </div>\n
+    <div class="views-field views-field-title"> <span class="field-content"><a href="/stores/huntsville">Huntsville</a></span> </div>\n
+    <div class="views-field views-field-field-postal-address">
+        <div class="field-content">
+            <div class="street-block">
+                <div class="thoroughfare">2501 Memorial Pkwy SW</div>
+            </div>
+            <div class="addressfield-container-inline locality-block country-US"><span class="locality">Huntsville</span>, <span class="state">AL</span> <span class="postal-code">35801</span></div><span class="country">United States</span></div>
+    </div>\n
+    <div class="views-field views-field-field-phone-number"> <span class="views-label views-label-field-phone-number">Phone: </span>
+        <div class="field-content">256.801.3741</div>
+    </div>\n
+    <div class="views-field views-field-field-store-hours"> <span class="views-label views-label-field-store-hours">Hours: </span>
+        <div class="field-content">8am to 9pm Seven Days A Week </div>
+    </div>\n
+    <div class="views-field views-field-nothing"> <span class="field-content"><a href="/node/3991101">Store info</a> |\n \t<a href="/sales-flyer?store=3991101">Sales Flyers</a><br/>\n<a href="/events?store=3991101">Events</a> | <a href="/store-locations?store=3991101">Map &amp; Directions</a></span> </div>\n
+    <div class="views-field views-field-store-make-users-store"> <span class="field-content"><form accept-charset="UTF-8" action="/stores/list/state?page=0" id="store-make-users-store-3991101" method="post"><div><input name="store" type="hidden" value="3991101"/>\n<input name="store_id" type="hidden" value="HSV"/>\n<input name="destination" type="hidden" value=""/>\n<div class="set_store"><input class="form-submit" id="edit-store-submit-399110158f15d61655d5" name="op" type="submit" value="Make This My Store"/></div><div class="set_store title"><input class="form-submit" id="edit-store-submit-399110158f15d616567c-name" name="op" type="submit" value="Huntsville"/></div><div class="storefront-button-description">Selecting MAKE THIS MY STORE allows you to see local information throughout the site such as store specials, local events, product lists and more.</div><input name="form_build_id" type="hidden" value="form-6vJHkHkeIYUxE4VPbeYCEHz7SGVEo399mgfVU-3ChB0"/>\n<input name="form_id" type="hidden" value="store_make_users_store_3991101"/>\n</div></form></span> </div>
+</div>
+````
+---
+
+# Parsing HTML with Python
+
+Use a for loop to address each element of `divs` in turn
+
+````python
+from bs4 import BeautifulSoup
+
+with open('wholefoods.html') as f:
+    soup = BeautifulSoup(f.read())
+
+divs = soup.find_all('div', attrs={'class': 'views-row'})
+
+for div in divs:
+    street = div.find(class_='thoroughfare').text
+    print street
+
+````
+---
+
+# Parsing HTML with Python
+
+OK, some are blank. Here's a new part of Python syntax: the `try` block
+
+````python
+for div in divs:
+    try:
+        street = div.find(class_='thoroughfare').text
+    except AttributeError:
+        street = ''
+    print street 
+````
+
+---
+
+# Parsing HTML with Python
+
+Let's create a function to organize things
+
+````python
+from bs4 import BeautifulSoup
+
+def process_div(div):
+    try:
+        street = div.find(class_='thoroughfare').text
+    except AttributeError:
+        street = ''
+    
+    return street
+
+with open('wholefoods.html') as f:
+    soup = BeautifulSoup(f.read())
+
+divs = soup.find_all('div', attrs={'class': 'views-row'})
+
+for div in divs:
+    print process_div(div)
+````
+---
+
+# Parsing HTML with Python
+
+Now we have to look at the pattern for each data element we want:
+
++ Address
++ store name
++ City
++ State
++ ZIP code
+
+---
+
+# Parsing HTML with Python
+
+This returns a `dict`, rather than a `str`.
+
+````python
+def process_div(div):
+    try:
+        d = {
+          'street': div.find(class_='thoroughfare').text,
+          'name': div.find(class_='views-field-title').find(class_='field-content').text,
+          'city': div.find(class_='locality').text,
+          'state': div.find(class_='state').text,
+          'country': div.find(class_='country').text,
+          'zipcode': div.find(class_='postal-code').text,
+        }
+    except:
+        d = {}
+
+    return d
+````
+
+---
+
+# Parsing HTML with Python
+
+Letters aren't all letters
+
+--
+
+Some are special `Unicode` letters
+
+````python
+string = u"Àçcéñtèd Léttérs"
+print string
+````
+--
+````python
+print string.encode('utf8')
+````
+
+---
+
+# Parsing HTML with Python
+````python
+def process_div(div):
+    try:
+        return {
+         'street': div.find(class_='thoroughfare').text.encode('utf8'),
+         'name': div.find(class_='views-field-title').find(class_='field-content').text.encode('utf8'),
+         'city': div.find(class_='locality').text.encode('utf8'),
+         'state': div.find(class_='state').text.encode('utf8'),
+         'zipcode': div.find(class_='postal-code').text.encode('utf8'),
+        }
+    except AttributeError:
+        return {}
+````
+
+---
+
+# Parsing HTML with Python
+
+Python has special modules for creating csvs
+
+````python
+import csv
+import sys
+
+fields = ['name', 'street', 'city', 'state', 'zipcode']
+
+writer = csv.DictWriter(sys.stdout, fieldnames=fields)
+writer.writeheader()
+````
+
+---
+````python
+import csv
+import sys
+from bs4 import BeautifulSoup
+
+def process_div(div):
+    try:
+        return {
+         'street': div.find(class_='thoroughfare').text.encode('utf8'),
+         'name': div.find(class_='views-field-title').find(class_='field-content').text.encode('utf8'),
+         'city': div.find(class_='locality').text.encode('utf8'),
+         'state': div.find(class_='state').text.encode('utf8'),
+         'zipcode': div.find(class_='postal-code').text.encode('utf8'),
+        }
+    except AttributeError:
+        return {}
+
+with open('wholefoods.html') as f:
+    soup = BeautifulSoup(f.read())
+
+divs = soup.find_all('div', attrs={'class': 'views-row'})
+
+fields = ['name', 'street', 'city', 'state', 'zipcode']
+
+writer = csv.DictWriter(sys.stdout, fieldnames=fields)
+writer.writeheader()
+
+for div in divs:
+    d = process_div(div)
+    if d != {}:
+        writer.writerow(d)
+````
+
+---
+
+# Parsing HTML with Python
+
+````
+python wholefoods.py > wholefoods.csv
+````
+
+---
+
+
+# Get Cracker Barrel Locations
+
+--
+
+![img-full](../images/complete-list-of-cracker-barrel.png)
+
+---
+
+# Get Cracker Barrel Locations
+
+This is a little simpler: there's sort of an API
+
+![img-full](../images/cracker-barrel-api.png)
+
+---
+
+# Get Cracker Barrel Locations
+
+This is a little simpler: there's sort of an API
+
+Except what's this mess?
+
+![img-full](../images/long-request-url.png)
+
+---
+
+# Get Cracker Barrel Locations
+
+It's some kind of XML
+
+![img-full](../images/long-request-xml.png)
+
+---
+
+# Get Cracker Barrel Locations
+
+```
+<request><appkey>3C44AEBA-B85D-11E5-B8DC-C8188E89CD5A</appkey><geoip>1</geoip><formdata id="locatorsearch"><dataview>store_default</dataview><geolocs><geoloc><addressline></addressline><longitude></longitude><latitude></latitude></geoloc></geolocs><searchradius>50</searchradius><where><openingsoon><eq>0</eq></openingsoon><labslocation><eq>null</eq></labslocation></where></formdata></request>
+```
+
+--
+
+![img-full](../images/cracker-xml-in-url.png)
+
+---
+
+# Get Cracker Barrel Locations
+
+
+    https://hosted.where2getit.com/crackerbarrel/ajax?lang=en_US&xml_request=<request><appkey>3C44AEBA-B85D-11E5-B8DC-C8188E89CD5A</appkey><formdata id="locatorsearch"><dataview>store_default</dataview><geolocs><geoloc><addressline>lincoln, ne</addressline><longitude>-96.6851982</longitude><latitude>40.8257625</latitude></geoloc></geolocs><searchradius>2000</searchradius><where><openingsoon><eq>0</eq></openingsoon><labslocation><eq>null</eq></labslocation></where></formdata></request>
+
+---
+
+# Get Cracker Barrel Locations
+
+![img-full](../images/cracker-barrel-raw-xml.png)
+
+---
+
+# Convert XML to CSV
+
+
+OK, How to turn this into a usable format?
+
+--
+
+[http://lmgtfy.com/?q=xml+to+csv](http://lmgtfy.com/?q=xml+to+csv)
+
+---
+
+# Convert XML to CSV
+
+Online tools, e.g: http://www.luxonsoftware.com/converter/xmltocsv
+
+Problems:
+
++ Size limits
++ Requires the internet
++ Not good for lots of files
+
+---
+
+# Convert XML to CSV
+
+Other option: find a Python module for it, e.g. [xmlutils](https://github.com/knadh/xmlutils.py)
+
+---
+
+class: center,middle
+
+#Break
+
+---
+
+# Get County Shapefile from the Census
+
+Unfortunately, the "USA Counties" dataset on CARTO is wrong!
+
+https://www.census.gov/geo/maps-data/data/tiger-line.html
+
+[![img-full](../images/tyger-tyger.png)](https://www.census.gov/geo/maps-data/data/tiger.html)
+
+---
+
+# Get County Shapefile <strike>from the Census</strike>
+
+Quicker: copy from my CARTO page:
+
+https://fitnr.carto.com/tables/cb_2016_us_county_5m/public
+
+---
+
+# Spatial Statistics
+
+Create a map with these three datasets
+
+![img-full](../images/carto-three-datasets.png)
+
+---
+
+# Spatial Statistics
+
+Run in data view
+
+````SQL
+SELECT COUNT(DISTINCT county.GEOID)
+FROM cb_2016_us_county_5m county,
+wholefoods b
+WHERE ST_Contains(county.the_geom, b.the_geom)
+````
+
+---
+
+# Spatial Statistics
+
+![img-full](../images/spatial-count.png)
+
+---
+
+# Spatial Statistics
+
+
+How to count counties with Cracker Barrel locations?
+
+--
+
+Adapt this query:
+
+````SQL
+SELECT COUNT(DISTINCT county.GEOID)
+FROM cb_2016_us_county_5m county,
+wholefoods b
+WHERE ST_Contains(county.the_geom, b.the_geom)
+````
+
+---
+
+# Spatial Joins
+
+Now to map the counties with Whole Foods
+
+--
+
+````SQL
+SELECT
+    county.cartodb_id,
+    county.the_geom_webmercator,
+    COUNT(b.*) AS count
+FROM cb_2016_us_county_5m county
+LEFT JOIN wholefoods b
+ON (ST_Contains(county.the_geom, b.the_geom))
+GROUP BY
+    county.the_geom_webmercator,
+    county.cartodb_id
+HAVING COUNT(b.*) > 0
+````
+---
+# Spatial Joins
+
+Apply query to two copies of the `cb_2016_us_county_5m` layer
+
+(CARTO doesn't like to display the geometries of a different layer)
+
+![two copies of one layer](../images/carto-two-copies-of-layer.png)
+
+
+---
+
+# Spatial Joins
+
+![img-full](../images/carto-map-1.png)
+
+--
+
+Is this map a lie?
+
+---
+
+# Spatial Statistics
+
+How many Whole Foods are in a county with a Cracker Barrel, and vis versa?
+
+--
+
+````SQL
+SELECT
+    COUNT(DISTINCT b.cartodb_id)
+
+FROM crackerbarrel c
+
+LEFT JOIN cb_2016_us_county_5m county
+ON (ST_Contains(county.the_geom, c.the_geom))
+
+LEFT JOIN wholefoods b
+ON (ST_Contains(county.the_geom, b.the_geom))
+````
+---
+
+# Spatial Statistics
+
+How many C.B. are in W.F. counties?
+
+````SQL
+SELECT
+    COUNT(DISTINCT c.cartodb_id)
+
+FROM wholefoods b
+
+LEFT JOIN cb_2016_us_county_5m county
+ON (ST_Contains(county.the_geom, b.the_geom))
+
+LEFT JOIN crackerbarrel c
+ON (ST_Contains(county.the_geom, c.the_geom))
+````
+
+---
+# Spatial Joins
+
+Map counties with both a C.B. count and a W.F. count
+
+````SQL
+SELECT
+    county.cartodb_id,
+    county.the_geom_webmercator,
+    COUNT(b.*) AS count_wf,
+    COUNT(c.*) AS count_cb
+
+FROM cb_2016_us_county_5m county
+
+LEFT JOIN wholefoods b
+ON (ST_Contains(county.the_geom, b.the_geom))
+
+LEFT JOIN crackerbarrel c
+ON (ST_Contains(county.the_geom, c.the_geom))
+
+GROUP BY
+    county.the_geom_webmercator,
+    county.cartodb_id
+
+HAVING
+    COUNT(b.*) > 0 OR COUNT(c.*) > 0
+````
+
+---
+# Spatial Joins
+
+CARTO can't map this kind of divering scale easily
+
+--
+
+````CSS
+#cb_2016_us_county_5m {
+  polygon-fill: #FFEDA0;
+  polygon-opacity: 0.85;
+  line-color: #FFF;
+  line-width: 0.5;
+  line-opacity: 0.85;
+}
+
+#cb_2016_us_county_5m [ count_cb >= 1] {
+   polygon-fill: #FF9900;
+}
+
+#cb_2016_us_county_5m [ count_wf >= 1] {
+   polygon-fill: #6B0FB2;
+}
+
+#cb_2016_us_county_5m [ count_wf >= 1][ count_cb >= 1] {
+   polygon-fill: #666666;
+}
+````
+
+---
+
+# Spatial Joins
+
+![img-full](../images/that-do-both.png)
+
+    </textarea>
+    <script src="../assets/remark.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
