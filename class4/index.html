@@ -9,6 +9,15 @@
     <textarea id="source">
 
 class:center,middle
+
+![img-center-30](../images/pratt_logo.png)
+# Mining the Web
+### Neil Freeman
+### http://fitnr.github.io/savi-705/class4/index.html
+
+---
+
+class:center,middle
 # 2 Scrape 2 Map
 
 ---
@@ -20,7 +29,7 @@ class:center,middle
 
 #### People write dumb articles. Let's see if there's anything here
 
-.img-full[![dumb article](../images/medium-cb-wf.png))
+[![alt text](../images/medium-cb-wf.png))](https://medium.com/@michael_hendrix/why-2016-came-down-to-whole-foods-vs-cracker-barrel-4361cb9b1e5f)
 
 ---
 
@@ -609,12 +618,6 @@ python wholefoods.py > wholefoods.csv
 
 ---
 
-class: center,middle
-
-#Break
-
----
-
 
 # Get Cracker Barrel Locations
 
@@ -688,7 +691,7 @@ OK, How to turn this into a usable format?
 
 # Convert XML to CSV
 
-Online tools, e.g: [http://www.luxonsoftware.com/converter/xmltocsv](http://www.luxonsoftware.com/converter/xmltocsv)
+Online tools, e.g: http://www.luxonsoftware.com/converter/xmltocsv
 
 Problems:
 
@@ -704,12 +707,215 @@ Other option: find a Python module for it, e.g. [xmlutils](https://github.com/kn
 
 ---
 
-# Get County Shapefile from the Census
+class: center,middle
 
-`https://www.census.gov/cgi-bin/geo/shapefiles/getFile.php?directory=COUNTY&filename=tl_2016_us_county.zip&year=2016`
-.img-full[![](../images/tiger-county.png))
+#Break
 
 ---
+
+# Get County Shapefile from the Census
+
+Unfortunately, the "USA Counties" dataset on CARTO is wrong!
+
+https://www.census.gov/geo/maps-data/data/tiger-line.html
+
+[![img-full](../images/tyger-tyger.png)](https://www.census.gov/geo/maps-data/data/tiger.html)
+
+---
+
+# Get County Shapefile <strike>from the Census</strike>
+
+Quicker: copy from my CARTO page:
+
+https://fitnr.carto.com/tables/cb_2016_us_county_5m/public
+
+---
+
+# Spatial Statistics
+
+Create a map with these three datasets
+
+![img-full](../images/carto-three-datasets.png)
+
+---
+
+# Spatial Statistics
+
+Run in data view
+
+````SQL
+SELECT COUNT(DISTINCT county.GEOID)
+FROM cb_2016_us_county_5m county,
+wholefoods b
+WHERE ST_Contains(county.the_geom, b.the_geom)
+````
+
+---
+
+# Spatial Statistics
+
+![img-full](../images/spatial-count.png)
+
+---
+
+# Spatial Statistics
+
+
+How to count counties with Cracker Barrel locations?
+
+--
+
+Adapt this query:
+
+````SQL
+SELECT COUNT(DISTINCT county.GEOID)
+FROM cb_2016_us_county_5m county,
+wholefoods b
+WHERE ST_Contains(county.the_geom, b.the_geom)
+````
+
+---
+
+# Spatial Joins
+
+Now to map the counties with Whole Foods
+
+--
+
+````SQL
+SELECT
+    county.cartodb_id,
+    county.the_geom_webmercator,
+    COUNT(b.*) AS count
+FROM cb_2016_us_county_5m county
+LEFT JOIN wholefoods b
+ON (ST_Contains(county.the_geom, b.the_geom))
+GROUP BY
+    county.the_geom_webmercator,
+    county.cartodb_id
+HAVING COUNT(b.*) > 0
+````
+---
+# Spatial Joins
+
+Apply query to two copies of the `cb_2016_us_county_5m` layer
+
+(CARTO doesn't like to display the geometries of a different layer)
+
+![two copies of one layer](../images/carto-two-copies-of-layer.png)
+
+
+---
+
+# Spatial Joins
+
+![img-full](../images/carto-map-1.png)
+
+--
+
+Is this map a lie?
+
+---
+
+# Spatial Statistics
+
+How many Whole Foods are in a county with a Cracker Barrel, and vis versa?
+
+--
+
+````SQL
+SELECT
+    COUNT(DISTINCT b.cartodb_id)
+
+FROM crackerbarrel c
+
+LEFT JOIN cb_2016_us_county_5m county
+ON (ST_Contains(county.the_geom, c.the_geom))
+
+LEFT JOIN wholefoods b
+ON (ST_Contains(county.the_geom, b.the_geom))
+````
+---
+
+# Spatial Statistics
+
+How many C.B. are in W.F. counties?
+
+````SQL
+SELECT
+    COUNT(DISTINCT c.cartodb_id)
+
+FROM wholefoods b
+
+LEFT JOIN cb_2016_us_county_5m county
+ON (ST_Contains(county.the_geom, b.the_geom))
+
+LEFT JOIN crackerbarrel c
+ON (ST_Contains(county.the_geom, c.the_geom))
+````
+
+---
+# Spatial Joins
+
+Map counties with both a C.B. count and a W.F. count
+
+````SQL
+SELECT
+    county.cartodb_id,
+    county.the_geom_webmercator,
+    COUNT(b.*) AS count_wf,
+    COUNT(c.*) AS count_cb
+
+FROM cb_2016_us_county_5m county
+
+LEFT JOIN wholefoods b
+ON (ST_Contains(county.the_geom, b.the_geom))
+
+LEFT JOIN crackerbarrel c
+ON (ST_Contains(county.the_geom, c.the_geom))
+
+GROUP BY
+    county.the_geom_webmercator,
+    county.cartodb_id
+
+HAVING
+    COUNT(b.*) > 0 OR COUNT(c.*) > 0
+````
+
+---
+# Spatial Joins
+
+CARTO can't map this kind of divering scale easily
+
+--
+
+````CSS
+#cb_2016_us_county_5m {
+  polygon-fill: #FFEDA0;
+  polygon-opacity: 0.85;
+  line-color: #FFF;
+  line-width: 0.5;
+  line-opacity: 0.85;
+}
+
+#cb_2016_us_county_5m [ count_cb >= 1] {
+   polygon-fill: #FF9900;
+}
+
+#cb_2016_us_county_5m [ count_wf >= 1] {
+   polygon-fill: #6B0FB2;
+}
+
+#cb_2016_us_county_5m [ count_wf >= 1][ count_cb >= 1] {
+   polygon-fill: #666666;
+}
+````
+
+---
+
+# Spatial Joins
+
+![img-full](../images/that-do-both.png)
 
     </textarea>
     <script src="../assets/remark.js">
