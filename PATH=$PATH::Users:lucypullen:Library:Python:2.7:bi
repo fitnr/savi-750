@@ -1,0 +1,14 @@
+
+
+
+command line notes
+
+
+
+if you can't open things installed with pip, write this
+
+PATH=$PATH:/Users/lucypullen/Library/Python/2.7/bin
+export PATH
+
+
+this is where pip is saving files

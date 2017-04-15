@@ -43,8 +43,19 @@
 <li><a href="http://www.iobis.org/explore/#/taxon/526649">John Dory</a>
 </ul>
 
+<p>
+Large result sets can be downloaded as a single CSV file using the download API. The initial search request will return a UUID, which can be used to retrieve the file when it is ready. Files will be removed after a few days. Alternatively, results can be downloaded synchronously by adding sync=true.
 
-<iframe width="100%" height="520" frameborder="0" src="https://savi.carto.com/u/lpullensavi/builder/3a28dfb6-164e-11e7-9b58-0e05a8b3e3d7/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+#OCCURENCE DOWNLOAD: 
+http://api.iobis.org/occurrence/download?Morone_saxatillis,Melanogrammus_aeglefinus,Coryphaena_hippurus,Thunnus_alalunga,Lopholatilus_chamaelonticeps,Litopenaeus_setiferus,Xiphias_gladius,Pollachius_virens,Merluccius_Bilinearis,Sebates_fasciatus,Paralichthys_dentatus,Zeus_faber
+
+#UNIQUE IDENTIFIER: 
+{ "uuid" : "7cd266ac-2963-38bd-859c-1042169051eb" }
+
+#GET DOWNLOAD STATUS: 
+http://api.iobis.org/download/7cd266ac-2963-38bd-859c-1042169051eb/status/sync=true
+
+<iframe width="100%" height="520" frameborder="0" src="https://savi.carto.com/u/lpullensavi/builder/63c92ac9-51fa-49dc-bcd6-2ba4543a3e16/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 <h3>Areas of interest</h3>
 <p>Boats operating in Massachuetts, Rhode Island, Maine, New Jersey, New York, Maryland, Georgia and Florida supply Mermaids Garden with fish. We are intersted in the groundfishery on the east coast, particularly the North Atlantic from New England to Nova Scotia, to identify new sources of sustainable fish the CSF may contact to grow their business. </p>
