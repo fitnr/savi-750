@@ -1,17 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body { font-family: Helvetica Neue, Helvetica, sans-serif; }
 
-body { font-family: 'Droid Serif'; }
 a:visited, a:link, a:active { text-decoration: none; }
 a:hover { text-decoration: underline; }
 p, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Yanone Kaffeesatz';
+  font-family: Franklin Gothic Medium, sans-serif;
   font-weight: normal;
 }
-.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.remark-code, .remark-inline-code { font-family: monospace; }
 li {
-  font-family: 'Yanone Kaffeesatz';
+  font-family: Helvetica Neue, Helvetica, sans-serif;
   font-size:2em;
 }
 img {
