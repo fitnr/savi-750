@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Lopholatilus_chamaeleonticeps_1491614465.kml</name><Style id="Fishes"><BalloonStyle><text><![CDATA[<table><tr><td><b>Country</b></td><td>$[Country]</td></tr><tr><td><b>Year Collected</b></td><td>$[YearCollected]</td></tr><tr><td><b>Collector</b></td><td>$[Collector]</td></tr><tr><td><b>Locality</b></td><td>$[Locality]</td></tr><tr><td><b>Url</b></td><td>$[Url]</td></tr><tr><td><b>Catalog No.</b></td><td>$[CatalogNum]</td></tr></table>]]></text><bgColor>#ff673005</bgColor><textColor>#ffffffff</textColor></BalloonStyle><IconStyle><Icon><href>http://www.fishbase.us/map/Google/images/red.png</href></Icon></IconStyle></Style><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-96.425000,26.916667</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1952]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/149955337">http://data.gbif.org/ws/rest/occurrence/get/149955337</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[157724.5047246]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-96.333340,27.166670</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1954]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Gulf of Mexico, 150 fathoms.]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/198259209">http://data.gbif.org/ws/rest/occurrence/get/198259209</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[10996]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-94.265000,27.698330</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1973]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Gulf of Mexico, 170/177 fathoms; Station 13297.]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/198259818">http://data.gbif.org/ws/rest/occurrence/get/198259818</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[90436]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-87.066667,29.833333</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1977]]></value></Data>
+							<Data name="Collector"><value><![CDATA[R.L. SHIPP et al.]]></value></Data>
+							<Data name="Locality"><value><![CDATA[GULF OF MEXICO]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=927601">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=927601</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[AMNH 83753]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-87.066666,29.833334</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1977]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[GULF OF MEXICO]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/197848806">http://data.gbif.org/ws/rest/occurrence/get/197848806</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[AMNH 83753]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-87.000000,29.800000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1950]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Fla: Off Santa Rosa I.]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/149955327">http://data.gbif.org/ws/rest/occurrence/get/149955327</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[152561.5255865]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-86.700000,29.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1955]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[So. of Santa Rosa, Fla.]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/149955342">http://data.gbif.org/ws/rest/occurrence/get/149955342</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[158810.5255867]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-86.416667,29.500000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1978]]></value></Data>
+							<Data name="Collector"><value><![CDATA[R.L. SHIPP, J.T. WILLIAMS, T.S. SEARCY]]></value></Data>
+							<Data name="Locality"><value><![CDATA[GULF OF MEXICO]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=927607">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=927607</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[AMNH 85996]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-86.416664,29.500000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1978]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[GULF OF MEXICO]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/197848807">http://data.gbif.org/ws/rest/occurrence/get/197848807</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[AMNH 85996]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-85.600000,28.500000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1950]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Gulf of Mexico, Fla.: Off Cape San Blas.]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/149955328">http://data.gbif.org/ws/rest/occurrence/get/149955328</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[152562.5255866]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-80.050003,25.666666</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1971]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[[Atlantic Ocean], off Miami, Florida, [ca. 7.3 air miles ESE Key Biscayne]]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/199217024">http://data.gbif.org/ws/rest/occurrence/get/199217024</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[27201]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-79.133333,31.983333</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1976]]></value></Data>
+							<Data name="Collector"><value><![CDATA[R/V DOLPHIN]]></value></Data>
+							<Data name="Locality"><value><![CDATA[WESTERN CENTRAL ATLANTIC OCEAN]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=927604">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=927604</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[AMNH 76773]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-79.133330,31.983334</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1976]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[WESTERN CENTRAL ATLANTIC OCEAN]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/197848804">http://data.gbif.org/ws/rest/occurrence/get/197848804</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[AMNH 76773]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-79.083336,32.050000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1976]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[WESTERN CENTRAL ATLANTIC OCEAN]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/197848805">http://data.gbif.org/ws/rest/occurrence/get/197848805</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[AMNH 76775]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-79.083333,32.050000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1976]]></value></Data>
+							<Data name="Collector"><value><![CDATA[R/V DOLPHIN]]></value></Data>
+							<Data name="Locality"><value><![CDATA[WESTERN CENTRAL ATLANTIC OCEAN]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=927605">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=927605</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[AMNH 76775]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-78.070000,32.420000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1978]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Florida Current - Cape Romain Section]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35031122">http://data.gbif.org/ws/rest/occurrence/get/35031122</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[76679]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-77.800000,32.370000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1978]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Florida Current - Cape Romain Section]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35031119">http://data.gbif.org/ws/rest/occurrence/get/35031119</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[76678]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-76.817500,35.359700</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Lee Creek Mine, Yorktown Formation]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/37939856">http://data.gbif.org/ws/rest/occurrence/get/37939856</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[587929]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-76.695702,34.612598</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Atlantic Ocean, [off of North Carolina], off Beaufort, [ca. 7.5 air miles SSW center Beaufort]]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/199217960">http://data.gbif.org/ws/rest/occurrence/get/199217960</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[27198]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-75.580000,34.630000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1978]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Florida Current - Cape Hatteras Section]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35031123">http://data.gbif.org/ws/rest/occurrence/get/35031123</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[76680]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-75.270000,34.420000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1978]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Florida Current - Cape Hatteras Section]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35031125">http://data.gbif.org/ws/rest/occurrence/get/35031125</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[76681]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-74.920000,35.720000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1985]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35031275">http://data.gbif.org/ws/rest/occurrence/get/35031275</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[93606]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-74.906005,38.935113</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States (c]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Cape May]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=1787415">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=1787415</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[IGFA]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-74.056526,40.107893</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States (c]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Brielle]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=1787413">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=1787413</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[IGFA]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-74.056526,40.107893</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States (c]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Brielle]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=1787414">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=1787414</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[IGFA]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-73.730000,39.440000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[2007]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/180632881">http://data.gbif.org/ws/rest/occurrence/get/180632881</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[167767]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-72.833336,38.941666</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Atlantic Ocean, Off Cape Hatteras]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/197849280">http://data.gbif.org/ws/rest/occurrence/get/197849280</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[ROM 23957]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-72.833333,38.941667</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1966]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Atlantic Ocean; Off Cape Hatteras]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/45143552">http://data.gbif.org/ws/rest/occurrence/get/45143552</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[23957]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-72.390000,38.520000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1982]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Edge of warm-core ring 82B]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35031128">http://data.gbif.org/ws/rest/occurrence/get/35031128</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[76682]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-72.320000,39.370000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1937]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35029742">http://data.gbif.org/ws/rest/occurrence/get/35029742</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[34563]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-72.273000,39.441300</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[114 miles off Atlantic City, New Jersey]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/203886168">http://data.gbif.org/ws/rest/occurrence/get/203886168</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[8402]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-72.272964,39.441261</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[114 miles off Atlantic City, New Jersey]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/176212561">http://data.gbif.org/ws/rest/occurrence/get/176212561</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[8402]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-72.180000,40.100000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1986]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35031281">http://data.gbif.org/ws/rest/occurrence/get/35031281</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[93608]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-71.600000,40.130000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1930]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35029753">http://data.gbif.org/ws/rest/occurrence/get/35029753</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[34565]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-71.500000,39.930000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1930]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35029735">http://data.gbif.org/ws/rest/occurrence/get/35029735</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[34562]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-71.420000,39.770000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1930]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35029760">http://data.gbif.org/ws/rest/occurrence/get/35029760</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[34566]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-71.350000,40.270000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1985]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35031279">http://data.gbif.org/ws/rest/occurrence/get/35031279</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[93607]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-71.000000,39.900000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1971]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[NW Atlantic,,, Block Canyon, East Edge]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/149955353">http://data.gbif.org/ws/rest/occurrence/get/149955353</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[206359.5065923]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.970000,39.620000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1953]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35031130">http://data.gbif.org/ws/rest/occurrence/get/35031130</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[76683]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.820000,41.260000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States of]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/122322510">http://data.gbif.org/ws/rest/occurrence/get/122322510</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[1341]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.820000,41.260000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States of]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/178121550">http://data.gbif.org/ws/rest/occurrence/get/178121550</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[1341]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.816667,40.250000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States (c]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1979]]></value></Data>
+							<Data name="Collector"><value><![CDATA[P. BURN, NYZS, R/V DELAWARE II (NOAA)]]></value></Data>
+							<Data name="Locality"><value><![CDATA[BLOCK ISLAND OUTER CONTINENTAL SHELF]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=927606">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=927606</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[AMNH 96770]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.816666,40.250000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1979]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[BLOCK ISLAND OUTER CONTINENTAL SHELF]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/197848809">http://data.gbif.org/ws/rest/occurrence/get/197848809</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[AMNH 96770]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.680000,41.510000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States of]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/122322511">http://data.gbif.org/ws/rest/occurrence/get/122322511</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[1342]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.680000,41.510000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States of]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/178121551">http://data.gbif.org/ws/rest/occurrence/get/178121551</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[1342]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.570000,40.070000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1953]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35030011">http://data.gbif.org/ws/rest/occurrence/get/35030011</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[38307]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.520000,40.050000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1930]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35029791">http://data.gbif.org/ws/rest/occurrence/get/35029791</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[34766]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.520000,40.050000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1930]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35029748">http://data.gbif.org/ws/rest/occurrence/get/35029748</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[34564]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.000000,40.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Atlantic Ocean]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/197848812">http://data.gbif.org/ws/rest/occurrence/get/197848812</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[BMNH 1880.9.14.34]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.000000,40.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Lat. 40 N. Long. 70 W. 80 m. Sxe. Noman'S Land]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/149955359">http://data.gbif.org/ws/rest/occurrence/get/149955359</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[22899.5003146]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-70.000000,40.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[United States (c]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Nantucket Shoals, Massachusetts, U.S.A. (40°N, 70°W), 84 fm.]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=1766995">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=1766995</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[FB 2740020]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-67.980000,39.970000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[2002]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35040332">http://data.gbif.org/ws/rest/occurrence/get/35040332</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[162303]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-67.850000,41.445000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[Canada]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[US Northeast Atlantic Shelf > Georges Bank > Georges Bank]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/17561415">http://data.gbif.org/ws/rest/occurrence/get/17561415</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[1850]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-67.850000,41.445000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[Canada]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1982]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.iobis.org/OBISWEB/ObisControllerServlet?site=fishbase&amp;searchCategory=%2FAdvancedSearchServlet&amp;genus=Lopholatilus&amp;species=chamaeleonticeps">http://www.iobis.org/OBISWEB/ObisControllerServlet?site=fishbase&amp;searchCategory=%2FAdvancedSearchServlet&amp;genus=Lopholatilus&amp;species=chamaeleonticeps</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[1850]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-67.610000,39.950000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[2003]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35040380">http://data.gbif.org/ws/rest/occurrence/get/35040380</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[163355]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-67.480000,39.830000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[2002]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[vicinity of Bear Seamount]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35040336">http://data.gbif.org/ws/rest/occurrence/get/35040336</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[162304]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-67.450000,39.900000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[2003]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35040378">http://data.gbif.org/ws/rest/occurrence/get/35040378</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[163354]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-67.450000,39.880000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[2004]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Bear Seamount]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35040417">http://data.gbif.org/ws/rest/occurrence/get/35040417</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[164506]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-66.600000,40.720000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[USA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[2002]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35040339">http://data.gbif.org/ws/rest/occurrence/get/35040339</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[162305]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-66.133330,41.366670</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[CANADA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1988]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[5Z1]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/122689547">http://data.gbif.org/ws/rest/occurrence/get/122689547</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[NED1988097-26-25-1]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-66.066700,45.266700</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[St.John River  NB]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/17495837">http://data.gbif.org/ws/rest/occurrence/get/17495837</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[8600863]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-66.066700,45.266700</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[0]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.iobis.org/OBISWEB/ObisControllerServlet?site=fishbase&amp;searchCategory=%2FAdvancedSearchServlet&amp;genus=Lopholatilus&amp;species=chamaeleonticeps">http://www.iobis.org/OBISWEB/ObisControllerServlet?site=fishbase&amp;searchCategory=%2FAdvancedSearchServlet&amp;genus=Lopholatilus&amp;species=chamaeleonticeps</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[8600863]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-65.400000,44.850000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[Canada]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Nova Scotia to southern Florida and Gulf of Mexico]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/113844308">http://data.gbif.org/ws/rest/occurrence/get/113844308</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[Lopholatilus chamaeleonticeps]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-65.400000,44.850000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[Canada]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[0]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.iobis.org/OBISWEB/ObisControllerServlet?site=fishbase&amp;searchCategory=%2FAdvancedSearchServlet&amp;genus=Lopholatilus&amp;species=chamaeleonticeps">http://www.iobis.org/OBISWEB/ObisControllerServlet?site=fishbase&amp;searchCategory=%2FAdvancedSearchServlet&amp;genus=Lopholatilus&amp;species=chamaeleonticeps</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[Lopholatilus chamaeleonticeps]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-64.500000,11.830000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[Venezuela]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[just west of Los Hermanor Islands, coastal Venezuela]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/35040070">http://data.gbif.org/ws/rest/occurrence/get/35040070</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[154251]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-63.800000,42.800000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/149955340">http://data.gbif.org/ws/rest/occurrence/get/149955340</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[24292.5003368]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-63.200000,43.216670</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[CANADA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1983]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[465]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/122688222">http://data.gbif.org/ws/rest/occurrence/get/122688222</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[HAM1983095-11-25-1]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-63.000000,44.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1981]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Scotian Shelf]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/17495838">http://data.gbif.org/ws/rest/occurrence/get/17495838</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[8600902]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-63.000000,44.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1981]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.iobis.org/OBISWEB/ObisControllerServlet?site=fishbase&amp;searchCategory=%2FAdvancedSearchServlet&amp;genus=Lopholatilus&amp;species=chamaeleonticeps">http://www.iobis.org/OBISWEB/ObisControllerServlet?site=fishbase&amp;searchCategory=%2FAdvancedSearchServlet&amp;genus=Lopholatilus&amp;species=chamaeleonticeps</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[8600902]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-62.270000,43.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1978]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/17613677">http://data.gbif.org/ws/rest/occurrence/get/17613677</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[CMNFI 1978-0286.1]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-62.270000,43.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1978]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/78275464">http://data.gbif.org/ws/rest/occurrence/get/78275464</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[CMNFI 1978-0286.1]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-62.270000,43.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1978]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.iobis.org/OBISWEB/ObisControllerServlet?site=fishbase&amp;searchCategory=%2FAdvancedSearchServlet&amp;genus=Lopholatilus&amp;species=chamaeleonticeps">http://www.iobis.org/OBISWEB/ObisControllerServlet?site=fishbase&amp;searchCategory=%2FAdvancedSearchServlet&amp;genus=Lopholatilus&amp;species=chamaeleonticeps</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[CMNFI 1978-0286.1]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>-62.200000,43.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[CANADA]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1978]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[465]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/122687438">http://data.gbif.org/ws/rest/occurrence/get/122687438</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[HAM1978003-25-25-1]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>70.000000,40.283333</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1949]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[Georges Bank, Cruise 27, Station 18, Loran out]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://data.gbif.org/ws/rest/occurrence/get/46569340">http://data.gbif.org/ws/rest/occurrence/get/46569340</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[16138]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>86.000000,29.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1957]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=671711">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=671711</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[GCRL 1473]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>87.000000,29.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1956]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=671713">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=671713</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[GCRL 1508]]></value></Data>
+					</ExtendedData>
+					</Placemark><Placemark><name></name>
+						<styleUrl>#Fishes</styleUrl>
+						<Point><coordinates>94.000000,27.000000</coordinates></Point>
+						<ExtendedData>
+							<Data name="Country"><value><![CDATA[]]></value></Data>
+							<Data name="YearCollected"><value><![CDATA[1956]]></value></Data>
+							<Data name="Collector"><value><![CDATA[]]></value></Data>
+							<Data name="Locality"><value><![CDATA[]]></value></Data><Data name="Url"><value><![CDATA[<a href="http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=671712">http://www.fishbase.org/Museum/SpecOccurrences.php?catnum2=671712</a>]]></value></Data><Data name="CatalogNum"><value><![CDATA[GCRL 1493]]></value></Data>
+					</ExtendedData>
+					</Placemark></Document>
+				</kml>
