@@ -1,0 +1,64 @@
+
+
+.main img {
+margin-top: 10px;
+margin-bottom: 6px;
+width: 100%;
+border:1px solid; 
+border-color: #9b9b9a; 
+border-radius: 2px; 
+}
+.callout{
+background-color:#FF2900; 
+width: 100%; 
+height: 35px;
+margin: 20px;
+} 
+
+#hover {
+}
+
+.main .small {
+  font-family: 'Cutive Mono', sanserif;
+  font-size: 8;
+  font-style: normal;
+  color: black;
+  line-height:150%;
+}
+
+.main p {
+	font-family: 'Cutive Mono', sanserif;
+	font-style: normal;
+  color: black;
+  line-height:150%;
+}
+
+.main h3 {
+	font-size: 18px;
+	font-family: 'Cutive Mono', sanserif;
+	font-style: normal;
+  font-weight: bold;
+  color: black;
+}
+
+.main h2 {
+	font-family: 'Cutive Mono', sanserif;
+	font-style: normal;
+  font-weight: bold;
+  color: black;
+    letter-spacing: -2px;
+}
+
+.main h1 {
+	font-family: 'Cutive Mono', sanserif;
+	font-style: normal;
+  font-weight: bold;
+  color: black;
+  letter-spacing: -2px;
+}
+
+.viewing {
+    background: #f4f4f0;
+    border: 1px solid;
+    border-color: #9b9b9a;
+}

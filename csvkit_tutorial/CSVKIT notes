@@ -1,0 +1,39 @@
+CSVKIT notes
+
+csvstat 
+runs stats on a file
+
+read about each command:
+$ csvstat --help  	(space is significant)
+
+
+cd pathname		navigate to the folder (set directory)
+
+csvstat 		is a command
+
+ls				look at contents of the folder
+$ csvstat filename
+$ csvstat ACS_15_5YR_B07413_with_ann.csv
+
+to select file type it in (positional argument - it can go anywhere)
+
+
+choose columns
+column		(sort csv by column)
+
+ 
+csvscut		limits number of columns
+column  GEO.id GEO.id2 GEO.display.label 
+column "GEO.id" "GEO.id2" "GEO.display.label" 
+
+send it somewhere
+| 			(above backslash) pipe : send to another command
+| head		pipe head
+
+>			sending to a file
+co
+
+
+
+
+csv clean

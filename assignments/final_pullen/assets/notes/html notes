@@ -1,0 +1,27 @@
+
+<!--mapbox details->
+// * lucylovitt.22fb20a9 * //
+// pk.eyJ1IjoibHVjeWxvdml0dCIsImEiOiJjaXZhOGRzOTAwMDNtMnVsdmxuYWZpdmhjIn0.3u6AnQffrJrp1rvahhyeTQ //
+
+
+baselayer notes
+
+     <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.3/"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+   integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+   crossorigin=""/>
+
+
+json notes
+   L.geoJson(data, {
+    style: function (feature) {
+        return {color: feature.properties.color};
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.description);
+    }
+}).addTo(map);
+
+
