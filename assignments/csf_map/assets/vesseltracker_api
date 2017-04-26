@@ -1,0 +1,110 @@
+#scrape real time AIS data with this information:
+
+
+
+API  - - - trial link is live until April 30, 2017 - - - - - -  -
+https://ws.vtexplorer.com/?username=LUCYPULLEN&password=3j9Kg2F6D&method=getList&format=1
+
+
+#carto error - does not recognize data type - - 
+
+
+#output example for getVessel API:
+JSON
+[
+{
+"ERROR":false,
+"METHOD":"getVessel"
+},
+[
+{
+"MMSI":212610000,
+"TIME":"20110930
+07:52:50 GMT",
+"LONGITUDE":5.43749,
+"LATITUDE":35.97177,
+"COG":35.3,
+"SOG":15.8,
+"HEADING":33,
+"IMO":7613882,
+"NAME":"EUROVOYAGER",
+"CALLSIGN":"P3ZK7",
+"TYPE":60,
+"A":15,
+"B":104,
+"C":12,
+"D":11,
+"DRAUGHT":4.6,
+"DEST":"ALGECIRAS TANGER M",
+"ETA":"0930
+09:00",
+"NAVSTAT":0
+}
+]
+]
+
+#output example for getList:
+JSON
+[
+{
+"ERROR":false,
+"METHOD":"getList"
+},
+[
+{ ... } // vessel 1
+{ ... } // vessel 2
+...
+{ ... } // vessel N
+]
+]
+
+#output parameters
+MMSI 	number of AIS transponder
+TIME 	timestamp of utc position report
+LONGITUDE	WGS84
+LATITUDE	WGS84
+COG		course over ground in degrees
+SOG		speed over ground in knots
+HEADING	of vessel in degrees
+NAVSTAT	navigation status to AIS
+IMO 	vessel ID #
+NAME 	vessel name
+CALLSIGN	vessel 	call string
+TYPE	according to AIS specs
+A 	distance from AIS receiver to bow
+B 	distance to stern (length=A+B)
+C 	distance to port	
+D 	distance to starboard (width=C+D)
+DEST	port of destination
+ETA		"month:day:hour:minutes"
+
+
+#Vessel ID (imo & mmsi)
+8120258, 8606551, 367166260, 367087280, 367396080, 367474990, 367056642, 33820403, 367054980, 367373450, 367373450 
+
+#vessel names (getList)
+"F/V Diane Lynn II", "F/V Sea Rambler", "F/V Mattie & Maren", "F/V Jaime & Ashley", "F/V Nobska", "F/V Midnight Sun", "F/V Iron Maiden", "F/V Iron Lady", "F/V Shamrock", "F/V Morue", "F/V Midnight Oil", F/V Sea Wolf, "F/V Anna Eileen", "F/V Freedom", "F/V Navigator", "F/V Miss Bertha" 
+
+#web service
+getList - returns last received data for all vessels in a predefined list of IMO or MMSI numbers.
+
+#access where p1,p2...,pN are global or service specific parameters
+https://ws.vtexplorer.com/?p1=*&p2=*...&pN=*
+
+#example for trial account
+https://ws.vtexplorer.com/?username=USER&password=PASSWORD&method=getList
+
+#certificate authority
+http://www.astrapaging.com/ca.crt
+
+#frequency
+getList - 1 minute
+
+#define parameters
+username	string	personal name		n/a
+password 	string	test subscription	n/a
+method		getList	see cptr 1			n/a
+format		0-AIS	format for values	0
+output		json	or xml				json
+compress	0 (none), 1(zip), 2(gzip), 3 (bzip2)
+
