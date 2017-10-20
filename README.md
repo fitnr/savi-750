@@ -16,10 +16,10 @@ Continuing Education Units (C.E.U.s): 3.0
 + [Class Format](#class-format)
 + [Submitting Assignments](#submitting-assignments)
 + [Course Outline](#outline)
-	+ [Session 1, March 25, 2017](#class1)
-	+ [Session 2, April 1, 2017](#class2)
-	+ [Session 3, April 8, 2017](#class3)
-	+ [Session 4, April 15, 2017](#class4)
+	+ [Session 1, October 21](#class1)
+	+ [Session 2, October 28](#class2)
+	+ [Session 3, November 4](#class3)
+	+ [Session 4, November 11](#class4)
 + [Resources](#resources)
 	+ [Suggested Reading](#suggested-reading)
 
@@ -90,7 +90,7 @@ Find an interesting or visually compelling map (interactive or static) or visual
 ----
 
 <a id="class1"></a>
-## [Session 1 - March 25](http://fitnr.github.io/savi-750/class1/index.html)
+## [Session 1 - October 21](http://fitnr.github.io/savi-750/class1/index.html)
 + Introduction
 + Data on the web
 + Introduction to mapping and cartography
@@ -111,7 +111,7 @@ Please take the [student skills survey](https://docs.google.com/forms/d/e/1FAIpQ
 + [CARTO “Introduction to Map Design”](https://carto.com/academy/courses/design-for-beginners)
 
 <a id="class2"></a>
-## [Session 2 - April 13, 2016](http://fitnr.github.io/savi-750/class2/index.html)
+## [Session 2 - October 28](http://fitnr.github.io/savi-750/class2/index.html)
 + Web scraping
 + Introduction to APIs
 + Introduction to the command line and parsing data with [csvkit](http://csvkit.readthedocs.io/)
@@ -123,7 +123,7 @@ Create a second map, using new data scraped from the web or pulled via an API. W
 #### Readings
 
 <a id="class3"></a>
-### [Class 3 - April 18, 2016](http://fitnr.github.io/savi-750/class3/index.html)
+### [Class 3 - November 4](http://fitnr.github.io/savi-750/class3/index.html)
 + Introduction to the Census Factfinder
 + Introduction to SQL
 + Introduction to Spatial SQL
@@ -135,7 +135,7 @@ Update your maps (or create a new one) using data joined from two sources
 + Prepare a simple draft map for your project, using one or two sources. Embed itinto an HTML file in `assignments/assignment3`. Include a short description of the sources and any processing you did (or would like to do!).
 
 <a id="class4"></a>
-### [Class 4 - April 20, 2016](http://fitnr.github.io/savi-750/class4/index.html)
+### [Class 4 - November 11](http://fitnr.github.io/savi-750/class4/index.html)
 + Python for scraping the web
 + Advanced topics TBD
 
