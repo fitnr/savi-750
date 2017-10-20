@@ -44,13 +44,12 @@ This course introduces the tools, techniques, and general approaches used to acq
 
 You will be required to have free accounts with the following services:
 
-+ [Github](https://github.com/)
 + [CARTO](http://carto.com/)
 + [Google](https://accounts.google.com/signup?service=mail)
 
-In addition, please install a free text editor of your choice:
+In addition, please install the text editor of your choice. Some (free) suggestions:
 + [Sublime Text](https://www.sublimetext.com/) (All systems)
-+ [TextWrangler](http://www.barebones.com/products/textwrangler/) (All systems)
++ [Atom](https://atom.io/) (All systems)
 + [Notepad++](https://notepad-plus-plus.org/) (Windows)
 
 <a id="course-readings"></a>
@@ -63,7 +62,7 @@ Class runs from 9:30am to 5:30pm. Each day will be consist of 80-90–minute blo
 
 <a id="submitting-assignments"></a>
 ### Submitting Assignments
-All assignments will be submitted by adding your content to [this repository](http://github.com/fitnr/savi-750). See `[assignments/](assignments/README.md)` for details. **Assignments aren't considered submitted until the pull request has been issued.** We will have ample time in class to address any technical issues and a reference guide for the process.
+All assignments will be submitted by adding your content to the course Dropbox folder. 
 
 #### Assessment
 Area | Total Points
@@ -170,11 +169,6 @@ Update your maps (or create a new one) using data joined from two sources
 + [Codecademy Python Course](https://www.codecademy.com/learn/python)
 + [MIT Introduction to Computer Science and Programming with Python](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/index.htm) (free course)
 + [Learn Python the Hard Way](https://learnpythonthehardway.org/book/)
-
-#### Git
-+ [A tutorial for getting started with Git and Github](https://help.github.com/articles/git-and-github-learning-resources/)
-+ [Try Git](https://try.github.io/levels/1/challenges/1)
-+ [Git Reference Manual](https://git-scm.com/docs)
 
 #### HTML & CSS
 + [Codecademy HTML and CSS Course](https://www.codecademy.com/en/tracks/htmlcss)
