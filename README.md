@@ -62,15 +62,15 @@ Class runs from 9:30am to 5:30pm. Each day will be consist of 80-90–minute blo
 
 <a id="submitting-assignments"></a>
 ### Submitting Assignments
-All assignments will be submitted by adding your content to the course Dropbox folder. 
+All assignments will be submitted by adding your content to the course Dropbox folder. Assignments must be submitted by 10 pm of the Friday before class.
 
 #### Assessment
 Area | Total Points
 --- | ---
-Class Participation | 25
-Visualization Critiques | 25
-Visualizations | 25
-Final Project | 25
+class participation | 25
+weekly critiques | 25
+weekly projects | 25
+final project | 25
 **Total** | **100**
 
 #### Attendance
@@ -84,7 +84,7 @@ Your engagement makes class sessions richer and more fulfilling for everyone. Qu
 Topics will be covered that day in class. Reading assignments are to be read before class in preparation of the lecture and exercises. Assignments are due before the start of the next class and build on the information presented in class.
 
 ### Weekly assignment
-Find an interesting or visually compelling map (interactive or static) or visualization online and write 2-3 paragraphs on the visualization, discussing the data source(s), the visual style, and how well the data was represented. Feel free to use the visualization resources listed below. Submit your analysis (include a link to the visualization) to this repository before each class.
+Find an interesting or visually compelling map (interactive or static) or visualization online and write 2-3 paragraphs on the visualization, discussing the data source(s), the visual style, the creator's goals and audience, and how well the data was represented. Feel free to use the visualization resources listed below. Submit your analysis (include a link to the visualization) to this repository before each class. Come prepared to informally present the project to your classmates.
 
 ----
 
@@ -94,13 +94,13 @@ Find an interesting or visually compelling map (interactive or static) or visual
 + Data on the web
 + Introduction to mapping and cartography
 + Introduction to HTML and CSS
-+ Introduction to Git and [Github](http://github.com)
-
-Please take the [student skills survey](https://docs.google.com/forms/d/e/1FAIpQLScf0l8tUuXc0z4Uz0lan3fMwIoU-jRTMrCpdOivX-YDwuTuEg/viewform).
 
 #### Assignment
-1. Complete the [CARTO “Online Mapping for Beginners”](https://carto.com/academy/courses/beginners-course) course.
-2. Identify a research question that you would like to explore in this class, with the intention of creating maps and visualizations that will help answer question or clarify the topic. Write 2-3 paragraphs on what question you would like to answer, what data you'd like to explore using, and what you hope to contribute with your work.
+0. Complete the [CARTO “Online Mapping for Beginners”](https://carto.com/academy/courses/beginners-course) course.
+1. Identify a research question that you would like to explore in this class, with the intention of creating maps and visualizations that will help answer question or clarify the topic.
+    * Write a short summary of the your topic. What questions you would like to answer? What audience would you like to reach? What data would you like to explore?
+    * Create a basic CARTO map with one data layer that connects to your topic.
+    * Embed the map in a basic HTML document with your write-up.
 
 ### Readings
 + Thomas Levine, [Introduction to web scraping](https://thomaslevine.com/!/web-sites-to-data-tables/)
@@ -108,6 +108,9 @@ Please take the [student skills survey](https://docs.google.com/forms/d/e/1FAIpQ
 + Ben Wellington "[Mapping the Sharing Economy](http://iquantny.tumblr.com/post/110747103479/mapping-the-sharing-economy-an-in-depth-view-of)"
 + Heer, Jeffrey, Michael Bostock, and Vadim Ogievetsky. "[A tour through the visualization zoo.](http://hci.stanford.edu/jheer/files/zoo/)" Commun. ACM 53.6 (2010): 59-67. 
 + [CARTO “Introduction to Map Design”](https://carto.com/academy/courses/design-for-beginners)
+
+### Suggested Reading
++ Hern, Alex, [New York taxi details can be extracted from anonymised data, researchers say](https://www.theguardian.com/technology/2014/jun/27/new-york-taxi-details-anonymised-data-researchers-warn), the Guardian, 27 June 2014
 
 <a id="class2"></a>
 ## [Session 2 - October 28](http://fitnr.github.io/savi-750/class2/index.html)
@@ -200,11 +203,31 @@ Update your maps (or create a new one) using data joined from two sources
 + [Carto Academy](http://academy.carto.com/)
 + [Elements of Cartographic Style](http://www.gismanual.com/home/index.htm) by Paul Cote
 
-#### Visualizations
+#### Visualizations and maps
 * [Flowing Data](http://flowingdata.com/)
 * [Census Data Visualization Gallery](https://www.census.gov/dataviz/)
 * [IQuantNY](http://iquantny.tumblr.com/)
 * [bl.ocks](https://bl.ocks.org)
+
+#### Selected interactive maps
+* [Interactive maps collected by the NYPL](https://www.nypl.org/collections/nypl-recommendations/guides/nyc-interactive-maps)
+* <a href="https://dsl.richmond.edu/panorama/redlining">The Displacement Alert Project Map</a>
+* <a href="http://80s.nyc">80s.nyc</a>
+* <a href="http://map.dapmapnyc.org/app">Land Cover Trends Field Photo Map
+* </a>
+* <a href="https://landcovertrends.usgs.gov/fieldphotomap/index.html"></a>
+* <a href="http://www.robertmanduca.com/projects/jobs.html">Where Are The Jobs?</a>
+* <a href="https://www.nytimes.com/interactive/2014/05/04/nyregion/where-pedestrians-and-bicyclists-are-injured-and-why.html">Where Pedestrians and Bicyclists Are Injured, and Why</a>
+* <a href="http://www.hubcab.org">Hubcap</a>
+* <a href="https://transit.sidewalklabs.com">NYC Transit Explorer</a>
+* <a href="https://onthemap.ces.census.gov">OnTheMap</a>
+* <a href="https://data.buzzfeed.com/projects/2016-04-planemaps/">Spies in the Skies</a> (<a href="https://www.buzzfeed.com/peteraldhous/spies-in-the-skies">related article</a>)
+* <a href="https://www.nytimes.com/interactive/2017/08/07/upshot/music-fandom-maps.html">Music Fandom</a>
+* <a href="https://www.nytimes.com/interactive/2017/06/30/upshot/the-best-and-worst-new-york-neighborhoods.html">The Best and Worst New York Neighborhoods...</a>
+* <a href="https://www.nytimes.com/interactive/2017/06/22/upshot/Census-Time-Machine-Demographics-in-America.html">A Census Time Machine: Sioux Falls Is the Past, Staten Island the Present, Las Vegas the Future
+* </a>
+* <a href="https://www.nytimes.com/interactive/2017/03/08/upshot/who-wins-and-who-loses-under-republicans-health-care-plan.html">Who Wins and Who Loses Under Republicans’ Health Care Plan
+* </a>
 
 #### Sublime Text
 * [Package control](https://packagecontrol.io)
@@ -225,4 +248,3 @@ Update your maps (or create a new one) using data joined from two sources
 #### Precedents
 
 This course builds [from material prepared by Richard Dunks](https://github.com/fitnr/savi-750) under the terms of the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
