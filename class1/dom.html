@@ -7,8 +7,8 @@
 </head>
 <body>
 <textarea id="source">
----
-class: center,middle
+
+class: center, middle
 # Introduction to HTML and CSS
 
 ---
@@ -20,20 +20,98 @@ class: center,middle
 --
 
 + Mark text with tags to instruct browser how to display the text 
---
+
+```html
+It was the <strong>best</strong> of times, it was
+the <strong>worst</strong> of times.
+```
+---
+
+# Overview of HTML
+
++ Tags decribe the structure of a document
+
+```html
+<header>
+  <h1>Tale of Two Cities</h1>
+  <span>by Charles Dickens</span>
+</header>
+<section>
+  <p>It was the best of times, it was the worst of times.</p>
+</section>
+```
+
+---
+
+# Overview of HTML
 
 + Classes define sets of tags
---
-
 + IDs identify particular tags
 
 ```html
 <header>
   <h1>Tale of Two Cities</h1>
-  <p class="author">by Charles Dickens</p>
+  <span class="author">by Charles Dickens</span>
 </header>
-<p>It was the best of times, it was the worst of times.</p>
+<section class="chapter" id="chapter-1">
+  <p>It was the best of times, it was the worst of times.</p>
+</section>
 ```
+
+---
+
+# Overview of HTML
+
++ A well-formed `html` page has a `head`, a `title` and a `body`
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>my page</title>
+</head>
+<body>
+  Hello World!
+</body>
+</html>
+```
+
+---
+
+# Overview of HTML
+
++ The "hyper" is short for "hyperlink"
++ An anchor link connects two documents:
+````html
+<a></a>
+````
+
+--
+
+````html
+Students at <a href="https://www.pratt.edu">Pratt</a> are very <a href="https://commons.pratt.edu/savi/">Savi</a>.
+````
+
+---
+# Overview of HTML
+
+````html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tale of Two Cities: Chapter 1</title>
+</head>
+<body>
+  <header>
+    <h1>Tale of Two Cities</h1>
+    <span class="author">by <a href="https://en.wikipedia.org/wiki/Charles_Dickens">Charles Dickens</a></span>
+  </header>
+  <section class="chapter" id="chapter-1">
+    <p>It was the <strong>best</strong> of times, it was the worst of times.</p>
+  </section>
+</body>
+</html>
+````
 
 ---
 
@@ -45,44 +123,146 @@ class: center,middle
 
 + Defines styles associated with HTML tags, as well as classes and IDs
 
+---
+
+#Overview of CSS
+
++ Basic CSS
+
 ```css
-header {
-  width: 70%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+a {
+  color: blue;
 }
+
+body {
+  font-family: Helvetica;
+}
+
+strong {
+  color: red;
+}
+
+```
+---
+
+#Overview of CSS
+
++ CSS format
++ white space doesn't matter
+
+```css
+specifier {
+  property: rule;
+  property: rule;
+}
+```
+
+```css
+specifier { property: rule; property: rule; }
 ```
 
 ---
 
 #Overview of CSS
-+ Cascading Style Sheet
-+ Defines styles associated with HTML tags, as well as classes and IDs
++ Different specifiers target different parts of an `html` document
 
 ```css
-.author {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-}
-
+/* a tag */
 p {
-    font-size: 1em;
+  color: red;
+}
+
+/* a class */
+.author {
+  color: red;
+}
+
+/* an id */
+#chapter-1 {
+  color: red;
 }
 ```
+
+---
+
+# Combining CSS and HTML
+
++ CSS can be embedded in an `html` document
+````html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tale of Two Cities: Chapter 1</title>
+  <style>
+    body {
+      color: gray;
+    }
+    .hello {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <p class="hello">How are you?</p>
+  <p class="reply">I'm well, thanks</p>
+</body>
+</html>
+````
+---
+# Combining CSS and HTML
+
++ CSS can be linked from another document
+````html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tale of Two Cities: Chapter 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p class="hello">How are you?</p>
+  <p class="reply">I'm well, thanks</p>
+</body>
+</html>
+````
+````css
+/* This is a file called style.css */
+body { color: gray; }
+.hello { color: blue; }
+````
+
+---
+# Javascript
+
++ A programming language that's available to every webpage
++ Controls interaction
++ Makes an `html` page dynamic
+
+````javascript
+var foo = 'Hello World';
+var element = document.getElementById('chapter-1');
+element.innerHTML = foo;
+````
+---
+# Javascript
+
++ Like CSS, Javascript can be embedded in a web page, or linked from another document.
+
 ---
 class: center, middle
 #Let’s create a webpage
 
 ##[Right click and "Save link as" to download this text](HTML_example/index.html)
 
+---
 
 </textarea>
 <script src="../assets/remark.js">
 </script>
 <script>
-var slideshow = remark.create();
+var slideshow = remark.create({
+  highlightStyle: 'solarized-light'
+});
 </script>
 </body>
 </html>

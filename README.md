@@ -90,8 +90,9 @@ Find an interesting or visually compelling map (interactive or static) or visual
 <a id="class1"></a>
 ## [Session 1 - October 21](http://fitnr.github.io/savi-750/class1/index.html)
 + Introduction
-+ Data on the web
++ Open data
 + Introduction to mapping and cartography
++ Introduction to CARTO
 + Introduction to HTML and CSS
 
 #### Assignment
@@ -100,6 +101,7 @@ Find an interesting or visually compelling map (interactive or static) or visual
     * Write a short summary of the your topic. What questions you would like to answer? What audience would you like to reach? What data would you like to explore?
     * Create a basic CARTO map with one data layer that connects to your topic.
     * Embed the map in a basic HTML document with your write-up.
+2. On the same page, include the link to an interesting map or visualization and add your weekly assignment.
 
 ### Readings
 + Thomas Levine, [Introduction to web scraping](https://thomaslevine.com/!/web-sites-to-data-tables/)
@@ -114,35 +116,46 @@ Find an interesting or visually compelling map (interactive or static) or visual
 
 <a id="class2"></a>
 ## [Session 2 - October 28](http://fitnr.github.io/savi-750/class2/index.html)
-+ Web scraping
++ Introduction to the Census Factfinder
 + Introduction to APIs
-+ Introduction to the command line and parsing data with [csvkit](http://csvkit.readthedocs.io/)
-+ Opening closed data with [Tabula](http://tabula.technology)
++ Parsing data with [csvkit](http://csvkit.readthedocs.io/)
++ Manual Web scraping
 
 ### Assignments
-Create a second map, using new data scraped from the web or pulled via an API. Write 2-3 paragraphs discussing any challenges you encountered working with the data and/or creating your map in Carto.
-
-#### Readings
+1. Complete the [SQL and PostGIS in CARTO](http://academy.carto.com/courses/04-sql-postgis.html) course.
+Update your maps (or create a new one) using data joined from two sources
+2. Create a second map, using new data scraped from the web or pulled via an API.
+    * Embed the map in a new HTML document.
+    * Include a paragraph discussing any challenges you encountered working with the data and/or creating your map in CARTO.
+3. Weekly assignment
 
 <a id="class3"></a>
 ### [Class 3 - November 4](http://fitnr.github.io/savi-750/class3/index.html)
-+ Introduction to the Census Factfinder
 + Introduction to SQL
-+ Introduction to Spatial SQL
++ Introduction to spatial SQL
++ Opening closed data with [Tabula](http://tabula.technology)
 
 ### Assignments
-+ Complete the [SQL and PostGIS in CARTO](http://academy.carto.com/courses/04-sql-postgis.html) course.
-Update your maps (or create a new one) using data joined from two sources
-+ Work through "The Basics" at [Learn Python](http://www.learnpython.org) (you can skip "String Formatting". If you're feeling good, jump ahead to "List Comprehensions")
-+ Prepare a simple draft map for your project, using one or two sources. Embed itinto an HTML file in `assignments/assignment3`. Include a short description of the sources and any processing you did (or would like to do!).
+1. Work through "The Basics" at [Learn Python](http://www.learnpython.org) (you can skip "String Formatting". If you're feeling good, jump ahead to "List Comprehensions")
+2. Update your interactive map to include data that you've joined, filtered or modified with an SQL query. Plan a 10-minute presentation explaining the topic your map addresses, the data sources you used, and your methodology.
+3. Weekly assignment
+
+### Readings
+
+* [The Mapbox Guide to Map Design](https://www.mapbox.com/resources/guide-to-map-design-part-1.pdf), pages 1-50
+* Paul Cote, [Mapping with Aggregated Statistics](http://www.pbcgis.com/normalize/)
 
 <a id="class4"></a>
 ### [Class 4 - November 11](http://fitnr.github.io/savi-750/class4/index.html)
++ Class presentations
 + Python for scraping the web
-+ Advanced topics TBD
++ Quantitative maps on the web
++ Review
+
+### Assignments
+1. Make any desired revisions to your map. Your final project should be embedded on an HTML page that includes an introduction and description of your topic, as well as a description your process and methodology.
 
 #### Readings
-
 * [Few Interact With Our Interactive Maps–What Can We Do About It?](http://mapbrief.com/2017/04/06/few-interact-with-our-interactive-maps-what-can-we-do-about-it/)
 
 ---
@@ -208,9 +221,10 @@ Update your maps (or create a new one) using data joined from two sources
 * [Census Data Visualization Gallery](https://www.census.gov/dataviz/)
 * [IQuantNY](http://iquantny.tumblr.com/)
 * [bl.ocks](https://bl.ocks.org)
+* (Propublica News Apps)[https://www.propublica.org/newsapps/]
+* [Interactive maps collected by the NYPL](https://www.nypl.org/collections/nypl-recommendations/guides/nyc-interactive-maps)
 
 #### Selected interactive maps
-* [Interactive maps collected by the NYPL](https://www.nypl.org/collections/nypl-recommendations/guides/nyc-interactive-maps)
 * <a href="https://dsl.richmond.edu/panorama/redlining">The Displacement Alert Project Map</a>
 * <a href="http://80s.nyc">80s.nyc</a>
 * <a href="http://map.dapmapnyc.org/app">Land Cover Trends Field Photo Map

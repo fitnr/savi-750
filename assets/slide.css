@@ -196,7 +196,7 @@ code, tt {
   border: 1px solid #eaeaea;
   background-color: #f8f8f8;
   border-radius: 3px; 
-word-wrap:break-word;
+  word-wrap:break-word;
 }
 
 pre code {
