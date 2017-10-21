@@ -82,7 +82,7 @@ Your engagement makes class sessions richer and more fulfilling for everyone. Qu
 ## Course Outline
 Topics will be covered that day in class. Reading assignments are to be read before class in preparation of the lecture and exercises. Assignments are due before the start of the next class and build on the information presented in class.
 
-### Weekly assignment
+### Weekly critiques
 Find an interesting or visually compelling map (interactive or static) or visualization online and write 2-3 paragraphs on the visualization, discussing the data source(s), the visual style, the creator's goals and audience, and how well the data was represented. Feel free to use the visualization resources listed below. Submit your analysis (include a link to the visualization) to this repository before each class. Come prepared to informally present the project to your classmates.
 
 ----
@@ -101,18 +101,17 @@ Find an interesting or visually compelling map (interactive or static) or visual
     * Write a short summary of the your topic. What questions you would like to answer? What audience would you like to reach? What data would you like to explore?
     * Create a basic CARTO map with one data layer that connects to your topic.
     * Embed the map in a basic HTML document with your write-up.
-2. On the same page, include the link to an interesting map or visualization and add your weekly assignment.
+2. On the same page, include the link to an interesting map or visualization and add your weekly critique.
 
 ### Readings
 + Thomas Levine, [Introduction to web scraping](https://thomaslevine.com/!/web-sites-to-data-tables/)
 + [Introduction to APIs ch 1-5](https://zapier.com/learn/apis/)
 + Ben Wellington "[Mapping the Sharing Economy](http://iquantny.tumblr.com/post/110747103479/mapping-the-sharing-economy-an-in-depth-view-of)"
-+ Jeffrey Heer, Michael Bostock and Vadim Ogievetsky. "[A tour through the visualization zoo.](http://hci.stanford.edu/jheer/files/zoo/)" Commun. ACM 53.6 (2010): 59-67. 
-+ [CARTO “Introduction to Map Design”](https://carto.com/academy/courses/design-for-beginners)
 
 ### Suggested Reading
 + Alex Hern. [New York taxi details can be extracted from anonymised data, researchers say](https://www.theguardian.com/technology/2014/jun/27/new-york-taxi-details-anonymised-data-researchers-warn), the Guardian, 27 June 2014
 + Beth Simone Noveck. [Is Open Data the Death of FOIA?](https://www.yalelawjournal.org/forum/is-open-data-the-death-of-foia), Yale Law Journal, November 21, 2016.
++ Jeffrey Heer, Michael Bostock and Vadim Ogievetsky. "[A tour through the visualization zoo.](http://hci.stanford.edu/jheer/files/zoo/)" Commun. ACM 53.6 (2010): 59-67. 
 
 <a id="class2"></a>
 ## [Session 2 - October 28](http://fitnr.github.io/savi-750/class2/index.html)
@@ -127,7 +126,10 @@ Update your maps (or create a new one) using data joined from two sources
 2. Create a second map, using new data scraped from the web or pulled via an API.
     * Embed the map in a new HTML document.
     * Include a paragraph discussing any challenges you encountered working with the data and/or creating your map in CARTO.
-3. Weekly assignment
+3. Weekly critique
+
+### Readings
++  Jeremy B. Merrill, [Heart of Nerd Darkness: Why Updating Dollars for Docs Was So Difficult](https://www.propublica.org/nerds/heart-of-nerd-darkness-why-dollars-for-docs-was-so-difficult)
 
 <a id="class3"></a>
 ### [Class 3 - November 4](http://fitnr.github.io/savi-750/class3/index.html)
@@ -138,7 +140,7 @@ Update your maps (or create a new one) using data joined from two sources
 ### Assignments
 1. Work through "The Basics" at [Learn Python](http://www.learnpython.org) (you can skip "String Formatting". If you're feeling good, jump ahead to "List Comprehensions")
 2. Update your interactive map to include data that you've joined, filtered or modified with an SQL query. Plan a 10-minute presentation explaining the topic your map addresses, the data sources you used, and your methodology.
-3. Weekly assignment
+3. Weekly critique
 
 ### Readings
 
@@ -223,6 +225,7 @@ Update your maps (or create a new one) using data joined from two sources
 * [bl.ocks](https://bl.ocks.org)
 * (Propublica News Apps)[https://www.propublica.org/newsapps/]
 * [Interactive maps collected by the NYPL](https://www.nypl.org/collections/nypl-recommendations/guides/nyc-interactive-maps)
+* [Source](https://source.opennews.org) (blog of OpenNews)
 
 #### Selected interactive maps
 * <a href="https://dsl.richmond.edu/panorama/redlining">The Displacement Alert Project Map</a>
