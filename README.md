@@ -45,7 +45,6 @@ This course introduces the tools, techniques, and general approaches used to acq
 You will be required to have free accounts with the following services:
 
 + [CARTO](http://carto.com/)
-+ [Google](https://accounts.google.com/signup?service=mail)
 
 In addition, please install the text editor of your choice. Some (free) suggestions:
 + [Sublime Text](https://www.sublimetext.com/) (All systems)
@@ -106,11 +105,12 @@ Find an interesting or visually compelling map (interactive or static) or visual
 + Thomas Levine, [Introduction to web scraping](https://thomaslevine.com/!/web-sites-to-data-tables/)
 + [Introduction to APIs ch 1-5](https://zapier.com/learn/apis/)
 + Ben Wellington "[Mapping the Sharing Economy](http://iquantny.tumblr.com/post/110747103479/mapping-the-sharing-economy-an-in-depth-view-of)"
-+ Heer, Jeffrey, Michael Bostock, and Vadim Ogievetsky. "[A tour through the visualization zoo.](http://hci.stanford.edu/jheer/files/zoo/)" Commun. ACM 53.6 (2010): 59-67. 
++ Jeffrey Heer, Michael Bostock and Vadim Ogievetsky. "[A tour through the visualization zoo.](http://hci.stanford.edu/jheer/files/zoo/)" Commun. ACM 53.6 (2010): 59-67. 
 + [CARTO “Introduction to Map Design”](https://carto.com/academy/courses/design-for-beginners)
 
 ### Suggested Reading
-+ Hern, Alex, [New York taxi details can be extracted from anonymised data, researchers say](https://www.theguardian.com/technology/2014/jun/27/new-york-taxi-details-anonymised-data-researchers-warn), the Guardian, 27 June 2014
++ Alex Hern. [New York taxi details can be extracted from anonymised data, researchers say](https://www.theguardian.com/technology/2014/jun/27/new-york-taxi-details-anonymised-data-researchers-warn), the Guardian, 27 June 2014
++ Beth Simone Noveck. [Is Open Data the Death of FOIA?](https://www.yalelawjournal.org/forum/is-open-data-the-death-of-foia), Yale Law Journal, November 21, 2016.
 
 <a id="class2"></a>
 ## [Session 2 - October 28](http://fitnr.github.io/savi-750/class2/index.html)
