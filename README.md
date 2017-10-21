@@ -98,7 +98,7 @@ Find an interesting or visually compelling map (interactive or static) or visual
 #### Assignment
 0. Complete the [CARTO “Online Mapping for Beginners”](https://carto.com/academy/courses/beginners-course) course.
 1. Identify a research question that you would like to explore in this class, with the intention of creating maps and visualizations that will help answer question or clarify the topic.
-    * Write a short summary of the your topic. What questions you would like to answer? What audience would you like to reach? What data would you like to explore?
+    * Write a short summary of the your topic. What question would you like to answer? What audience would you like to reach? What data would you like to explore?
     * Create a basic CARTO map with one data layer that connects to your topic.
     * Embed the map in a basic HTML document with your write-up.
 2. On the same page, include the link to an interesting map or visualization and add your weekly critique.
@@ -223,7 +223,7 @@ Update your maps (or create a new one) using data joined from two sources
 * [Census Data Visualization Gallery](https://www.census.gov/dataviz/)
 * [IQuantNY](http://iquantny.tumblr.com/)
 * [bl.ocks](https://bl.ocks.org)
-* (Propublica News Apps)[https://www.propublica.org/newsapps/]
+* [Propublica News Apps](https://www.propublica.org/newsapps/)
 * [Interactive maps collected by the NYPL](https://www.nypl.org/collections/nypl-recommendations/guides/nyc-interactive-maps)
 * [Source](https://source.opennews.org) (blog of OpenNews)
 
