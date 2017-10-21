@@ -230,9 +230,8 @@ Update your maps (or create a new one) using data joined from two sources
 #### Selected interactive maps
 * <a href="https://dsl.richmond.edu/panorama/redlining">The Displacement Alert Project Map</a>
 * <a href="http://80s.nyc">80s.nyc</a>
-* <a href="http://map.dapmapnyc.org/app">Land Cover Trends Field Photo Map
-* </a>
-* <a href="https://landcovertrends.usgs.gov/fieldphotomap/index.html"></a>
+* <a href="http://map.dapmapnyc.org/app">Displacement Alert Project Map</a>
+* <a href="https://landcovertrends.usgs.gov/fieldphotomap/index.html">Land Cover Trends Field Photo Map</a>
 * <a href="http://www.robertmanduca.com/projects/jobs.html">Where Are The Jobs?</a>
 * <a href="https://www.nytimes.com/interactive/2014/05/04/nyregion/where-pedestrians-and-bicyclists-are-injured-and-why.html">Where Pedestrians and Bicyclists Are Injured, and Why</a>
 * <a href="http://www.hubcab.org">Hubcap</a>
@@ -241,10 +240,9 @@ Update your maps (or create a new one) using data joined from two sources
 * <a href="https://data.buzzfeed.com/projects/2016-04-planemaps/">Spies in the Skies</a> (<a href="https://www.buzzfeed.com/peteraldhous/spies-in-the-skies">related article</a>)
 * <a href="https://www.nytimes.com/interactive/2017/08/07/upshot/music-fandom-maps.html">Music Fandom</a>
 * <a href="https://www.nytimes.com/interactive/2017/06/30/upshot/the-best-and-worst-new-york-neighborhoods.html">The Best and Worst New York Neighborhoods...</a>
-* <a href="https://www.nytimes.com/interactive/2017/06/22/upshot/Census-Time-Machine-Demographics-in-America.html">A Census Time Machine: Sioux Falls Is the Past, Staten Island the Present, Las Vegas the Future
-* </a>
-* <a href="https://www.nytimes.com/interactive/2017/03/08/upshot/who-wins-and-who-loses-under-republicans-health-care-plan.html">Who Wins and Who Loses Under Republicans’ Health Care Plan
-* </a>
+* <a href="https://www.nytimes.com/interactive/2017/06/22/upshot/Census-Time-Machine-Demographics-in-America.html">A Census Time Machine: Sioux Falls Is the Past, Staten Island the Present, Las Vegas the Future</a>
+
+* <a href="https://www.nytimes.com/interactive/2017/03/08/upshot/who-wins-and-who-loses-under-republicans-health-care-plan.html">Who Wins and Who Loses Under Republicans’ Health Care Plan</a>
 
 #### Sublime Text
 * [Package control](https://packagecontrol.io)
