@@ -241,7 +241,7 @@ Update your maps (or create a new one) using data joined from two sources
 * <a href="https://www.nytimes.com/interactive/2017/08/07/upshot/music-fandom-maps.html">Music Fandom</a>
 * <a href="https://www.nytimes.com/interactive/2017/06/30/upshot/the-best-and-worst-new-york-neighborhoods.html">The Best and Worst New York Neighborhoods...</a>
 * <a href="https://www.nytimes.com/interactive/2017/06/22/upshot/Census-Time-Machine-Demographics-in-America.html">A Census Time Machine: Sioux Falls Is the Past, Staten Island the Present, Las Vegas the Future</a>
-
+* [White Collar Crime Prediction Map](https://whitecollar.thenewinquiry.com)
 * <a href="https://www.nytimes.com/interactive/2017/03/08/upshot/who-wins-and-who-loses-under-republicans-health-care-plan.html">Who Wins and Who Loses Under Republicans’ Health Care Plan</a>
 
 #### Sublime Text
