@@ -174,11 +174,13 @@ Update your maps (or create a new one) using data joined from two sources
 * [JSON to CSV converter](https://konklone.io/json/)
 * [Table to TSV bookmarklet](javascript:%21function%28%29%7BArray.prototype.forEach.call%28document.getElementsByTagName%28%22table%22%29%2Cfunction%28a%29%7Bvar%20b%3Ddocument.createElement%28%22textarea%22%29%3Bb.style.setProperty%28%22width%22%2Ca.scrollWidth%2B%22px%22%29%2Cb.style.setProperty%28%22height%22%2C%22400px%22%29%2Cb.innerHTML%3DArray.prototype.map.call%28a.getElementsByTagName%28%22tr%22%29%2Cfunction%28a%29%7Breturn%20Array.prototype.map.call%28a.querySelectorAll%28%22th%2Ctd%22%29%2Cfunction%28a%29%7Breturn%20a.textContent.replace%28%22%5Cn%22%2C%22%20%22%29%7D%29.join%28%22%26%239%3B%22%29%7D%29.join%28%22%26%2313%3B%26%2310%3B%22%29%2Ca.parentNode.insertBefore%28b%2Ca.nextSibling%29%7D%29%7D%28%29%3B) (drag to toolbar or "save as bookmark")
 
-### Command line
+### <a id="command-line"></a>Command line
 * [What is the Command Line](https://learn.adafruit.com/what-is-the-command-line/overview?gclid=CMSy49eS8tICFZmIswod5zYMag) (series of pages with links to history articles)
 * [Lifehacker guide to the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
 * [Basic Unix commands](http://mally.stanford.edu/~sr/computing/basic-unix.html)
 * [Photos of historic command line interfaces](http://www.catb.org/esr/writings/taouu/html/ch02s02.html)
+* [Instructions for activating the Linux shell in Windows 10](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
+* For other versions of Windows, [install git-bash](https://git-scm.com/download/win)
 
 #### APIs
 + [Codecademy Learn to Code for APIs](https://www.codecademy.com/apis)
