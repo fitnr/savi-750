@@ -98,7 +98,7 @@ Find an interesting or visually compelling map (interactive or static) or visual
 #### Assignment
 0. Complete the [CARTO “Online Mapping for Beginners”](https://carto.com/academy/courses/beginners-course) course.
 1. Identify a research question that you would like to explore in this class, with the intention of creating maps and visualizations that will help answer question or clarify the topic.
-    * Write a short summary of the your topic. What question would you like to answer? What audience would you like to reach? What data would you like to explore?
+    * Write a short summary of the your topic. What questions would you like to answer? What audience would you like to reach? What data would you like to explore?
     * Create a basic CARTO map with one data layer that connects to your topic.
     * Embed the map in a basic HTML document with your write-up.
 2. On the same page, include the link to an interesting map or visualization and add your weekly critique.
@@ -207,20 +207,19 @@ Update your maps (or create a new one) using data joined from two sources
 
 #### (Some) Open Data Sources
 * [U.S. Government open data](https://www.data.gov)
-* [Census TIGER map data](https://www.census.gov/geo/maps-data/data/tiger.html)
-* [New York City Open Data Portal](https://nycopendata.socrata.com/)
-* [New York State Open Data Portal](https://data.ny.gov/)
+* [data.ny.gov](https://data.ny.gov/)
+* [New York City Open Data Portal](http://opendata.cityofnewyork.us)
+* [Census TIGER geodata](https://www.census.gov/geo/maps-data/data/tiger.html)
 * [UK open data](https://data.gov.uk)
 * [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets)
 * Kirk Bourne's list of [open data sources](http://www.datasciencecentral.com/profiles/blogs/a-plethora-of-open-data-repositories-i-e-thousands)
 * [NYPL Space/Time Directory](http://spacetime.nypl.org)
-* [https://data.ny.gov/](https://data.ny.gov/)
-* [https://data.sfgov.org/](https://data.sfgov.org/)
-* [https://data.cityofchicago.org/](https://data.cityofchicago.org/)
-* [https://data.cityofboston.gov/](https://data.cityofboston.gov/)
-* [https://data.seattle.gov/](https://data.seattle.gov/)
-* [https://data.kcmo.org/](https://data.kcmo.org/)
-* [http://data.lexingtonky.gov/](http://data.lexingtonky.gov/)
+* [data.sfgov.org](https://data.sfgov.org/)
+* [data.cityofchicago.org](https://data.cityofchicago.org/)
+* [data.cityofboston.gov](https://data.cityofboston.gov/)
+* [data.seattle.gov](https://data.seattle.gov/)
+* [data.kcmo.org](https://data.kcmo.org/)
+* [data.lexingtonky.gov](http://data.lexingtonky.gov/)
 
 #### Cartography
 + [Carto Academy](http://academy.carto.com/)
