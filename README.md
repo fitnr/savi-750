@@ -185,6 +185,11 @@ Update your maps (or create a new one) using data joined from two sources
 
 #### APIs
 + [Codecademy Learn to Code for APIs](https://www.codecademy.com/apis)
++ [Mapbox API Documentation](https://www.mapbox.com/api-documentation/)
++ [transit.land documentation](https://transit.land/documentation/)
++ [OpenWeatherMap API](http://openweathermap.org/API)
++ [OpenWeatherMap API](http://openweathermap.org/API)
++ [NOAA Tides API](https://tidesandcurrents.noaa.gov/api/)
 
 #### Python
 + [Codecademy Python Course](https://www.codecademy.com/learn/python)
