@@ -115,10 +115,11 @@ Find an interesting or visually compelling map (interactive or static) or visual
 
 <a id="class2"></a>
 ## [Session 2 - October 28](http://fitnr.github.io/savi-750/class2/index.html)
-+ Introduction to the Census Factfinder
-+ Introduction to APIs
-+ Parsing data with [csvkit](http://csvkit.readthedocs.io/)
 + Manual Web scraping
++ Introduction to APIs
++ Data types and formats
++ Parsing data with [csvkit](http://csvkit.readthedocs.io/)
++ Introduction to the Census Factfinder
 
 ### Assignments
 1. Complete the [SQL and PostGIS in CARTO](http://academy.carto.com/courses/04-sql-postgis.html) course.
