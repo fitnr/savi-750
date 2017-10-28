@@ -1,16 +1,25 @@
-body { font-family: Helvetica Neue, Helvetica, sans-serif; }
-
 a:visited, a:link, a:active { text-decoration: none; }
 a:hover { text-decoration: underline; }
-p, h1, h2, h3, h4, h5, h6 {
+
+body {
   font-family: Franklin Gothic Medium, sans-serif;
   font-weight: normal;
 }
-.remark-code, .remark-inline-code { font-family: monospace; }
-li {
-  font-family: Helvetica Neue, Helvetica, sans-serif;
-  font-size:2em;
+
+h1 + h2,
+h2 + h3 {
+  margin-top: -0.67em;
 }
+
+p, li {
+  font-size: 24px;
+}
+li {
+  margin-bottom: 0.25em;
+  padding-bottom: 0;
+}
+.remark-code, .remark-inline-code { font-family: monospace; }
+
 img {
   width:70%;
   display: block;
