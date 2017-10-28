@@ -53,16 +53,25 @@ class:center,middle
 ---
 
 class:middle,center
-#Copy the response
-#Paste into text editor
+
+# Copy the response
+# Paste into text editor
 
 ---
 
 # Convert tables with a bookmarklet
 
-## [Table to TSV](javascript:%21function%28%29%7BArray.prototype.forEach.call%28document.getElementsByTagName%28%22table%22%29%2Cfunction%28a%29%7Bvar%20b%3Ddocument.createElement%28%22textarea%22%29%3Bb.style.setProperty%28%22width%22%2Ca.scrollWidth%2B%22px%22%29%2Cb.style.setProperty%28%22height%22%2C%22400px%22%29%2Cb.innerHTML%3DArray.prototype.map.call%28a.getElementsByTagName%28%22tr%22%29%2Cfunction%28a%29%7Breturn%20Array.prototype.map.call%28a.querySelectorAll%28%22th%2Ctd%22%29%2Cfunction%28a%29%7Breturn%20a.textContent.replace%28%22%5Cn%22%2C%22%20%22%29%7D%29.join%28%22%26%239%3B%22%29%7D%29.join%28%22%26%2313%3B%26%2310%3B%22%29%2Ca.parentNode.insertBefore%28b%2Ca.nextSibling%29%7D%29%7D%28%29%3B)
-## [List of countries and dependencies by population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population)
+This is a line of Javascript I wrote to extract table data from web pages. It's handy for quickly freeing small datasets
 
+* <a href="javascript:!function(){Array.prototype.forEach.call(document.getElementsByTagName("table"),function(a){var b=document.createElement("textarea");b.style.setProperty("width",a.scrollWidth+"px"),b.style.setProperty("height","400px"),b.innerHTML=Array.prototype.map.call(a.getElementsByTagName("tr"),function(a){return Array.prototype.map.call(a.querySelectorAll("th,td"),function(a){return a.textContent.replace("\n"," ")}).join("&#9;")}).join("&#13;&#10;"),a.parentNode.insertBefore(b,a.nextSibling)})}();">tables to tsv</a>
+  * drag this link to your browser's bookmarks bar
+
+* try it here:
+  * [List of countries and dependencies by population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population)
+
+---
+class: center, middle
+[index](index.html)
 
     </textarea>
     <script src="../assets/remark.js">
