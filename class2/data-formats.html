@@ -10,42 +10,329 @@
 
 layout:true
 
-
-
 ---
 
 class: center, middle
 ![img-center-30](../images/pratt_logo.png)
-#Mining the Web
-###Neil Freeman
-###Slides are available here: http://fitnr.github.io/savi-705/class2/index.html
+# Mining the Web
+### Neil Freeman
+### Slides are available here: http://fitnr.github.io/savi-705/class2/index.html
 
 ---
 
 # Table of contents for today
-+ Data formats
++ Recap
++ Data types &amp; formats
 + Scraping data
 + APIs
 + Cleaning data
 
 ---
 
+# Data Types
+## Boolean
+
+--
+* `True`
+
+--
+* `False`
+
+--
+
+Named for George Boole (1815-1864), English mathematician who invented an algebra based two values (`0` and `1`)
+
+---
+# Data Types
+## String
+
+--
+
+* Strings contain text content
+* May include any letter, number or punctuation, in any language, including emoji
+* Strings may read left-to-right or right-to-left.
+* <u>Strings</u> do not <i>contain</i> <b>style</b>
+
+<pre>
+Hello, world!
+101 Dalmations
+⛏🕸👍
+ਗੁਰਮੁਖੀ
+دۆنیالیق اینسان حاقلاری بیلدیری‌سی
+</pre>
+
+???
+Gurmukhi
+arabic
+---
+
+# Data Types
+## String
+
+Strings are represented by one of many character encodings
+
+Encodings are a pattern of representing letters as numbers.
+
+--
+
+A well-known character encoding: Morse code
+
+![img-center-50](../images/morse_comparison.png)
+
+---
+
+# Data Types
+## String
+### Character encodings
+
+common encodings:
++ [`ASCII`](https://en.wikipedia.org/wiki/ASCII) (c. 1960)
++ [`ISO 8859-1`](https://en.wikipedia.org/wiki/ISO/IEC_8859-1) ("Latin-1")
++ [`Windows-1252`](https://en.wikipedia.org/wiki/Windows-1252) aka `CP-1252`
++ [`UTF-8`](https://en.wikipedia.org/wiki/UTF-8) (the current de-facto standard)
+
+--
+
+In `Windows-1252`, `café` is:<br>
+`99 97 102 233`<br>
+
+In `UTF-8`:<br>
+`99 97 102 195 169`<br>
+
+---
+
+# Data Types
+
+Nota bene: Every programming language has a different syntax for handling different data types
+
+Small bits of code are a useful tool for understanding how your computer is processing data (and fixing errors!)
+
+On your command line, enter the command `python`
+
+--
+
+You'll see this:
+```
+$ python
+>>>
+```
+
+The '>>>' means that you're now in a Python environment
+
+🐍🐍🐍
+
+---
+
+# Data Types
+## String
+
+At best, encoding mistakes often show up as strange characters
+
+--
+
+Converting the `UTF-8` code for "café" to Windows-1252 yields "cafÃ©"
+
+🐍
+```python
+>>> print u"café".encode("utf8").decode("windows-1252")
+cafÃ©
+```
+---
+
+# Data Types
+## String
+
+At worst, encoding issues break things
+
+🐍
+```python
+>>> print "café".encode("ascii")
+```
+--
+```
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 3: ordinal not in range(128)
+```
+
+---
+
+# Data Types
+## String
+
+In most older character encodings, each letter is one [byte](https://en.wikipedia.org/wiki/Byte): `a => 1100001`
+
+A byte is 8 bits
+
+--
+
+A dollar is eight bits
+
+[![img-center-full](../images/pieces-of-eight.jpg)](http://jpkoning.blogspot.nl/2017/10/the-ubiquitous-spanish-dollara-photo.html)
+
+---
+
+# Data Types
+## Numeric types
+
+Whole number have different names depending on context
+
++ `Integer`
++ `int`
++ `Number`
+
+```
+1
+3445
+```
+
+---
+# Data Types
+## Numeric types
+
+Numbers with decimals have different names depending on context
+
++ `decimal`
++ `float`
++ `real`
++ `numeric(10, 5)`
+
+```
+5.51
+101.0
+1e5
+6.6667
+3.141592653589793
+```
+---
+# Data Types
+## Numeric types
+
+Decimals are even more complicated than words!
+
+--
+
+* Technical internal issue: How many digits is the computer tracking?
+
+  * Precision: Total number of digits in a number
+  * Scale: Number of digits to the right of the decimal point
+
+(try this in the CARTO sql console)
+````sql
+SELECT 11.23456789::NUMERIC(4, 2);
+````
+````sql
+SELECT 11.23456789::NUMERIC(5, 3);
+````
+
+--
+
++ Human issue: How many digits are significant?
+
+--
+
+---
 # Data types
---
+## Date and time
 
-+ `Strings`: text content `hello`, `goodbye`
---
++ `Date`
++ `time`
++ `datetime`
++ `interval`, `timedelta`
 
-+ `Number`/`Integer`/`int`: whole numbers `1`, `3445`
---
+```
+2017-10-25
+04:10:22
+18:12:04
+2017-10-25 09:33:65
+2017-10-25 09:33:65 UTC
+2017-10-25 05:33:65-0400
+2017-10-25 09:33:65.4560
+Wednesday, October 25, 2017
+25 Oct 2017
+```
+---
+# Data types
+## Date and time
 
-+ `decimal`/`float`/`real`: fractional numbers `3.145`, `5.51`
---
++ In computing, `YYYY-MM-DD` format is most common (the way Americans write dates is very unusual)
 
-+ `boolean`: `True` or `False`
 --
++ In programming, date and time objects usually have a method
 
-+ And more!
+--
++ timezones are hard!
+
+---
+
+# Data types
+## and more!
+
+There are infinite number of data types, generally based on the combinations and relationships between those discussed 
+
+* `list` or `Array` (ordered groupings)
+```
+[1, 2, 3]
+Array('Apple', 'Pear', 'Orange')
+(1.2, 12, 120)
+```
+
+--
+* `dictionary`, `hash` or `mapping`, groups of `key => value` pairs
+````python
+{
+  'cat': 'meow',
+  'dog': 'woof'
+}
+````
+---
+# Data types
+## Even more data types
+
+* `Geometry` (nested ordered groupings)
+```
+POINT (-73.9230965166562 40.6974636065591)
+```
+```
+POLYGON ((-73.8548240195881 40.5707431498252,-73.8546956090577 40.570794665052,-73.8544366332235 40.5708993943387,-73.8541496414761 40.5710083658732,-73.8540941616224 40.5702523569784,-73.854174960512 40.5701824229669,-73.854231074553 40.5701346564439,-73.8543297354135 40.5700946397509,-73.8544169852997 40.5700615101435,-73.8548240195881 40.5707431498252))
+```
+```
+{
+  'type': 'Point',
+  'coordinates': (1005574.6700609335, 193390.6162231612)
+}
+```
+---
+# Data types
+## Comparing types
+
+Converting between types is called casting or coercing. It might be performed automatically, but don't count on it.
+
+--
+* A computer can store `123` as an integer or text.
+
+--
+* Don't expect `"123"` and `123` to be equal
+
+--
+* Don't expect `"01239"` and `1239` to be equal
+
+--
+* Don't expect `123.00` and `123` to be equal
+
+--
+* Expect `123.00` and `123.0000` are equal
+
+--
+* `1` and `0.999999999999999999999999999999999999` just might be equal!
+```sql
+SELECT 0.999999999999999999999999999999999999;
+```
+
+---
+class: middle, center
+# Data formats
+## The way we share data
 
 ---
 class:center
@@ -54,15 +341,178 @@ class:center
 
 ---
 
+# CSV
+
+````
+STATEFP,COUNTYFP,GEOID,NAME,LANDKM,B06011_001,B25105_001
+01,005,01005,Barbour,2291.820999999999913,,556
+01,023,01023,Choctaw,2365.954999999999927,17732,440
+01,035,01035,Conecuh,2201.896000000000186,15667,397
+01,051,01051,Elmore,1601.876999999999953,25998,845
+01,065,01065,Hale,1667.805000000000064,,532
+01,109,01109,Pike,1740.740999999999985,19053,601
+01,113,01113,Russell,1660.584000000000060,22242,754
+01,117,01117,Shelby,2034.095000000000027,32892,1087
+02,016,02016,Aleutians West,11370.495000000000800,26955,1210
+````
+
++ comma-separated values
+
+--
++ text documents
+
+--
++ more or less human-readable
+
+--
++ each line is a record
+
+--
++ each record is broken into fields
+
+--
++ fields may be quoted: `1,"Hello, world!",2017-10-25 12:00:00`
+
+--
++ usually, an entire column is interpeted as a single data type
+
+---
+
+# CSV
+### Gotchas
+--
+
++ character encoding (Windows or UTF-8?)
+
+--
++ separator (a.k.a delimiter), commonly `,;|` or `tab`
+
+--
++ untyped: the entire document might be interpreted as text
+
+--
++ Text may or may not be quoted. Numeric characters in quotes is likely to be interpreted as a `string`
+```
+manhattan,1
+bronx,"2"
+brooklyn,3
+```
+---
+
 class:center
 # JSON
 ![img-full](../images/json.png)
 
+[official website](http://json.org)
+
 ---
 
-class:center
+# JSON
+## Javascript object notation
+
+Mostly a subset of the syntax Javascript uses for data
+
+--
+
+lists
+```json
+[1, "hello, world!", '2017-10-10 12:34:56']
+```
+
+--
+
+objects (key-value pairs)
+````json
+{
+  "id": 1,
+  "message":"hello, world!",
+  "timestamp": '2017-10-10 12:34:56'
+}
+````
+---
+# JSON
+
+lists of objects:
+````json
+[
+  {
+    "id": 1,
+    "message": "what hath god wrought?",
+    "timestamp": '1844-05-24 10:25:54'
+  },
+  {
+    "id": 2,
+    "message": "hello, world!",
+    "timestamp": '2017-10-10 12:34:56'
+  }
+]
+````
+--
+
+objects with lists:
+````json
+{
+  "id": 1,
+  "contents": ["apple", "pear", "orange"],
+  "tasty": true
+}
+````
+---
+
+# JSON
+
+--
++ Created c. 2000
+
+--
++ support built-in to web browsers
+
+--
++ support built-in to Python
+
+--
++ open standard
+
+--
++ supports complex, nested structures
+
+--
++ sort-of human readable
+
+--
++ typed (`Boolean`, `Integer`, `Float` and `String`)
+
+---
+class: center
 # Shapefile
-![img-full](../images/shp.png)
+![img-center-50](../images/shp.png)
+
+---
+# Shapefile
+
+--
++ introduced by ESRI in the 1990's
+
+--
++ worst name: consists of at least three files (`.shp`, `.shx`, `.dbf`)
+
+--
++ separate files for geometries and attributes
+
+--
++ built for geometry
+
+--
++ closed standard
+--
+
++ widely supported
+
+--
++ binary (never human-readable)
+
+--
++ indexable
 
 ---
 
@@ -70,46 +520,56 @@ class:center
 # GeoJSON
 ![img-full](../images/geojson.png)
 
-For more information see Eric Brelsford's [GeoJSON and Github tutorial](http://youtu.be/TQs7fYo9d_M)
+[official website](http://geojson.org)
+
+---
+# GeoJSON
+
+````json
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [125.6, 10.1]
+  },
+  "properties": {
+    "name": "Dinagat Islands",
+    "population": 127152
+  }
+}
+````
+--
++ subset of JSON, introduced 2008
+
+--
++ structured way of encoding geometries and attributes
+
+--
++ open standard
+
+--
++ Mostly human-readable
+
+--
++ Not indexable
 
 ---
 
-class:center,middle
-# Why are there so many?
+# Data formats
+
+Just scratching the surface!
+
++ literally thousands of closed data formats
+--
+
++ haven't mentioned databases
+--
+
++ haven't mentioned raster formats
 
 ---
 
-# Pros
---
-
-+ CSV: Flexible, human-readable.
---
-
-+ JSON: multi-level, computer-readable
---
-
-+ Shapefile: indexed, legacy of support
---
-
-+ GeoJSON: Geodata that's sort of human-readable
-
----
-
-# Cons
---
-
-+ CSV: untyped, no depth
---
-
-+ JSON: messy to humans
---
-
-+ Shapefile: many files, harder to edit
---
-
-+ GeoJSON: slow for big files
-
----
+[index](index.html)
 
     </textarea>
     <script src="../assets/remark.js">
