@@ -134,8 +134,8 @@ Update your maps (or create a new one) using data joined from two sources
 
 <a id="class3"></a>
 ### [Class 3 - November 4](http://fitnr.github.io/savi-750/class3/index.html)
-+ Introduction to SQL
-+ Introduction to spatial SQL
++ Introduction to SQL and spatial SQL
++ Introduction to python
 + Opening closed data with [Tabula](http://tabula.technology)
 
 ### Assignments
