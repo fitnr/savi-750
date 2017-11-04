@@ -488,10 +488,41 @@ When the indented block ends, Python automatically closes the file
 
 ---
 
+## one more thing
+
+A `str` can act like a sequence
+````python
+hello = 'Hello World!'
+
+for letter in hello:
+    print(letter + '!')
+````
+
+--
+
+```
+H!
+e!
+l!
+l!
+o!
+ !
+W!
+o!
+r!
+l!
+d!
+!!
+```
+
+
+---
+
 ## `import`
 ### Add functions to your code
 
-Imports may be built-in (e.g. `csv`) or open source code added from outside (with `pip`)
++ import from the standard library (e.g. `csv`)
++ or outside code (added with `pip`)
 
 ````python
 import csv
