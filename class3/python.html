@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mining the Web - Class 3</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/slide.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: center, middle
+
+
+class: center, middle
+![img-center-30](../images/pratt_logo.png)
+#Mining the Web
+###Neil Freeman
+###Slides are available here: http://fitnr.github.io/savi-750/class3/python.html
+
+---
+
+# Introduction to Python
+
+# 🐍🐍🐍
+
+---
+
+class: left
+
+# Many ways to run Python scripts
+
+### within the Python shell
+
+![hello world](../images/python-cli.png)
+
+---
+# Many ways to run Python scripts
+
+### Within a [Jupyter notebook](https://jupyter.org)
+
+![hello world](../images/python-jupyter.png)
+
+---
+# Many ways to run Python scripts
+
+### From a file
+
+Save file as `hello.py`
+
+![hello world](../images/hello.py.png)
+
+---
+# Many ways to run Python scripts
+
+### From a file
+
+Excute the file with `python hello.py`
+
+![hello world](../images/python-a.png)
+
+---
+
+# Python language guide
+
+For this tutorial, use a Jupyter notebook or the Python command line.
+
+---
+# Python language guide
+
+Booleans
+
+```
+True
+False
+None
+```
+
+`None` is Python's version of `NULL`.
+
+---
+## `bool`
+
+Compare booleans with the `is` operator:
+
+```python
+False is False
+True is True
+None is None
+```
+
+```python
+False is not False
+True is not False
+None is not False
+```
+
+---
+
+## `Int` and `Float`
+
+````python
+pizza = 4
+cat = 51.25
+````
+--
+
+````python
+pizza + cat
+````
+````python
+55.25
+````
+--
+
+Other math works like you would expect
+
+```python
+2 + 2
+1.5 * 2
+2 / 4
+```
+
+---
+
+## `str`
+
+Strings (`str`)
+
+```python
+"Hello World!"
+```
+
+--
+Defining variables store something for later
+
+````python
+hello = "hello"
+x = "world"
+my_var = 'of course, strings can be long'
+note = "single or double quotes, which ever you prefer!"
+````
+
+---
+## `str`
+The `+` operator concatenates strings
+
+````python
+hello + " " + x
+````
+
+--
+
+The `*` operator concatenates strings
+
+````python
+"hello" * 3
+````
+```python
+'hellohellohello'
+```
+
+--
+
+The `/` operator...
+
+````python
+'hello' / 2
+````
+
+---
+## `str`
+
+A `str` is an `object` with properties.
+
+````python
+hello.upper()
+hello.lower()
+````
+--
+
+Properties return a new string
+
+````python
+foo = 'hello world'
+bar = foo.upper()
+print(foo)
+````
+````
+hello world
+````
+
+---
+
+## Variables
+
+Redefining variables is possible
+
+```python
+apple = 'apple'
+apple = 6
+print(apple)
+```
+```python
+6
+```
+--
+
+But be careful...
+
+---
+
+## `Exception`
+
+Using `+` with different types confuses Python:
+
+````python
+apple = 6
+orange = 'orange'
+
+apple + orange
+````
+--
+````
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+````
+--
+
+Lots of errors are from mixing up different types.
+
+---
+
+## Comparisons
+
+Comparison operators produce a boolean value
+
+```
+'Orange' == 'orange'
+6 > 5
+6 <= 10
+'apple' is True
+```
+
+---
+## Conditionals
+
+````python
+sound = 'meow meow meow'
+hungry = True
+
+if hungry is True:
+    sound = sound.upper()
+````
+
+--
++ The `if` statement is evaluated
+
+--
++ the comparison operator reduces to a boolean
+
+--
++ If the result is `True`, the indented part is evaluated. If not, it's ignored.
+
+--
++ Indentation matters!
+
+--
+
+````python
+print(sound)
+````
+---
+
+## `elif` and `else`
+
+````python
+count = 6
+
+if count > 10:
+    color = 'violet'
+
+elif count > 5:
+    color = 'blue'
+
+else:
+    color = 'white'
+````
+
++ `elif` ("else if") is evaluated when the `if` statement is false
++ At the end, the `else` is evaluated
++ A conditional might have many `elif`s
++ but at most one `else`
+
+---
+
+# `list`
+
+Lists are sequences of objects. Order matters!
+
+````python
+cats = ['Inky', "Moxie", 'Sweet Potato', "Felix"]
+````
+
+--
+Access a single `list` element with index notation
+
+````python
+cats[1]
+````
+--
+````
+"Moxie"
+````
+--
+
+Access a subset of the list with [slice notation](https://docs.python.org/3/library/stdtypes.html#typesseq-common)
+
+````python
+cats[1:3]
+````
+--
+````
+['Moxie', 'Sweet Potato']
+````
+
+---
+
+# `list`
+
+Lists can be edited
+
+--
+
+Produce a new list
+
+````python
+cats + ["Socks"]
+````
+
+--
+
+Edit the existing list
+
+```python
+cats.append("Socks")
+```
+
+---
+
+# `dict`
+
+Dictionaries are groups of key-value pairs.
+
+````python
+cat_colors = {
+    'Inky': 'black',
+    'Sweet Potato': 'splotchy',
+    'Moxie': 'orange and gray',
+    "Felix": "black"
+}
+````
+--
++ `dict`s don't have an order
+
+--
++ Each key can only occur once, values can repeat
+
+--
+
+Access a value with the key
+
+````python
+cat_colors['Inky']
+````
+
+---
+
+## loops
+
+The `for` loop steps through a sequence, evaluating the indented block for each element of the list
+
+````python
+cats = ['Inky', "Moxie", 'Sweet Potato']
+
+cat_colors = {
+    'Inky': 'black',
+    'Sweet Potato': 'splotchy',
+    'Moxie': 'orange and gray'
+}
+
+for cat in cats:
+    print(cat + " is " + cat_colors[cat])
+````
+
+--
+
+````
+Inky is black
+Moxie is orange and gray
+Sweet Potato is splotchy
+````
+
+In the loop, `cat` is a new variable that gets created. You can call it whatever you like.
+
+---
+
+## `def`
+
+Functions store procedures and simplify your code
+
+````python
+cats = ["Inky", "Moxie", "Sweet Potato", "Felix"]
+
+def cat_info(name):
+    return name + ' is a cat'
+
+for cat in cats:
+    print(cat_info(cat))
+
+cat_info("Felix")
+````
+--
+````python
+Inky is a cat
+Moxie is a cat
+Sweet Potato is a cat
+Felix is a cat
+````
+
+---
+
+## `def`
+
+
+Functions can have many parameters (but usually just a few are enough!)
+
+````python
+def cat_info(name, breed, color):
+    return name + ' is a ' + breed + ' cat and is ' + color
+````
+
+--
+
+Specify function parameters in any order by naming them explicitly
+
+````python
+info = cat_info('Moxie', color='orange', breed='alley cat'):
+print(info)
+````
+
+---
+
+## `open`
+
+A built-in function for opening files
+
+It creates a `file` object
+
+````python
+f = open('class2/data/ct.csv')
+contents = f.read()
+f.close()
+````
+--
+
+The path will be relative to wherever you are when you run the file.
+
+---
+## `file`
+
+Always close your file handles!
+````python
+f.close()
+````
+
+--
+
+Since that's extra typing, there's a special syntax
+
+````python
+with open('class2/data/ct.csv') as f:
+    contents = f.read()
+````
+
+When the indented block ends, Python automatically closes the file
+
+---
+
+## `import`
+### Add functions to your code
+
+Imports may be built-in (e.g. `csv`) or open source code added from outside (with `pip`)
+
+````python
+import csv
+````
+
+Put all the imports at the top of your file.
+
+---
+## `csv`
+
+Load csv data into Python
+
+--
+
+`csv.reader` yields `list`s
+
+````python
+import csv
+
+with open('class2/data/ct.csv') as f:
+    reader = csv.reader(f)
+
+    for row in reader:
+        print(row[0])
+````
+
+`csv` reads the file line by line – so even huge files can be processed (fairly) quickly
+
+--
+
+When the file closes, `csv` can't read it, so the reading must happen within the `open` block.
+
+
+
+---
+## `csv`
+
+`csv.DictReader` yields `dict`
+
+
+````python
+import csv
+
+with open('class2/data/ct.csv') as f:
+    reader = csv.DictReader(f)
+
+    for row in reader:
+        print(row['NAME'])
+````
+
+--
+Python has built-in help! (or, [read the docs online](https://docs.python.org/3.6/library/csv.html))
+
+````python
+help(csv)
+````
+
+
+---
+
+class: center, middle
+
+[index](index.html)
+
+    </textarea>
+    <script src="../assets/remark.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
