@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mining the Web - Class 3 - Geocoding</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/slide.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+layout:true
+
+---
+
+class: center, middle
+![img-center-30](../images/pratt_logo.png)
+# Mining the Web
+### Neil Freeman
+### http://fitnr.github.io/savi-750/class3/spatial-sql.html
+
+---
+
+#NYC Geoclient API Setup
++ [Register for an account](https://developer.cityofnewyork.us/api/geoclient-api 
+)
++ Click on the activation email
++ Start a project
++ Click on Geoclient v1 under available APIs
+
+---
+
+class:center,middle
+#Geocoding
+![img-full](../images/geocoding.png)
+
+---
+
+# Census Geocoding API
+
+https://geocoding.geo.census.gov
+
+---
+
+# Census Geocoding API Call
+
+```
+https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4600+Silver+Hill+Rd+Suitland+MD+20746&benchmark=9&format=json
+```
+
+--
+
+Service endpoint
+```
+https://geocoding.geo.census.gov/geocoder/locations/onelineaddress
+```
+
+--
+
+Query parameters
+```
+address=4600+Silver+Hill+Rd+Suitland+MD+20746
+benchmark=9
+format=json
+```
+---
+
+class:center,middle
+#Let's try that in Python
+##[Open this file](citations.csv)
+
+And inspect it with `csvkit`
+
+---
+
+# How to geocode file?
+
+Our goal is to get a coordinate for every citation
+
+--
++ Read each line in CSV
+
+--
++ construct the address from the fields
+
+--
++ geocode the address
+
+--
++ Save a new CSV
+
+---
+
+#Install the censusgeocode package
++ Go to your command line
++ Type `pip install --user censusgeocode`
+
+---
+class:center, middle
+
+[index](./index.html)
+
+    </textarea>
+    <script src="../assets/remark.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

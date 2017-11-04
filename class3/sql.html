@@ -16,52 +16,147 @@ class: center, middle
 ![img-center-30](../images/pratt_logo.png)
 #Mining the Web
 ###Neil Freeman
-###Slides are available here: http://fitnr.github.io/savi-750/class3/index.html
+###Slides are available here: http://fitnr.github.io/savi-750/class3/sql.html
 
 ---
 
 # Introduction to SQL
-## Let's look at counties
 
 ---
 
-#Add County Data from Data Library
+Hello World!
+```sql
+select 'Hello World!';
+```
+
+--
+
+Commas separate fields (just like a CSV) 
+
+```sql
+select 'Hello World!', 100, TRUE; 
+```
+
+---
+
+## Let's look at counties
+
+### Add County Data from Data Library
 
 ![img-full](../images/sql1.png)
 
 ---
 
-#Introduction to SQL
-![img-full](../images/sql2.png)
+The **from** clause pulls fields from a table:
+
+````sql
+select county from counties_ny;
+````
+
+**county** is the name of a column in the table **counties_ny**
+
+--
+
+```
+Rockland
+Kings
+New York
+Herkimer
+Queens
+```
+
+The result is a set of **rows** (in no particular order)
 
 ---
 
-#Introduction to SQL
+## Selecting columns
 
-The `WHERE` clause filters results
+````sql
+select county, fips from counties_ny;
+````
+--
 
-![img-full](../images/sql3.png)
+````
+Franklin    36033
+Orleans     36073
+Westchester 36119
+Albany      36001
+Sullivan    36105
+Kings       36047
+````
+
+--
+
+Use ***** as a wild card to get all the rows of a table:
+
+````sql
+select * from counties_ny;
+````
 
 ---
 
-#Introduction to SQL
+## Where
 
-The `WHERE` clause filters results
+The **where** clause filters results
 
-![img-full](../images/sql4.png)
+````sql
+select * from counties_ny where county = 'Rockland';
+````
+
+--
+
+```
+Rockland
+```
+
+In this case there is only one row
 
 ---
 
-#Introduction to SQL
+
+## Comparison operators
+
+* equality: `a = b`
+* inequality: `a <> b`, `a != b`
+* greater than, greater than or equal: `a > b`, `a >= b`
+
+--
+
+```sql
+select * from counties_ny where county = 'Rockland';
+select * from counties_ny where county <> 'Queens';
+```
+
+---
 
 Functions change the results
 
-![img-left](../images/sql6.png)
+````sql
+select concat(county, ' County, ', state_name) from counties_ny;
+````
+
+--
+
+````sql
+select replace(county, 'e', 'eeeee') from counties_ny;
+````
+
+[List of SQL functions](https://www.postgresql.org/docs/current/static/functions.html)
+
+---
+
+## Aggregates
+
+Aggregate functions summarize the data
+
+````sql
+select count(county) from counties_ny;
+````
 
 ---
 
 class:center, middle
-#How do we do joins in SQL?
+# Joins
 
 ---
 
@@ -71,57 +166,39 @@ class:center
 http://stackoverflow.com/questions/406294/left-join-and-left-outer-join-in-sql-server
 
 ---
+class: left
+
+## Joins
+
+Joins merge two tables
+
+````sql
+select *
+from apple join orange on (a.id=b.id)
+````
+--
+
+Very useful for connecting data and geometry tables
+
+````sql
+select a.the_geom, b.*
+from shapes as a
+  join data as b on (a.id=b.id)
+````
+--
+
+Table aliases save a lot of time!
+
+---
 
 class:middle,center
-# How Many Trees in Each County?
+# Joining Census geometry to census data
 
 ---
 
-# Spatially Joining points with Polygons
+class: middle, center
 
-![img-center-80](../images/sql_join2.png)
----
-
-#Steps to Answer
-
----
-
-#Steps to Answer
-1. Import the World Borders file from the Data Library
-
----
-
-#Steps to Answer
-1. Import the World Borders file from the Data Library
-2. Join the datasets together
-
----
-
-##Several things going on here
---
-
-+ Aliases for tables (using the keyword "**AS**")
---
-
-+ Using the function **ST_CONTAINS()**
-
----
-
-#Joining Earthquakes with World Borders
-![img-full](../images/st_c.png)
-
----
-
-#Several Options to Get Our Answer
---
-
-1. Can create a table and count from there
---
-
-2. Use this as a temporary table and generate the counts
---
-
-![img-full](../images/sql_join3.png)
+[index](./index.html)
 
     </textarea>
     <script src="../assets/remark.js">
