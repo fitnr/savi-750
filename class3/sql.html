@@ -196,6 +196,25 @@ class:middle,center
 
 ---
 
+
+````sql
+SELECT shapes.cartodb_id
+   , shapes.the_geom
+   , shapes.the_geom_webmercator
+   , shapes.aland
+   , a.hc01_est_vc09
+   , a.hc01_est_vc10
+     , 10.0 / 20
+   , cast(pop25up as numeric) as pizza
+   , pop25up::numeric / (shapes.aland/2589988.11) as densityadult
+  
+FROM cb_2016_36_tract_500k as shapes
+  join ny_tracts_ed as a
+    on (a.geo_id2::text = shapes.geoid)
+````
+
+---
+
 class: middle, center
 
 [index](./index.html)
