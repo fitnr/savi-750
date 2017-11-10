@@ -37,7 +37,10 @@ class:center,middle
 # Get Whole Foods Locations
 
 --
-![list of whole foods](../images/complete-list-of-whole-foods.png)]
+![list of whole foods](../images/complete-list-of-whole-foods.png)
+
+--
+nope! nope! nope! nope! nope!
 
 ---
 
@@ -68,8 +71,6 @@ Would be painful to manually download all of this
 
 --
 
-class: center, middle
-
 ## Python to the rescue
 
 ---
@@ -90,7 +91,7 @@ class: center, middle
 # First, let's get some Soup
 
 ```
-sudo pip install BeautifulSoup4
+pip install --user BeautifulSoup4
 ```
 
 Beautiful Soup will help us parse HTML
@@ -100,6 +101,14 @@ Beautiful Soup will help us parse HTML
 and open up the docs:
 
 [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+--
+
+And start a new file
+
+```python
+from bs4 import BeautifulSoup
+```
 
 ---
 
@@ -112,10 +121,13 @@ and open up the docs:
 # Get the Whole Foods
 
 The URLs follow a simple pattern:
-```
-http://www.wholefoodsmarket.com/stores/list/state?field_postal_address_administrative_area=&page=1
-http://www.wholefoodsmarket.com/stores/list/state?field_postal_address_administrative_area=&page=20
-```
+````
+http://www.wholefoodsmarket.com/stores/list/state?
+  field_postal_address_administrative_area=&page=1
+
+http://www.wholefoodsmarket.com/stores/list/state?
+  field_postal_address_administrative_area=&page=20
+````
 
 ---
 
@@ -142,8 +154,6 @@ curl "http://www.wholefoodsmarket.com/stores/list/state?page="{0..21} > wholefoo
 Read the file
 
 ```python
-from bs4 import BeautifulSoup
-
 with open('wholefoods.html') as f:
     soup = BeautifulSoup(f.read())
 
@@ -177,8 +187,6 @@ Inspect the website to get an idea of what's here
 Find a particular element
 
 ````python
-from bs4 import BeautifulSoup
-
 with open('wholefoods.html') as f:
     soup = BeautifulSoup(f.read())
 
@@ -231,11 +239,9 @@ class: center,middle
 
 # Parsing HTML with Python
 
-Use a for loop to address each element of `divs` in turn
+Use a `for` loop to address each element of `divs` in turn
 
 ````python
-from bs4 import BeautifulSoup
-
 with open('wholefoods.html') as f:
     soup = BeautifulSoup(f.read())
 
@@ -243,7 +249,7 @@ divs = soup.find_all('div', attrs={'class': 'views-row'})
 
 for div in divs:
     street = div.find(class_='thoroughfare').text
-    print street
+    print(street)
 
 ````
 ---
@@ -256,9 +262,11 @@ OK, some are blank. Here's a new part of Python syntax: the `try` block
 for div in divs:
     try:
         street = div.find(class_='thoroughfare').text
+
     except AttributeError:
         street = ''
-    print street 
+
+    print(street) 
 ````
 
 ---
@@ -268,16 +276,19 @@ for div in divs:
 Let's create a function to organize things
 
 ````python
-from bs4 import BeautifulSoup
-
 def process_div(div):
     try:
         street = div.find(class_='thoroughfare').text
+
     except AttributeError:
         street = ''
     
     return street
+````
 
+--
+
+````python
 with open('wholefoods.html') as f:
     soup = BeautifulSoup(f.read())
 
@@ -286,6 +297,7 @@ divs = soup.find_all('div', attrs={'class': 'views-row'})
 for div in divs:
     print process_div(div)
 ````
+
 ---
 
 # Parsing HTML with Python
@@ -298,11 +310,23 @@ Now we have to look at the pattern for each data element we want:
 + State
 + ZIP code
 
+--
+
+````python
+with open('wholefoods.html') as f:
+    soup = BeautifulSoup(f.read())
+
+divs = soup.find_all('div', attrs={'class': 'views-row'})
+
+div = divs[0]
+print(div.find(class_='thoroughfare'))
+print(div.find(class_='thoroughfare').text)
+````
 ---
 
 # Parsing HTML with Python
 
-This returns a `dict`, rather than a `str`.
+Adjust the function to return a `dict` created from the attributes of each `div`.
 
 ````python
 def process_div(div):
@@ -333,11 +357,11 @@ Some are special `Unicode` letters
 
 ````python
 string = u"Àçcéñtèd Léttérs"
-print string
+print(string)
 ````
 --
 ````python
-print string.encode('utf8')
+print(string.encode('utf8'))
 ````
 
 ---
@@ -361,7 +385,7 @@ def process_div(div):
 
 # Parsing HTML with Python
 
-Python has special modules for creating csvs
+Rather than opening a new file, let's just send it to the command line, which is a little easier
 
 ````python
 import csv
@@ -375,21 +399,6 @@ writer.writeheader()
 
 ---
 ````python
-import csv
-import sys
-from bs4 import BeautifulSoup
-
-def process_div(div):
-    try:
-        return {
-         'street': div.find(class_='thoroughfare').text.encode('utf8'),
-         'name': div.find(class_='views-field-title').find(class_='field-content').text.encode('utf8'),
-         'city': div.find(class_='locality').text.encode('utf8'),
-         'state': div.find(class_='state').text.encode('utf8'),
-         'zipcode': div.find(class_='postal-code').text.encode('utf8'),
-        }
-    except AttributeError:
-        return {}
 
 with open('wholefoods.html') as f:
     soup = BeautifulSoup(f.read())
@@ -408,8 +417,55 @@ for div in divs:
 ````
 
 ---
+## Python's syntactic sugar
 
-# Parsing HTML with Python
+````python
+for div in divs:
+    d = process_div(div)
+    
+    if d != {}:
+        writer.writerow(d)
+````
+--
+
+becomes...
+
+````python
+writer.writerows([process_div(d) for d in divs])
+````
+
+---
+
+## List comprehensions
+
+Replace this...
+
+````python
+result = []
+for variable in iterable:
+    result.append(expression(variable))
+````
+
+--
+With this:
+
+````python
+result = [expression(variable) for variable in iterable]
+````
+
+--
+
+````python
+a = [1, 2, 3]
+
+[x for x in a]
+
+[x + 1 for x in a]
+````
+
+---
+
+# Send the result to CSV
 
 ````
 python wholefoods.py > wholefoods.csv
@@ -647,10 +703,10 @@ SELECT
 FROM wholefoods b
 
 LEFT JOIN cb_2016_us_county_5m county
-ON (ST_Contains(county.the_geom, b.the_geom))
+    ON (ST_Contains(county.the_geom, b.the_geom))
 
 LEFT JOIN crackerbarrel c
-ON (ST_Contains(county.the_geom, c.the_geom))
+    ON (ST_Contains(county.the_geom, c.the_geom));
 ````
 
 ---
@@ -661,6 +717,7 @@ Map counties with both a C.B. count and a W.F. count
 ````SQL
 SELECT
     county.cartodb_id,
+    county.the_geom,
     county.the_geom_webmercator,
     COUNT(b.*) AS count_wf,
     COUNT(c.*) AS count_cb
@@ -668,10 +725,10 @@ SELECT
 FROM cb_2016_us_county_5m county
 
 LEFT JOIN wholefoods b
-ON (ST_Contains(county.the_geom, b.the_geom))
+    ON (ST_Contains(county.the_geom, b.the_geom))
 
 LEFT JOIN crackerbarrel c
-ON (ST_Contains(county.the_geom, c.the_geom))
+    ON (ST_Contains(county.the_geom, c.the_geom))
 
 GROUP BY
     county.the_geom_webmercator,
@@ -684,7 +741,7 @@ HAVING
 ---
 # Spatial Joins
 
-CARTO can't map this kind of divering scale easily
+CARTO can't map this kind of diverging scale easily
 
 --
 
