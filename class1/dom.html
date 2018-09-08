@@ -114,6 +114,21 @@ Students at <a href="https://www.pratt.edu">Pratt</a> are very <a href="https://
 ````
 
 ---
+# Overview of HTML
+
+Other documents can be embedded in HTML. Commonly, images:
+
+```html
+<img src="animals/cute/cat.jpg" alt="A furry cat">
+
+<img src="buildings/brick/library.jpg" alt="A brick library">
+```
+
+--
+
+And also resources that the browser uses to change the way the HTML is rendered.
+
+---
 
 #Overview of CSS
 --
@@ -192,7 +207,7 @@ p {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tale of Two Cities: Chapter 1</title>
+  <title>A short conversation</title>
   <style>
     body {
       color: gray;
@@ -216,7 +231,7 @@ p {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tale of Two Cities: Chapter 1</title>
+  <title>A short conversation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -235,18 +250,39 @@ body { color: gray; }
 # Javascript
 
 + A programming language that's available to every webpage
-+ Controls interaction
-+ Makes an `html` page dynamic
 
+--
++ Controls interaction, making an `html` page dynamic
+
+--
++ Can make its own requests over the Internet, often uses to load more resources
+
+--
++ Like CSS, Javascript can be embedded in a web page, or linked from another document.
+
+--
++ The complexity of Javascript can be very high, and in practice web developers relies mostly on code *libraries* written by others.
+
+--
+
+Javascript to alter an element of a page:
 ````javascript
 var foo = 'Hello World';
 var element = document.getElementById('chapter-1');
 element.innerHTML = foo;
 ````
----
-# Javascript
 
-+ Like CSS, Javascript can be embedded in a web page, or linked from another document.
+---
+# Overview of Web pages
+
++ Consist of at least one HTML file and one or more CSS and Javascript files.
+
+--
++ Your browser requests a single resource, which may then lead to downloading more.
+
+--
++ Highly interactive websites likely have loads of complex Javascript.
+
 
 ---
 class: center, middle

@@ -54,7 +54,7 @@ The required readings for this course consist of book chapters, newspaper articl
 
 <a id="class-format"></a>
 ### Class Format 
-Class runs from 9:30am to 5:30pm. Each day will be consist of 80-90–minute blocks broken up by 10-minute breaks and a half-hour break for lunch. Class will be a mix of lecture and exercise work, emphasizing the application of skills covered in the lecture portion of the class. You will have ample time in class to work on practical exercises based on the information presented in lectures.
+Class runs from 9:30am to 5:30pm. Each day will be consist of 80-to-90–minute blocks broken up by 10-minute breaks and a half-hour break for lunch. Class will be a mix of lecture and exercise work, emphasizing the application of skills covered in the lecture portion of the class. You will have ample time in class to work on practical exercises based on the information presented in lectures.
 
 <a id="submitting-assignments"></a>
 ### Submitting Assignments
@@ -91,6 +91,7 @@ Find an interesting or visually compelling map (interactive or static) or visual
 + Introduction to mapping and cartography
 + Introduction to CARTO
 + Introduction to HTML and CSS
++ Introduction to the Unix command line
 
 #### Assignment
 0. Complete the [CARTO “Online Mapping for Beginners”](https://carto.com/academy/courses/beginners-course) course.
@@ -98,6 +99,7 @@ Find an interesting or visually compelling map (interactive or static) or visual
     * Write a short summary of the your topic. What questions would you like to answer? What audience would you like to reach? What data would you like to explore?
     * Create a basic CARTO map with one data layer that connects to your topic.
     * Embed the map in a basic HTML document with your write-up.
+    * Write a paragraph describing the dataset. Namely, what data it contains, who created it and how and why they did so. Use information from the dataset's metadata. If that's incomplete, use additional research. Give your best guess if you can't find complete metadata.
 2. On the same page, include the link to an interesting map or visualization and add your weekly critique.
 
 ### Readings
@@ -132,7 +134,7 @@ Update your maps (or create a new one) using data joined from two sources
 <a id="class3"></a>
 ### [Class 3 - September 22](http://fitnr.github.io/savi-750/class3/index.html)
 + Introduction to SQL and spatial SQL
-+ Introduction to python
++ Introduction to Python
 + Opening closed data with [Tabula](http://tabula.technology)
 
 ### Assignments
