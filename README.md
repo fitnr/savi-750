@@ -103,7 +103,7 @@ Find an interesting or visually compelling map (interactive or static) or visual
 2. On the same page, include the link to an interesting map or visualization and add your weekly critique.
 
 ### Readings
-+ Thomas Levine, [Introduction to web scraping](https://thomaslevine.com/!/web-sites-to-data-tables/)
++ Thomas Levine, [Introduction to web scraping](https://thomaslevine.com/computing/web-sites-to-data-tables-in-theory/)
 + [Introduction to APIs ch 1-5](https://zapier.com/learn/apis/)
 + Ben Wellington "[Mapping the Sharing Economy](http://iquantny.tumblr.com/post/110747103479/mapping-the-sharing-economy-an-in-depth-view-of)"
 
@@ -122,8 +122,8 @@ Find an interesting or visually compelling map (interactive or static) or visual
 
 ### Assignments
 1. Complete the [SQL and PostGIS in CARTO](http://academy.carto.com/courses/04-sql-postgis.html) course.
-Update your maps (or create a new one) using data joined from two sources
 2. Create a second map, using new data scraped from the web or pulled via an API.
+    * This map should include data pulled from two sources
     * Embed the map in a new HTML document.
     * Include a paragraph discussing any challenges you encountered working with the data and/or creating your map in CARTO.
 3. Weekly critique
