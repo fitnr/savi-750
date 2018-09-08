@@ -15,11 +15,10 @@ Continuing Education Units (C.E.U.s): 3.0
 + [Course Readings](#course-readings)
 + [Class Format](#class-format)
 + [Submitting Assignments](#submitting-assignments)
-+ [Course Outline](#outline)
-	+ [Session 1, October 21](#class1)
-	+ [Session 2, October 28](#class2)
-	+ [Session 3, November 4](#class3)
-	+ [Session 4, November 11](#class4)
++ [Course Outline](#outline)1)
+	+ [Session 2, Sept. 15](#class2)
+	+ [Session 3, Sept. 22](#class3)
+	+ [Session 4, Sept. 29](#class4)
 + [Resources](#resources)
 	+ [Suggested Reading](#suggested-reading)
 
@@ -42,9 +41,7 @@ This course introduces the tools, techniques, and general approaches used to acq
 ### Course Requirements 
 **All students will need to bring their own laptop for exercises during class.** Time will be set aside to help install, configure, and run the programs necessary for all assignments, projects, and exercises. Where possible, all programs will be free and open-source. All assigned work using services hosted online can be run using free accounts. **Please update your system to the latest version of your prefered operating system prior to the first day of class to ensure you're able to successfully install and use the tools in class.**
 
-You will be required to have free accounts with the following services:
-
-+ [CARTO](http://carto.com/)
+You will be required to have free accounts with [Carto](http://carto.com/).
 
 In addition, please install the text editor of your choice. Some (free) suggestions:
 + [Sublime Text](https://www.sublimetext.com/) (All systems)
@@ -61,7 +58,7 @@ Class runs from 9:30am to 5:30pm. Each day will be consist of 80-90–minute blo
 
 <a id="submitting-assignments"></a>
 ### Submitting Assignments
-All assignments will be submitted by adding your content to the course Dropbox folder. Assignments must be submitted by 10 pm of the Friday before class.
+All assignments will be submitted to [lms.pratt.edu](https://lms.pratt.edu). Assignments must be submitted by 9 pm of the Friday before class.
 
 #### Assessment
 Area | Total Points
@@ -88,7 +85,7 @@ Find an interesting or visually compelling map (interactive or static) or visual
 ----
 
 <a id="class1"></a>
-## [Session 1 - October 21](http://fitnr.github.io/savi-750/class1/index.html)
+## [Session 1 - September 7](http://fitnr.github.io/savi-750/class1/index.html)
 + Introduction
 + Open data
 + Introduction to mapping and cartography
@@ -114,7 +111,7 @@ Find an interesting or visually compelling map (interactive or static) or visual
 + Jeffrey Heer, Michael Bostock and Vadim Ogievetsky. "[A tour through the visualization zoo.](http://hci.stanford.edu/jheer/files/zoo/)" Commun. ACM 53.6 (2010): 59-67. 
 
 <a id="class2"></a>
-## [Session 2 - October 28](http://fitnr.github.io/savi-750/class2/index.html)
+## [Session 2 - September 15](http://fitnr.github.io/savi-750/class2/index.html)
 + Manual Web scraping
 + Introduction to APIs
 + Data types and formats
@@ -133,7 +130,7 @@ Update your maps (or create a new one) using data joined from two sources
 +  Jeremy B. Merrill, [Heart of Nerd Darkness: Why Updating Dollars for Docs Was So Difficult](https://www.propublica.org/nerds/heart-of-nerd-darkness-why-dollars-for-docs-was-so-difficult)
 
 <a id="class3"></a>
-### [Class 3 - November 4](http://fitnr.github.io/savi-750/class3/index.html)
+### [Class 3 - September 22](http://fitnr.github.io/savi-750/class3/index.html)
 + Introduction to SQL and spatial SQL
 + Introduction to python
 + Opening closed data with [Tabula](http://tabula.technology)
@@ -149,7 +146,7 @@ Update your maps (or create a new one) using data joined from two sources
 * Paul Cote, [Mapping with Aggregated Statistics](http://www.pbcgis.com/normalize/)
 
 <a id="class4"></a>
-### [Class 4 - November 11](http://fitnr.github.io/savi-750/class4/index.html)
+### [Class 4 - September 29](http://fitnr.github.io/savi-750/class4/index.html)
 + Class presentations
 + Python for scraping the web
 + Quantitative maps on the web
