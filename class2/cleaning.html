@@ -17,7 +17,78 @@
 + Adding data
 --
 
++ Formatting data
+--
+
++ Correcting errors
+--
+
 + Concatenating data together
+
+---
+
+# Data Cleaning
+
+The line between "cleaning up the data" and "interpreting the data" is very fine.
+
+--
+
+A little friction when you're working with your data is OK - it gives you an excuse to examine what's actually happening in the data.
+
+--
+
+There are many automated tools, but beware! Programs that solve some error may introduce another problem
+
+---
+
+# Data Cleaning
+
+Is just series of tactics. The trick is identifying and stating what the problem is, then finding a tool (or creating one) to fix it.
+
+--
+
+Document what you do and keep a copy of the previous data.
+
+---
+
+# Data Cleaning
+
+Issue: data is too big
+
+--
+
+Tactic: remove unneeded fields or split into parts
+
+---
+
+# Data Cleaning
+
+Issue: the file is malformed (e.g. extra columns in a CSV, broken JSON)
+
+--
+
+Tactic: Use a linter to find the bad parts, possibly 
+
+---
+
+# Data Cleaning
+
+Issue: fields have unneccessary or unusual characters
+e.g. `50perc` instead of `50%`, `12/31/2018` instead of `2018-12-31`
+
+--
+
+Tactic: Format the individual fields
+
+---
+
+# Data Cleaning
+
+And this only addresses the formatting of files themselves. Issues of accuracy, precision and confidence are additional worries.
+
+--
+
+Let's focus on the easy stuff.
 
 ---
 

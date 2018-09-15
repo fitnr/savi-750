@@ -66,6 +66,10 @@ Gurmukhi
 arabic
 ---
 
+[![img-full](../images/string-poem.png)](https://twitter.com/FakeUnicode/status/1035811446410567681)
+
+---
+
 # Data Types
 ## String
 
@@ -134,7 +138,7 @@ Converting the `UTF-8` code for "café" to Windows-1252 yields "cafÃ©"
 
 🐍
 ```python
->>> print u"café".encode("utf8").decode("windows-1252")
+>>> print(u"café".encode("utf8").decode("windows-1252"))
 cafÃ©
 ```
 ---
@@ -142,11 +146,22 @@ cafÃ©
 # Data Types
 ## String
 
+![img](../images/ohara.jpg)
+
+--
+```python
+'’'.encode('utf8').decode('cp1252')
+'â€™'
+```
+---
+# Data Types
+## String
+
 At worst, encoding issues break things
 
 🐍
 ```python
->>> print "café".encode("ascii")
+>>> print("café".encode("ascii"))
 ```
 --
 ```
@@ -154,7 +169,6 @@ Traceback (most recent call last):
   File "<string>", line 1, in <module>
 UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 3: ordinal not in range(128)
 ```
-
 ---
 
 # Data Types
@@ -168,7 +182,7 @@ A byte is 8 bits
 
 A dollar is eight bits
 
-[![img-center-full](../images/pieces-of-eight.jpg)](http://jpkoning.blogspot.nl/2017/10/the-ubiquitous-spanish-dollara-photo.html)
+[![img-center](../images/pieces-of-eight.jpg)](http://jpkoning.blogspot.nl/2017/10/the-ubiquitous-spanish-dollara-photo.html)
 
 ---
 
@@ -258,7 +272,7 @@ Wednesday, October 25, 2017
 + In computing, `YYYY-MM-DD` format is most common (the way Americans write dates is very unusual)
 
 --
-+ In programming, date and time objects usually have a method
++ In programming, date and time objects usually come with methods to convert to different string formats
 
 --
 + timezones are hard!
@@ -321,7 +335,7 @@ Converting between types is called casting or coercing. It might be performed au
 * Don't expect `123.00` and `123` to be equal
 
 --
-* Expect `123.00` and `123.0000` are equal
+* Expect `123.00` and `123.0000` to be equal
 
 --
 * `1` and `0.999999999999999999999999999999999999` just might be equal!
@@ -385,13 +399,16 @@ STATEFP,COUNTYFP,GEOID,NAME,LANDKM,B06011_001,B25105_001
 + character encoding (Windows or UTF-8?)
 
 --
++ line ending: Unix or Windows
+
+--
 + separator (a.k.a delimiter), commonly `,;|` or `tab`
 
 --
 + untyped: the entire document might be interpreted as text
 
 --
-+ Text may or may not be quoted. Numeric characters in quotes is likely to be interpreted as a `string`
++ Text may or may not be quoted. Numeric characters in quotes are likely to be interpreted as a `string`
 ```
 manhattan,1
 bronx,"2"
