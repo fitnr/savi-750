@@ -187,6 +187,59 @@ A dollar is eight bits
 ---
 
 # Data Types
+## String
+### Line Endings
+
+In text, the entire document is a series of strings - even the line endings.
+
+--
+
+Carriage returns and line feeds
+
+![img-left-40](../images/underwood_electric_carriage_return_typewriter.jpg)
+
+[![img-right-40](../images/TTY33ASR.jpg)](https://en.wikipedia.org/wiki/Teletype_Model_33#/media/File:TTY33ASR.jpg)
+
+---
+
+# Data Types
+## String
+### Line Endings
+
++ A [carriage return](https://en.wikipedia.org/wiki/Carriage_return) is a lever that returns the typewriter's mechanical <i>carriage</i> to the left side of the page.
++ A [line feed](https://en.wikipedia.org/wiki/Newline) moves the paper up one line height.
+
+--
+
+ASCII has both `CR` and `LF` characters, and different operating systems expect different things in files:
+
+Windows:
+<p class="highlightpre">
+This is a line<span style="font-weight: bold; color: orange">CRLF</span>This is a new line
+</p>
+
+Unix:
+<p class="highlightpre">
+This is a line<span style="font-weight: bold; color: orange">LF</span>This is a new line
+</p>
+
+---
+
+# Data Types
+## String
+### Line Endings
+
+Before processing a file, check the line endings. Many systems will automatically check, but not all.
+
+In Unix:
+* `file` checks line endings
+* `dos2unix` converts them
+* If you don't have `dos2unix`: `tr -d "\r" < in.csv > out.csv`
+
+
+---
+
+# Data Types
 ## Numeric types
 
 Whole number have different names depending on context

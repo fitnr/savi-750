@@ -215,7 +215,8 @@ pre code {
   border: none;
   background: transparent; }
 
-.highlight pre {
+.highlight pre,
+.highlightpre {
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
   font-size: 13px;
@@ -232,11 +233,12 @@ pre {
   overflow: auto;
   padding: 6px 10px;
   border-radius: 3px; }
-  pre code, pre tt {
-    background-color: transparent;
-    border: none; }
 
-p.footer{
+pre code, pre tt {
+  background-color: transparent;
+  border: none; }
+
+p.footer {
   position:fixed;
   left:10px;
   bottom:0px;

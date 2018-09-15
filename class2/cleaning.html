@@ -92,17 +92,93 @@ Let's focus on the easy stuff.
 
 ---
 
-# csvkit
+# Bash Command Line
+
+Commands run with the format:
+````bash
+command -flags --long-flag arguments
+````
+
+All of the parts of the above, except the `command`, are optional:
+--
+
+````bash
+ls
+````
+--
+````bash
+ls -l
+````
+--
+````bash
+ls -l ~/Documents
+````
+--
+````bash
+ls ~/Documents
+````
+--
+````bash
+curl --verbose https://httpbin.org/get
+````
+
+---
+
+# Bash Command Line
+
+Think of the command line as a world of text being edited and filtered. There are tools built into the shell scripting language to redirect and accept text.
+
+--
+
+Send text to a file with `>`
+````bash
+echo a b c > newfile.txt
+````
+
+--
+
+Send a file to a command with `<`
+````bash
+cut -d ' ' -f 2 < newfile.txt
+````
+
+--
+
+Send the result of a command to another command with `|` (pipe)
+````bash
+echo a b c | cut -d ' ' -f 2
+````
+
+---
+
+# Bash Command Line
+
+Documentation is usually built-in, there are a couple different ways find it:
+
+````bash
+ls -h
+csvcut --help
+man cat
+aws help
+````
+---
+
+# Bash Command Line
+## csvkit
+
+`csvkit` is a set of command line tools for parsing and editing CSV
 
 http://csvkit.readthedocs.io
 
----
+--
 
-Use this example data
+Let's use this example data:
 
 https://github.com/fitnr/savi-750/tree/gh-pages/class2/data
 
----
+--
+
+And work on
 
 + Combining (`csvstack`)
 + Transforming (`csvjson`, `in2csv`)
