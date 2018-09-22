@@ -20,7 +20,13 @@ class: center, middle
 
 ---
 
-#NYC Geoclient API Setup
+class:center,middle
+#Geocoding
+![img-full](../images/geocoding.png)
+
+---
+
+#NYC Geoclient API
 + [Register for an account](https://developer.cityofnewyork.us/api/geoclient-api 
 )
 + Click on the activation email
@@ -29,9 +35,8 @@ class: center, middle
 
 ---
 
-class:center,middle
-#Geocoding
-![img-full](../images/geocoding.png)
+# NYC Geoclient API
+
 
 ---
 
@@ -63,36 +68,140 @@ benchmark=9
 format=json
 ```
 ---
+## Geocoding
 
-class:center,middle
-#Let's try that in Python
-##[Open this file](citations.csv)
+### [Download this file](class3.csv)
 
 And inspect it with `csvkit`
 
+--
+
+Sample commands:
+
+````bash
+head -n 1 class3.csv
+csvstat class3.csv
+````
+
 ---
+## Geocoding with the Census API and Python
 
-# How to geocode file?
-
-Our goal is to get a coordinate for every citation
+Our goal is to get a coordinate for every citation.
 
 --
 + Read each line in CSV
 
 --
-+ construct the address from the fields
++ construct an address from the fields
 
 --
 + geocode the address
 
 --
-+ Save a new CSV
++ Save the output to a new CSV
+
+---
+## Geocoding with the Census API and Python
+
+Install the censusgeocode package
++ Go to your `bash` command line
++ `pip install --user censusgeocode`
+
+--
+
+This will make the geocoding part easier. Most popular APIs have a corresponding Python library that takes care of the heavy lifting
 
 ---
 
-#Install the censusgeocode package
-+ Go to your command line
-+ Type `pip install --user censusgeocode`
+## Geocoding with the Census API and Python
+
+### Step 1: read each line of the CSV
+
+Add the csv module to your code
+````python
+import csv
+````
+
+--
+Open the file and prepare to turn each row into a `dict`ionary
+````python
+with open('class3.csv') as f:
+  reader = csv.DictReader(f)
+````
+
+We're using the `csv` module, let's [open the docs for reference](https://docs.python.org/3.6/library/csv.html).
+
+We can also run `help(csv)` in Python, or `pydoc csv` in bash.
+
+---
+
+## Geocoding with the Census API and Python
+
+### Step 2: construct an address
+
+Get the first row
+````python
+row = next(reader)
+````
+
+Goal: transform this into something we can send to the Census API via [censusgeocode](https://pypi.org/project/censusgeocode/).
+
+---
+
+## Geocoding with the Census API and Python
+
+### Step 3: geocode an address
+
+````python
+import censusgeocode as cg
+````
+````python
+result = cg.onelineaddress(...)
+result = cg.address(...)
+````
+
+---
+
+## Geocoding with the Census API and Python
+
+### Step 4: save a new CSV
+
+Use a loop to do something with each row
+```python
+for row in reader:
+    # put the code in here
+```
+
+--
+````python
+fieldnames = [...]
+with open('geocoded.csv', 'w') as g:
+    csv.DictWriter(f, fieldnames)
+````
+
+---
+## Geocoding with the Census API and Python
+
+Final product:
+````python
+import csv
+import censusgeocode
+
+# open source and results file
+with open('class3.csv') as f, open('geocoded.csv', 'w') as g:
+    reader = csv.DictReader(f)
+    fieldnames = [...]
+    writer = csv.DictWriter(f, fieldnames)
+    writer.writeheader()
+
+    # Loop through each row and write the result to the new file
+    for row in reader:
+        # transform the address
+        address = censusgeocode.address(...)
+        resultrow = ...
+        writer.writerow(resultrow)
+
+````
 
 ---
 class:center, middle

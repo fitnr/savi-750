@@ -23,23 +23,39 @@ class: center, middle
 # Introduction to SQL
 
 ---
+## SQL
+
+SQL = Structured Query Language
+
++ In SQL, you describe the result, not the process for getting it
+
+--
+
++ This simplifies things, at the cost of making the database a little hard to visualize
+
+--
+
++ There are many varieties of SQL, we're using PostgreSQL, like Carto
+
+--
 
 Hello World!
 ```sql
 select 'Hello World!';
 ```
 
---
+---
+## SQL
 
 Commas separate fields (just like a CSV) 
 
 ```sql
 select 'Hello World!', 100, TRUE; 
 ```
-
 ---
+## SQL
 
-## Let's look at counties
+### Let's look at counties
 
 ### Add County Data from Data Library
 
@@ -47,74 +63,73 @@ select 'Hello World!', 100, TRUE;
 
 ---
 
+## SQL
+
 The **from** clause pulls fields from a table:
 
 ````sql
-select county from counties_ny;
+select name from counties;
 ````
 
-**county** is the name of a column in the table **counties_ny**
+**name** is the name of a column in the table **counties**
 
 --
 
 ```
-Rockland
-Kings
-New York
-Herkimer
-Queens
+Mohave
+Kittitas
+Kearny
+Montgomery
 ```
 
 The result is a set of **rows** (in no particular order)
 
 ---
+## SQL
 
-## Selecting columns
+### Selecting columns
 
 ````sql
-select county, fips from counties_ny;
+select name, geoid from counties;
 ````
 --
 
 ````
-Franklin    36033
-Orleans     36073
-Westchester 36119
-Albany      36001
-Sullivan    36105
-Kings       36047
+04015 Mohave
+53037 Kittitas
+20093 Kearny
+17135 Montgomery
 ````
+
+The result is a set of rows in arbitrary order (and Carto mixes up the columns, too)
 
 --
 
 Use ***** as a wild card to get all the rows of a table:
 
 ````sql
-select * from counties_ny;
+select * from counties;
 ````
 
 ---
+## SQL
 
-## Where
+### Where
 
 The **where** clause filters results
 
 ````sql
-select * from counties_ny where county = 'Rockland';
+select * from counties where name = 'Kings';
 ````
 
 --
 
-```
-Rockland
-```
-
-In this case there is only one row
+In this case there are two rows.
 
 ---
+## SQL
 
-
-## Comparison operators
+### Comparison operators
 
 * equality: `a = b`
 * inequality: `a <> b`, `a != b`
@@ -123,40 +138,114 @@ In this case there is only one row
 --
 
 ```sql
-select * from counties_ny where county = 'Rockland';
-select * from counties_ny where county <> 'Queens';
+select * from counties where county = 'Orange';
+select * from counties where county <> 'Washington';
 ```
 
+--
+
+Unlike Python, there's no assignment in SQL. Changing data is done differently.
+
 ---
+## SQL
 
 Functions change the results
 
+[List of SQL functions](https://www.postgresql.org/docs/current/static/functions.html)
+
 ````sql
-select concat(county, ' County, ', state_name) from counties_ny;
+select replace(name, 'e', 'eeeee') from counties;
 ````
 
 --
 
 ````sql
-select replace(county, 'e', 'eeeee') from counties_ny;
+select concat(name, ' County') from counties;
 ````
 
-[List of SQL functions](https://www.postgresql.org/docs/current/static/functions.html)
+--
+
+Concatenation is actually so useful that there's a special shorthand: `||`
+
+````sql
+select name || ' County' from counties;
+````
 
 ---
+## SQL
 
-## Aggregates
+### Aggregates
 
 Aggregate functions summarize the data
 
 ````sql
-select count(county) from counties_ny;
+select count(geoid) from counties;
 ````
+
+--
+
+````sql
+select sum(aland) from counties;
+````
+
+--
+
+````sql
+select min(aland) from counties;
+````
+````sql
+select max(awater) from counties;
+````
+
+---
+## SQL
+
+### Order and Limit
+
+Explicitly ordering data is often useful when asking questions:
+
+````sql
+select * from counties order by aland;
+````
+````sql
+select * from counties order by awater desc
+````
+
+--
+
+Limiting the number of rows is very useful when dealing with big datasets.
+
+````sql
+select * from counties order by aland desc limit 3;
+````
+````sql
+select * from counties order by awater asc limit 5;
+````
+
+---
+## SQL
+
+### Recap
+
+````sql
+select *
+from counties
+where name = 'Washington'
+order by aland
+limit 3
+````
+
+--
+
+Select all the columns from the counties table where the `name` is 'Washington', and give me the three results in ascending order by `aland`.
 
 ---
 
 class:center, middle
-# Joins
+
+## SQL
+
+### Joins
 
 ---
 
@@ -167,8 +256,9 @@ http://stackoverflow.com/questions/406294/left-join-and-left-outer-join-in-sql-s
 
 ---
 class: left
+## SQL
 
-## Joins
+### Joins
 
 Joins merge two tables
 
@@ -190,27 +280,14 @@ from shapes as a
 Table aliases save a lot of time!
 
 ---
+## SQL
 
-class:middle,center
-# Joining Census geometry to census data
-
----
-
+### Joining Census geometry to census data
 
 ````sql
-SELECT shapes.cartodb_id
-   , shapes.the_geom
-   , shapes.the_geom_webmercator
-   , shapes.aland
-   , a.hc01_est_vc09
-   , a.hc01_est_vc10
-     , 10.0 / 20
-   , cast(pop25up as numeric) as pizza
-   , pop25up::numeric / (shapes.aland/2589988.11) as densityadult
-  
-FROM cb_2016_36_tract_500k as shapes
-  join ny_tracts_ed as a
-    on (a.geo_id2::text = shapes.geoid)
+SELECT shapes.*, a.column
+FROM cb_2016_us_county_5m AS shapes
+  JOIN data_table AS a ON (a.geo_id2 = shapes.geoid)
 ````
 
 ---

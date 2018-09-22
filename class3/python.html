@@ -132,7 +132,7 @@ Strings (`str`)
 ```
 
 --
-Defining variables store something for later
+Defining variables stores something for later
 
 ````python
 hello = "hello"
@@ -191,7 +191,45 @@ hello world
 ````
 
 ---
+## Variables
 
+Are like a pointer that refers to a value.
+
+````python
+n = 1
+macaroni = "pizza"
+truthiness = False
+````
+
+A variable should consist of lowercase letters and underscores (`_`). Don't use a dash, because that means subtraction.
+
+--
+
+Some words are reserved by Python and shouldn't be used, e.g:
+```python
+file
+list
+and
+or
+class
+```
+
+---
+## Variables
+
+The name of the variable is essentially arbitrary, picking one that's self explanatory can be hard.
+
+--
+
+```python
+x = 'inputfile.csv'
+```
+--
+```python
+infile = 'inputfile.csv'
+```
+
+---
 ## Variables
 
 Redefining variables is possible
@@ -243,6 +281,18 @@ Comparison operators produce a boolean value
 'apple' is True
 ```
 
+--
+
+Note that `==` (comparison) is different from `=` (assignment).
+
+```python
+# assign the variable _apple_ the value 'macintosh'
+apple = 'macintosh'
+
+# check if the variable _apple_ equals 'macintosh'
+apple == 'macintosh'
+```
+
 ---
 ## Conditionals
 
@@ -265,6 +315,7 @@ if hungry is True:
 
 --
 + Indentation matters!
++ indent with spaces!
 
 --
 

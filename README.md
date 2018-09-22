@@ -15,7 +15,8 @@ Continuing Education Units (C.E.U.s): 3.0
 + [Course Readings](#course-readings)
 + [Class Format](#class-format)
 + [Submitting Assignments](#submitting-assignments)
-+ [Course Outline](#outline)1)
++ [Course Outline](#outline)
+    + [Session 1, Sept. 8](#class1)
 	+ [Session 2, Sept. 15](#class2)
 	+ [Session 3, Sept. 22](#class3)
 	+ [Session 4, Sept. 29](#class4)
@@ -134,8 +135,10 @@ Find an interesting or visually compelling map (interactive or static) or visual
 
 <a id="class3"></a>
 ### [Class 3 - September 22](http://fitnr.github.io/savi-750/class3/index.html)
-+ Introduction to SQL and spatial SQL
++ Quick look at TIGER and American Factfinder
 + Introduction to Python
++ Geocoding
++ Introduction to SQL and spatial SQL
 + Opening closed data with [Tabula](http://tabula.technology)
 
 ### Assignments
