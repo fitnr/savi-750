@@ -11,30 +11,30 @@
 class:center,middle
 
 ![img-center-30](../images/pratt_logo.png)
-# Mining the Web
-### Neil Freeman
-### http://fitnr.github.io/savi-750/class4/index.html
+## Mining the Web
+#### Neil Freeman
+#### http://fitnr.github.io/savi-750/class4/index.html
 
 ---
 
 class:center,middle
-# 2 Scrape 2 Map
+## 2 Scrape 2 Map
 
 ---
 
 class:center,middle
-# Goal: Map Whole Foods and Cracker Barrel
+## Goal: Map Whole Foods and Cracker Barrel
 
 --
 
-#### People write dumb articles. Let's see if there's anything here
+##### People write dumb articles. Let's see if there's anything here
 
 [![alt text](../images/medium-cb-wf.png))](https://medium.com/@michael_hendrix/why-2016-came-down-to-whole-foods-vs-cracker-barrel-4361cb9b1e5f)
 
 ---
 
 
-# Get Whole Foods Locations
+## Get Whole Foods Locations
 
 --
 ![list of whole foods](../images/complete-list-of-whole-foods.png)
@@ -44,22 +44,22 @@ nope! nope! nope! nope! nope!
 
 ---
 
-## There's no raw data!
+### There's no raw data!
 
 ![whole foods site](../images/wf-website.png)
 
 ---
 
-## There's no raw data!
-### We'll have to scrape it 
+### There's no raw data!
+#### We'll have to scrape it 
 
 --
 
-#### (manually?)
+##### (manually?)
 
 ---
 
-# There's a lot here
+## There's a lot here
 
 Would be painful to manually download all of this
 
@@ -67,16 +67,16 @@ Would be painful to manually download all of this
 
 ---
 
-# How to?
+## How to?
 
 --
 
-## Python to the rescue
+### Python to the rescue
 
 ---
 
-# Parsing HTML with Python
-### Plan of action
+## Parsing HTML with Python
+#### Plan of action
 
 + Read the file
 --
@@ -88,7 +88,7 @@ Would be painful to manually download all of this
 
 ---
 
-# First, let's get some Soup
+## First, let's get some Soup
 
 ```
 pip install --user BeautifulSoup4
@@ -112,13 +112,13 @@ from bs4 import BeautifulSoup
 
 ---
 
-# Get the Whole Foods
+## Get the Whole Foods
 
 .img-full[![inspect the website](../images/lots-of-pages.png)]
 
 ---
 
-# Get the Whole Foods
+## Get the Whole Foods
 
 The URLs follow a simple pattern:
 ````
@@ -131,15 +131,15 @@ http://www.wholefoodsmarket.com/stores/list/state?
 
 ---
 
-# Get the Whole Foods
-## Let's use a neat command line trick
+## Get the Whole Foods
+### Let's use a neat command line trick
 
 ![bash expansion](../images/bash-number-expansion.png)
 
 ---
 
-# Get the Whole Foods
-## Curl all 22 files all in one command
+## Get the Whole Foods
+### Curl all 22 files all in one command
 
 ```
 curl "http://www.wholefoodsmarket.com/stores/list/state?page="{0..21} > wholefoods.html
@@ -149,7 +149,7 @@ curl "http://www.wholefoodsmarket.com/stores/list/state?page="{0..21} > wholefoo
 
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 Read the file
 
@@ -162,7 +162,7 @@ print(soup)
 
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 One weird trick
 
@@ -174,7 +174,7 @@ So open it up and delete `</html>` tags.
 
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 Inspect the website to get an idea of what's here
 
@@ -182,7 +182,7 @@ Inspect the website to get an idea of what's here
 
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 Find a particular element
 
@@ -204,11 +204,11 @@ print divs[3]
 
 class: center,middle
 
-#Break
+##Break
 
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 ````html
 <div class="views-row views-row-1 views-row-odd views-row-first">\n
@@ -237,7 +237,7 @@ class: center,middle
 ````
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 Use a `for` loop to address each element of `divs` in turn
 
@@ -254,7 +254,7 @@ for div in divs:
 ````
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 OK, some are blank. Here's a new part of Python syntax: the `try` block
 
@@ -271,7 +271,7 @@ for div in divs:
 
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 Let's create a function to organize things
 
@@ -300,7 +300,7 @@ for div in divs:
 
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 Now we have to look at the pattern for each data element we want:
 
@@ -324,7 +324,7 @@ print(div.find(class_='thoroughfare').text)
 ````
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 Adjust the function to return a `dict` created from the attributes of each `div`.
 
@@ -347,7 +347,7 @@ def process_div(div):
 
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 Letters aren't all letters
 
@@ -366,7 +366,7 @@ print(string.encode('utf8'))
 
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 ````python
 def process_div(div):
     try:
@@ -381,9 +381,13 @@ def process_div(div):
         return {}
 ````
 
+--
+
+In Python 3 you don't have to do this step! Python 3 handles things much more easily
+
 ---
 
-# Parsing HTML with Python
+## Parsing HTML with Python
 
 Rather than opening a new file, let's just send it to the command line, which is a little easier
 
@@ -399,31 +403,35 @@ writer.writeheader()
 
 ---
 ````python
-
+# open file
 with open('wholefoods.html') as f:
     soup = BeautifulSoup(f.read())
 
-divs = soup.find_all('div', attrs={'class': 'views-row'})
-
+# Prepare to write results
 fields = ['name', 'street', 'city', 'state', 'zipcode']
-
 writer = csv.DictWriter(sys.stdout, fieldnames=fields)
 writer.writeheader()
 
+# get targeted content of file
+divs = soup.find_all('div', attrs={'class': 'views-row'})
+
+# process and write results
 for div in divs:
     d = process_div(div)
-    if d != {}:
+    # bool({}) is False
+    if d:
         writer.writerow(d)
 ````
 
 ---
-## Python's syntactic sugar
+## List comprehensions
+### Python's syntactic sugar
 
 ````python
 for div in divs:
     d = process_div(div)
     
-    if d != {}:
+    if d:
         writer.writerow(d)
 ````
 --
@@ -431,7 +439,8 @@ for div in divs:
 becomes...
 
 ````python
-writer.writerows([process_div(d) for d in divs])
+results = [process_div(d) for d in divs]
+writer.writerows(row for row in results if row)
 ````
 
 ---
@@ -455,6 +464,7 @@ result = [expression(variable) for variable in iterable]
 
 --
 
+try it out:
 ````python
 a = [1, 2, 3]
 
@@ -465,7 +475,7 @@ a = [1, 2, 3]
 
 ---
 
-# Send the result to CSV
+## Send the result to CSV
 
 ````
 python wholefoods.py > wholefoods.csv
@@ -474,7 +484,7 @@ python wholefoods.py > wholefoods.csv
 ---
 
 
-# Get Cracker Barrel Locations
+## Get Cracker Barrel Locations
 
 --
 
@@ -482,7 +492,7 @@ python wholefoods.py > wholefoods.csv
 
 ---
 
-# Get Cracker Barrel Locations
+## Get Cracker Barrel Locations
 
 This is a little simpler: there's sort of an API
 
@@ -490,7 +500,7 @@ This is a little simpler: there's sort of an API
 
 ---
 
-# Get Cracker Barrel Locations
+## Get Cracker Barrel Locations
 
 This is a little simpler: there's sort of an API
 
@@ -500,7 +510,7 @@ Except what's this mess?
 
 ---
 
-# Get Cracker Barrel Locations
+## Get Cracker Barrel Locations
 
 It's some kind of XML
 
@@ -508,7 +518,7 @@ It's some kind of XML
 
 ---
 
-# Get Cracker Barrel Locations
+## Get Cracker Barrel Locations
 
 ```
 <request><appkey>3C44AEBA-B85D-11E5-B8DC-C8188E89CD5A</appkey><geoip>1</geoip><formdata id="locatorsearch"><dataview>store_default</dataview><geolocs><geoloc><addressline></addressline><longitude></longitude><latitude></latitude></geoloc></geolocs><searchradius>50</searchradius><where><openingsoon><eq>0</eq></openingsoon><labslocation><eq>null</eq></labslocation></where></formdata></request>
@@ -519,21 +529,80 @@ It's some kind of XML
 ![img-full](../images/cracker-xml-in-url.png)
 
 ---
+## Get Cracker Barrel Locations
 
-# Get Cracker Barrel Locations
+````html
+<request>
+    <appkey>3C44AEBA-B85D-11E5-B8DC-C8188E89CD5A</appkey>
+    <geoip>1</geoip>
+    <formdata id="locatorsearch">
+        <dataview>store_default</dataview>
+        <geolocs>
+            <geoloc>
+                <addressline></addressline>
+                <longitude></longitude>
+                <latitude></latitude>
+            </geoloc>
+        </geolocs>
+        <searchradius>50</searchradius>
+        <where>
+            <openingsoon>
+                <eq>0</eq>
+            </openingsoon>
+            <labslocation>
+                <eq>null</eq>
+            </labslocation>
+        </where>
+    </formdata>
+</request>
+````
 
+
+---
+
+## Get Cracker Barrel Locations
+
+````html
+<request>
+    <appkey>3C44AEBA-B85D-11E5-B8DC-C8188E89CD5A</appkey>
+    <geoip>1</geoip>
+    <formdata id="locatorsearch">
+        <dataview>store_default</dataview>
+        <geolocs>
+            <geoloc>
+                <addressline></addressline>
+                <longitude>-96.6851982</longitude>
+                <latitude>40.8257625</latitude>
+            </geoloc>
+        </geolocs>
+        <searchradius>2000</searchradius>
+        <where>
+            <openingsoon>
+                <eq>0</eq>
+            </openingsoon>
+            <labslocation>
+                <eq>null</eq>
+            </labslocation>
+        </where>
+    </formdata>
+</request>
+````
+---
+
+## Get Cracker Barrel Locations
 
     https://hosted.where2getit.com/crackerbarrel/ajax?lang=en_US&xml_request=<request><appkey>3C44AEBA-B85D-11E5-B8DC-C8188E89CD5A</appkey><formdata id="locatorsearch"><dataview>store_default</dataview><geolocs><geoloc><addressline>lincoln, ne</addressline><longitude>-96.6851982</longitude><latitude>40.8257625</latitude></geoloc></geolocs><searchradius>2000</searchradius><where><openingsoon><eq>0</eq></openingsoon><labslocation><eq>null</eq></labslocation></where></formdata></request>
 
 ---
 
-# Get Cracker Barrel Locations
+## Get Cracker Barrel Locations
 
+642 Cracker Barrels!
 ![img-full](../images/cracker-barrel-raw-xml.png)
 
 ---
 
-# Convert XML to CSV
+## Convert XML to CSV
 
 
 OK, How to turn this into a usable format?
@@ -544,7 +613,7 @@ OK, How to turn this into a usable format?
 
 ---
 
-# Convert XML to CSV
+## Convert XML to CSV
 
 Online tools, e.g: http://www.luxonsoftware.com/converter/xmltocsv
 
@@ -556,7 +625,7 @@ Problems:
 
 ---
 
-# Convert XML to CSV
+## Convert XML to CSV
 
 Other option: find a Python module for it, e.g. [xmlutils](https://github.com/knadh/xmlutils.py)
 
@@ -564,11 +633,11 @@ Other option: find a Python module for it, e.g. [xmlutils](https://github.com/kn
 
 class: center,middle
 
-#Break
+##Break
 
 ---
 
-# Get County Shapefile from the Census
+## Get County Shapefile from the Census
 
 Unfortunately, the "USA Counties" dataset on CARTO is wrong!
 
@@ -578,7 +647,7 @@ https://www.census.gov/geo/maps-data/data/tiger-line.html
 
 ---
 
-# Get County Shapefile <strike>from the Census</strike>
+## Get County Shapefile <strike>from the Census</strike>
 
 Quicker: copy from my CARTO page:
 
@@ -586,7 +655,7 @@ https://fitnr.carto.com/tables/cb_2016_us_county_5m/public
 
 ---
 
-# Spatial Statistics
+## Spatial Statistics
 
 Create a map with these three datasets
 
@@ -594,7 +663,7 @@ Create a map with these three datasets
 
 ---
 
-# Spatial Statistics
+## Spatial Statistics
 
 Run in data view
 
@@ -607,13 +676,13 @@ WHERE ST_Contains(county.the_geom, b.the_geom)
 
 ---
 
-# Spatial Statistics
+## Spatial Statistics
 
 ![img-full](../images/spatial-count.png)
 
 ---
 
-# Spatial Statistics
+## Spatial Statistics
 
 
 How to count counties with Cracker Barrel locations?
@@ -631,7 +700,7 @@ WHERE ST_Contains(county.the_geom, b.the_geom)
 
 ---
 
-# Spatial Joins
+## Spatial Joins
 
 Now to map the counties with Whole Foods
 
@@ -651,7 +720,7 @@ GROUP BY
 HAVING COUNT(b.*) > 0
 ````
 ---
-# Spatial Joins
+## Spatial Joins
 
 Apply query to two copies of the `cb_2016_us_county_5m` layer
 
@@ -662,7 +731,7 @@ Apply query to two copies of the `cb_2016_us_county_5m` layer
 
 ---
 
-# Spatial Joins
+## Spatial Joins
 
 ![img-full](../images/carto-map-1.png)
 
@@ -672,7 +741,7 @@ Is this map a lie?
 
 ---
 
-# Spatial Statistics
+## Spatial Statistics
 
 How many Whole Foods are in a county with a Cracker Barrel, and vis versa?
 
@@ -692,7 +761,7 @@ ON (ST_Contains(county.the_geom, b.the_geom))
 ````
 ---
 
-# Spatial Statistics
+## Spatial Statistics
 
 How many C.B. are in W.F. counties?
 
@@ -710,7 +779,7 @@ LEFT JOIN crackerbarrel c
 ````
 
 ---
-# Spatial Joins
+## Spatial Joins
 
 Map counties with both a C.B. count and a W.F. count
 
@@ -739,14 +808,14 @@ HAVING
 ````
 
 ---
-# Spatial Joins
+## Spatial Joins
 
 CARTO can't map this kind of diverging scale easily
 
 --
 
 ````CSS
-#cb_2016_us_county_5m {
+##cb_2016_us_county_5m {
   polygon-fill: #FFEDA0;
   polygon-opacity: 0.85;
   line-color: #FFF;
@@ -754,22 +823,22 @@ CARTO can't map this kind of diverging scale easily
   line-opacity: 0.85;
 }
 
-#cb_2016_us_county_5m [ count_cb >= 1] {
+##cb_2016_us_county_5m [ count_cb >= 1] {
    polygon-fill: #FF9900;
 }
 
-#cb_2016_us_county_5m [ count_wf >= 1] {
+##cb_2016_us_county_5m [ count_wf >= 1] {
    polygon-fill: #6B0FB2;
 }
 
-#cb_2016_us_county_5m [ count_wf >= 1][ count_cb >= 1] {
+##cb_2016_us_county_5m [ count_wf >= 1][ count_cb >= 1] {
    polygon-fill: #666666;
 }
 ````
 
 ---
 
-# Spatial Joins
+## Spatial Joins
 
 ![img-full](../images/that-do-both.png)
 
