@@ -9,19 +9,42 @@
     <textarea id="source">
 
 class:center,middle
-#Introduction to SQL
-##Let's look at earthquakes
-<!-- beginning of e block -->
+
+![img-center-30](../images/pratt_logo.png)
+## Mining the Web
+#### Neil Freeman
+#### http://fitnr.github.io/savi-750/class4/index.html
+
+---
+## Introduction to Spatial SQL
+
+### PostGIS
+
+* Open source spatial extension to PostgreSQL
+* Version 1.0 was released in 2005
+* Builds on `GEOS`, which builds on `Java Topology Suite`, which builds on the [OGC Simple Features Secification](http://www.gismanual.com/relational/99-049_OpenGIS_Simple_Features_Specification_For_SQL_Rev_1.1.pdf)
+* Chair of development is Paul Ramsey, a main developer at CARTO (2015-2018)
+
+[Documentation](https://postgis.net/docs/manual-2.4/)
 
 ---
 
-#Add Earthquake Data from Data Library
+class:center,middle
+## Introduction to Spatial SQL
+### Let's look at earthquakes
+
+---
+## Spatial SQL
+
+###Add Earthquake Data from Data Library
+
+Click "Connect Dataset"
 ![img-full](../images/cdb_earthquake.png)
-##Click "Connect Dataset"
+
 
 ---
 
-# Spatial SQL
+## Spatial SQL
 --
 
 ![img-center-80](../images/sql7.png)
@@ -31,26 +54,18 @@ class:center,middle
 
 ---
 
-class:middle,center
-# How Many Earthquakes Occured in Each Country?
+## Spatial SQL
+### How Many Earthquakes Occured in Each Country?
 
----
+--
+#### Steps to Answer
 
-#Steps to Answer
+--
 
----
-
-#Steps to Answer
 1. Import the World Borders file from the Data Library
+--
 
----
-
-#Steps to Answer
-1. Import the World Borders file from the Data Library
 2. Join the datasets together – spatially!
-
----
-## Spatial Join
 
 --
 
@@ -60,15 +75,26 @@ FROM world_borders as b
     LEFT JOIN all_day AS q
         ON ST_Contains(b.the_geom, q.the_geom)
 ````
---
+
+---
+
+## Spatial SQL
+### How Many Earthquakes Occured in Each Country?
 
 Several things going on here
+````sql
+SELECT b.name, q.place
+FROM world_borders as b
+    LEFT JOIN all_day AS q
+        ON ST_Contains(b.the_geom, q.the_geom)
+````
+
 --
 
 + Aliases for tables (using "**AS**")
 --
 
-+ Connecting the two tables with **ST_CONTAINS()**
++ Connecting the two tables with `ST_Contains()`
 --
 
 + This is a one-to-many join
@@ -76,8 +102,8 @@ Several things going on here
 It picks up every row from `world_borders` at least once, perhaps many times
 
 ---
-
-# PostGIS functions
+## Spatial SQL
+### PostGIS functions
 
 They begin with `ST` and they're amazing.
 
@@ -110,8 +136,8 @@ GROUP BY b.cartodb_id
 
 
 ---
-
-## More PostGIS Magic
+## Spatial SQL
+### More PostGIS Magic
 
 + Creating lines from series of points (`ST_MakeLine`)
 
